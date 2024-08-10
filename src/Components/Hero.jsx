@@ -35,7 +35,7 @@ export default function Hero() {
             >
                 <div
                     className='bg-[url("./assets/Astro_S1_2.0.svg")] bg-no-repeat bg-contain bg-left-bottom
-                    top-0 right-0 w-1/2 animate-wiggle animate-infinite animate-duration-[30000ms] animate-delay-1000 animate-ease-in-out'
+                    top-0 right-0 w-1/2 animate-wiggle animate-infinite animate-duration-[10000ms] animate-delay-1000 animate-ease-in-out'
                 ></div>
             </div>
         </>

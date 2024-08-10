@@ -28,7 +28,7 @@ function FaqAccordion() {
 }
 
 export default function FQA() {
-    return(
+    return (
         <>
             <div className="text-white text-center font-['Exo_2'] flex flex-col gap-9 z-10">
                 <h1 className="hidden md:block text-5xl text-balance max-lg:mx-28 font-bold">
@@ -39,15 +39,12 @@ export default function FQA() {
                 </h1>
                 <p className="lg:text-xl sm:text-lg font-['Roboto'] font-light text-pretty">
                     If we missed anything, please contact us at{' '}
-                    <a
-                        href="hackhayward@gmail.com"
-                        className="font-bold"
-                    >
+                    <a href="hackhayward@gmail.com" className="font-bold">
                         hackhayward@gmail.com
                     </a>
                 </p>
             </div>
-            <FaqAccordion  />
+            <FaqAccordion />
         </>
-    )
+    );
 }
