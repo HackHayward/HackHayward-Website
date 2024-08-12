@@ -27,7 +27,7 @@ function App() {
                     <div></div>
                     {/* FAQ */}
                     <div
-                        className="h-screen flex flex-col items-center lg:pt-32 p-10 gap-12  bg-[url(./assets/Background/Background.png)]  bg-center bg-cover bg-no-repeat "
+                        className="h-screen flex flex-col items-center lg:pt-32 p-10 gap-12  bg-[url(./assets/Background/Background.png)]  bg-center bg-cover bg-no-repeat overflow-x-hidden"
                         id="faq"
                     >
                         <FAQ />
