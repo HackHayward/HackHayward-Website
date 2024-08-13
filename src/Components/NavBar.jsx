@@ -1,5 +1,8 @@
 function NavButtons() {
+
+
     const links = [{ text: 'About' }, { text: 'FAQ' }, { text: 'Sponsor Us' }];
+
 
     return (
         <>

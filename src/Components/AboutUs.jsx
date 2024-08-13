@@ -24,13 +24,17 @@ export default function AboutUs() {
                         participants.
                     </p>
                 </div>
-                <div className="bg-[url('./assets/Scene2/s2Full.png')] bg-contain  bg-no-repeat lg:w-[35rem] lg:h-[35rem] w-full h-60 mt-4 lg:mt-0 lg:mr-40"></div>
+
+                <div className="bg-[url('./assets/Scene2/s2Full.png')] bg-contain  bg-no-repeat lg:w-[30rem] lg:h-[30rem] w-full h-60 mt-4 lg:mt-0 lg:mr-56"></div>
+
             </div>
             <div
                 className="flex flex-col lg:flex-row text-white  justify-between 
 "
             >
-                <div className="hidden md:block  bg-[url('./assets/Scene3/s3Full.png')] bg-contain bg-no-repeat lg:w-[35rem] lg:h-[35rem] w-full h-60 mt-4 lg:mt-0 lg:ml-32 "></div>
+
+                <div className="hidden md:block  bg-[url('./assets/Scene3/s3Full.png')] bg-contain bg-no-repeat lg:w-[30rem] lg:h-[30rem] w-full h-60 mt-4 lg:mt-0 lg:ml-48 "></div>
+
                 <div className="lg:w-1/2 w-full p-4 font-['Roboto'] flex flex-col gap-5 animate-fade-left">
                     <h1 className="text-5xl font-bold mb-4 text-center font-['Exo_2']">
                         Our Mission
