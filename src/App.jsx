@@ -2,6 +2,7 @@ import './App.css';
 import NavBar from './Components/NavBar';
 import Hero from './Components/Hero';
 import FAQ from './Components/FAQ';
+import AboutUs from './Components/AboutUs';
 
 function App() {
     return (
@@ -24,10 +25,15 @@ function App() {
                     brightness-50 saturate-150"
                     ></span>
                     {/* about us */}
-                    <div></div>
+                    <div
+                        className="lg:h-full h-[160vh] flex flex-col items-center gap-10 lg:pt-20 p-10  bg-[url(./assets/Background/Background.png)]  bg-center bg-cover bg-no-repeat overflow-x-hidden  "
+                        id="about"
+                    >
+                        <AboutUs />
+                    </div>
                     {/* FAQ */}
                     <div
-                        className="h-screen flex flex-col items-center lg:pt-32 p-10 gap-12  bg-[url(./assets/Background/Background.png)]  bg-center bg-cover bg-no-repeat overflow-x-hidden"
+                        className="h-screen flex flex-col items-center lg:pt-32 p-10 gap-12  bg-[url(./assets/Background/Background.png)]  bg-center bg-cover bg-no-repeat overflow-x-hidden overflow-y-hidden"
                         id="faq"
                     >
                         <FAQ />

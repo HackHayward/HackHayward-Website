@@ -45,7 +45,10 @@ export default function FQA() {
                 </h1>
                 <p className="lg:text-xl sm:text-lg font-['Roboto'] font-light text-pretty">
                     If we missed anything, please contact us at{' '}
-                    <a href="hackhayward@gmail.com" className="font-bold">
+                    <a
+                        href="hackhayward@gmail.com"
+                        className="font-bold text-[#c593e9]"
+                    >
                         hackhayward@gmail.com
                     </a>
                 </p>

@@ -1,10 +1,6 @@
 function NavButtons() {
-    const links = [
-        {text: "About"},
-        {text: "FAQ"},
-        {text: "Sponsor Us"}
-    ];
-    
+    const links = [{ text: 'About' }, { text: 'FAQ' }, { text: 'Sponsor Us' }];
+
     return (
         <>
             {links.map((links, index) => (
@@ -24,10 +20,16 @@ function NavButtons() {
 export default function NavBar() {
     return (
         <>
-            <div className="navbar lg:px-16 lg:pt-16 px-6 pt-6 absolute z-fix-100">
+            <div
+                className="navbar lg:px-16 lg:pt-16 px-6 pt-6 absolute z-fix-100 animate-fade-right
+"
+            >
                 {/* Logo */}
                 <div className="max-lg:navbar-start ">
-                    <a href="#home" className="max-lg:h-20 max-sm:h-16 hover:scale-110 transition">
+                    <a
+                        href="#home"
+                        className="max-lg:h-20 max-sm:h-16 hover:scale-110 transition"
+                    >
                         <img
                             src="./assets/Monotone Logo.png"
                             alt="HackHayward logo"
