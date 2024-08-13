@@ -5,6 +5,7 @@ import FAQ from './Components/FAQ';
 import AboutUs from './Components/AboutUs';
 import Footer from './Components/Footer';
 
+
 function App() {
     return (
         <>
@@ -49,9 +50,9 @@ function App() {
                     </div>
                 </main>
                 {/* footer */}
-                <footer className="bg-[rgb(48,37,45)]">
-                    <Footer />
-                </footer>
+
+                <footer className="bg-[rgb(48,37,45)]"></footer>
+
             </body>
         </>
     );

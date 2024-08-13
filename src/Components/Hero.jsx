@@ -2,9 +2,9 @@ export default function Hero() {
     return (
         <>
             {/* title */}
-            <div
-                className="text-white flex flex-col lg:gap-4 gap-2 z-fix-10 font-['Exo_2'] animate-fade-up"
-            >
+
+            <div className="text-white flex flex-col lg:gap-4 gap-2 z-fix-10 font-['Exo_2'] animate-fade-up">
+
                 <h1 className="lg:text-8xl sm:text-6xl text-5xl max-[340px]:text-4xl font-bold z-3 max-lg:text-center">
                     HackHayward
                 </h1>
