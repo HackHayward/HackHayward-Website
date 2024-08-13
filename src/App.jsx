@@ -5,7 +5,6 @@ import FAQ from './Components/FAQ';
 import AboutUs from './Components/AboutUs';
 import Footer from './Components/Footer';
 
-
 function App() {
     return (
         <>
@@ -30,7 +29,6 @@ function App() {
                     <div
                         className="h-full flex flex-col items-center gap-10 lg:pt-20 p-10 
                         bg-[url(./assets/Background/Background.png)]  bg-center bg-cover bg-no-repeat"
-
                         id="about"
                     >
                         <AboutUs />
@@ -39,20 +37,17 @@ function App() {
                     <div
                         className="h-screen flex flex-col items-center lg:pt-32 p-10 gap-12 
                         bg-[url(./assets/Background/Background.png)] bg-center bg-cover bg-no-repeat"
-
                         id="faq"
                     >
                         <FAQ />
                     </div>
                     {/* sponsor */}
-                    <div>
-
-                    </div>
+                    <div></div>
                 </main>
                 {/* footer */}
-
-                <footer className="bg-[rgb(48,37,45)]"></footer>
-
+                <footer className="bg-[rgb(48,37,45)]">
+                    <Footer />
+                </footer>
             </body>
         </>
     );

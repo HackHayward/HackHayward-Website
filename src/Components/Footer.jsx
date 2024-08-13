@@ -1,10 +1,14 @@
-import { BiLogoDiscord, BiLogoInstagram, BiLogoLinkedinSquare  } from "react-icons/bi";
+import {
+    BiLogoDiscord,
+    BiLogoInstagram,
+    BiLogoLinkedinSquare,
+} from 'react-icons/bi';
 
 function SocialButtons() {
     const links = [
         { icon: BiLogoDiscord, href: '' },
         { icon: BiLogoInstagram, href: '' },
-        { icon: BiLogoLinkedinSquare, href: '' }
+        { icon: BiLogoLinkedinSquare, href: '' },
     ];
 
     return (
@@ -15,7 +19,7 @@ function SocialButtons() {
                         href={`#${links.href}`}
                         className="text-white text-xl font-['Space_Grotesk'] font-medium"
                     >
-                        <links.icon className="h-12 w-auto"/>
+                        <links.icon className="h-12 w-auto" />
                     </a>
                 </li>
             ))}
@@ -24,11 +28,7 @@ function SocialButtons() {
 }
 
 function NavButtons() {
-    const links = [
-        { text: 'About' },
-        { text: 'FAQ' },
-        { text: 'Sponsor Us' }
-    ];
+    const links = [{ text: 'About' }, { text: 'FAQ' }, { text: 'Sponsor Us' }];
 
     return (
         <>
@@ -47,7 +47,7 @@ function NavButtons() {
 }
 
 export default function Footer() {
-    return(
+    return (
         <>
             <div className="navbar p-8 place-content-between">
                 {/* Logo */}
@@ -61,7 +61,9 @@ export default function Footer() {
                             alt="HackHayward logo"
                             className="h-full"
                         />
-                        <p className="text-white text-xl font-['Exo_2'] font-medium pl-6 max-sm:hidden">HackHayward</p>
+                        <p className="text-white text-xl font-['Exo_2'] font-medium pl-6 max-sm:hidden">
+                            HackHayward
+                        </p>
                     </a>
                 </div>
                 {/* Socials */}
@@ -69,7 +71,7 @@ export default function Footer() {
                     {/* Email */}
                     <div className="pb-1">
                         <p className="lg:text-lg text-sm font-['Space_Grotesk'] font-thin text-pretty text-white text-end">
-                        Reach out to us at {' '}
+                            Reach out to us at{' '}
                             <a
                                 href="mailto:hackhayward@gmail.com"
                                 className="font-black text-[#c593e9]"
@@ -86,12 +88,12 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <hr className="mx-8"/>
+            <hr className="mx-8" />
             <div className="navbar p-8 place-content-between max-sm:flex-col">
                 {/* Text */}
                 <div className="lg:navbar-start ">
                     <p className="text-white lg:text-lg text-sm font-['Space_Grotesk'] font-light max-sm:pb-6">
-                        MLH Code of Conduct 
+                        MLH Code of Conduct
                     </p>
                 </div>
                 {/* Nav Buttons */}

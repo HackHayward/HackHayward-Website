@@ -27,12 +27,6 @@ function FaqAccordion() {
     );
 }
 
-function FaqScene4() {
-    return (
-        <div className="bg-[url('./assets/Scene4/s4full.png')] bg-contain bg-center bg-no-repeat w-full h-full relative mr-36"></div>
-    );
-}
-
 export default function FQA() {
     return (
         <>
@@ -54,7 +48,6 @@ export default function FQA() {
                 </p>
             </div>
             <FaqAccordion />
-            <FaqScene4 />
         </>
     );
 }
