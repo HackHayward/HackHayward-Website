@@ -2,10 +2,7 @@ export default function Hero() {
     return (
         <>
             {/* title */}
-            <div
-                className="text-white flex flex-col lg:gap-4 gap-2 z-fix-10 font-['Exo_2'] animate-fade-up
-"
-            >
+            <div className="text-white flex flex-col lg:gap-4 gap-2 z-fix-10 font-['Exo_2'] animate-fade-up">
                 <h1 className="lg:text-8xl sm:text-6xl text-5xl max-[340px]:text-4xl font-bold z-3 max-lg:text-center">
                     HackHayward
                 </h1>
@@ -19,15 +16,13 @@ export default function Hero() {
                 <div className="flex gap-4 max-lg:justify-center lg:mt-4 mt-2 font-['Space_Mono']">
                     <button
                         className="bg-[#c593e9] text-white lg:h-16 lg:px-14 lg:py-4 h-12 px-6 pr-9
-                    hover:bg-[#cfb0e8] transition max-lg:text-sm slash-r animate-flip-up
-"
+                    hover:bg-[#cfb0e8] transition max-lg:text-sm slash-r animate-flip-up"
                     >
                         Pre-Register
                     </button>
                     <button
                         className="border-2 border-white text-white lg:h-16 lg:px-14 lg:py-4 h-12 px-6 pl-9
-                    hover:bg-gray-700 transition max-lg:text-sm slash-l animate-flip-down
-"
+                    hover:bg-gray-700 transition max-lg:text-sm slash-l animate-flip-down"
                     >
                         Sponsor Us
                     </button>
