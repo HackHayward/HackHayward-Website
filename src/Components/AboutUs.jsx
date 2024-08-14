@@ -3,10 +3,10 @@ export default function AboutUs() {
         <>
             <section className="flex flex-col lg:flex-row text-white justify-between">
                 <article className="lg:w-1/2 w-full p-4 flex flex-col gap-5 animate-fade-right">
-                    <h1 className="text-5xl font-bold mb-4 text-center font-['Exo_2']">
+                    <h1 className="text-5xl font-bold mb-4 text-center font-exo2">
                         About Us
                     </h1>
-                    <p className="mb-4 lg:text-2xl font-['Space_Grotesk']">
+                    <p className="mb-4 lg:text-2xl font-grotesk">
                         HackHayward, hosted at California State University, East
                         Bay, is the first collegiate hackathon in the Hayward,
                         California area. We challenge students to work
@@ -22,11 +22,11 @@ export default function AboutUs() {
             </section>
             <section className="flex flex-col lg:flex-row text-white justify-between">
                 <div className="hidden md:block bg-[url('./assets/Scene3/s3Full.png')] bg-contain bg-no-repeat lg:w-[30rem] lg:h-[30rem] w-full h-60 mt-4 lg:mt-0 lg:ml-48"></div>
-                <article className="lg:w-1/2 w-full p-4 font-['Roboto'] flex flex-col gap-5 animate-fade-left">
-                    <h1 className="text-5xl font-bold mb-4 text-center font-['Exo_2']">
+                <article className="lg:w-1/2 w-full p-4 font-robo flex flex-col gap-5 animate-fade-left">
+                    <h1 className="text-5xl font-bold mb-4 text-center font-exo2">
                         Our Mission
                     </h1>
-                    <p className="lg:text-2xl font-['Space_Grotesk']">
+                    <p className="lg:text-2xl font-grotesk">
                         Our mission is to empower underrepresented students
                         passionate about technology by providing hands-on
                         learning experiences, networking opportunities, and

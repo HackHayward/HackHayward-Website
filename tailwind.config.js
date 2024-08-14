@@ -7,9 +7,13 @@ export default {
                 120: '59rem',
             },
             fontFamily: {
-                grotesk: ['Space_Grotesk'],
+                grotesk: "'Space Grotesk','sans-serif'",
+                exo2: "'Exo 2','sans-serif'",
+                mono: "'Space Mono', 'monospace'",
+                robo: " 'Roboto', 'sans-serif'",
             },
         },
     },
+
     plugins: [require('tailwindcss-animated'), require('daisyui')],
 };
