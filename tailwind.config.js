@@ -7,8 +7,7 @@ export default {
                 120: '59rem',
             },
             fontFamily: {
-                nav: ['Kanit', 'sans-serif'],
-                exo: ['Exo 2', 'sans-serif'],
+                grotesk: ['Space_Grotesk'],
             },
         },
     },
