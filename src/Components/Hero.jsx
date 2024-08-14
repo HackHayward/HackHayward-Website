@@ -23,7 +23,7 @@ export default function Hero() {
 
                     <button
                         className="border-2 border-white text-white lg:h-16 lg:px-14 lg:py-4 h-12 px-6 pl-9
-                    hover:bg-gray-700 transition max-lg:text-sm slash-l animate-flip-down"
+                    hover:bg-gray-700 transition max-lg:text-sm slash-l animate-flip-down backdrop-blur-sm"
                     >
                         Sponsor Us
                     </button>
@@ -32,14 +32,20 @@ export default function Hero() {
             {/* Artwork */}
             <aside
                 className='bg-[url("./assets/New.cave_3.0sl.png")] bg-no-repeat bg-contain bg-right-bottom
-                top-0 right-0 z-0 h-full w-full absolute mobile-fix flex justify-end overflow-hidden '
+
+                top-0 right-0 z-0 h-full w-full absolute art-fix overflow-hidden'
             >
-                <img
-                    src="./assets/Astro_S1_2.0.svg"
-                    alt="mascot"
-                    className="
-                    top-0 right-0 w-1/2 animate-wiggle animate-infinite animate-duration-[10000ms] animate-delay-1000 animate-ease-in-out"
-                />
+                <span className="flex justify-end items-end w-full h-full">
+                    <img
+                        src="./assets/Astro_S1_2.0.svg"
+                        alt="mascot"
+                        className="bottom-0 right-0 w-1/2 xl:h-5/6
+                        animate-wiggle animate-infinite animate-duration-[10000ms] animate-delay-1000 animate-ease-in-out"
+                    />
+                </span>
+
+              
+
             </aside>
         </>
     );

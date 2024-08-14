@@ -4,7 +4,7 @@
 
 .slash-l {
     border-radius: 0px 100px 100px 0px;
-    clip-path: polygon(25% 1%, 100% 1%, 100% 101%, 0% 100%);
+    clip-path: polygon(25% 1%, 100% 1%, 100% 101%, 0% 101%);
     margin: 15px 0px 0px -65px;
     backdrop-filter: blur(3px) brightness(85%) !important;
 }
@@ -21,7 +21,7 @@
 @media screen and (max-width: 1023px){
     .slash-l {
         border-radius: 0px 100px 100px 0px;
-        clip-path: polygon(25% 1%, 100% 1%, 100% 100%, 0% 100%);
+        clip-path: polygon(25% 1%, 100% 1%, 100% 101%, 0% 101%);
         margin: 15px 0px 0px -45px;
     }
 
