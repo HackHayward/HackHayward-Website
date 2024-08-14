@@ -112,9 +112,7 @@ export default function Footer() {
             </section>
             <section className="flex justify-center bg-white text-black font-medium font-grotesk">
                 <p className="flex flex-row gap-2">
-                    Made with
-                    <img src="./assets/heart.png" alt="icon" />
-                    by HackHayward
+                    Made with ❤️ by HackHayward
                 </p>
             </section>
         </footer>

@@ -1,12 +1,10 @@
 export default function AboutUs() {
     return (
         <>
-            <section className="flex flex-col lg:flex-row text-white justify-between">
-                <article className="lg:w-1/2 w-full p-4 flex flex-col gap-5 animate-fade-right">
-                    <h1 className="text-5xl font-bold mb-4 text-center font-exo2">
-                        About Us
-                    </h1>
-                    <p className="mb-4 lg:text-2xl font-grotesk">
+            <section className="grid xl:grid-cols-2 items-center justify-items-center gap-4 text-white">
+                <article className="animate-fade-right max-w-xl">
+                    <h2 className="text-5xl font-bold font-exo2">About Us</h2>
+                    <p className="text-xl max-w-xl	font-grotesk mt-4">
                         HackHayward, hosted at California State University, East
                         Bay, is the first collegiate hackathon in the Hayward,
                         California area. We challenge students to work
@@ -18,15 +16,25 @@ export default function AboutUs() {
                         participants.
                     </p>
                 </article>
-                <div className="bg-[url('./assets/Scene2/s2Full.png')] bg-contain bg-no-repeat lg:w-[30rem] lg:h-[30rem] w-full h-60 mt-4 lg:mt-0 lg:mr-56"></div>
+                <div className="">
+                    <img
+                        src="./assets/Scene2/s2Full.png"
+                        className="rounded-md shadow-lg shadow-cyan-500/50"
+                    />
+                </div>
             </section>
-            <section className="flex flex-col lg:flex-row text-white justify-between">
-                <div className="hidden md:block bg-[url('./assets/Scene3/s3Full.png')] bg-contain bg-no-repeat lg:w-[30rem] lg:h-[30rem] w-full h-60 mt-4 lg:mt-0 lg:ml-48"></div>
-                <article className="lg:w-1/2 w-full p-4 font-robo flex flex-col gap-5 animate-fade-left">
-                    <h1 className="text-5xl font-bold mb-4 text-center font-exo2">
+            <section className="grid xl:grid-cols-2 items-center justify-items-center gap-4 text-white mt-4">
+                <div className="">
+                    <img
+                        src="./assets/Scene3/s3Full.png"
+                        className="rounded-md shadow-lg shadow-cyan-500/50"
+                    />
+                </div>
+                <article className="animate-fade-left row-start-1 row-end-2 xl:col-start-2 xl:col-end-3 max-w-xl">
+                    <h2 className="text-5xl font-bold font-exo2">
                         Our Mission
-                    </h1>
-                    <p className="lg:text-2xl font-grotesk">
+                    </h2>
+                    <p className="text-xl font-grotesk mt-4">
                         Our mission is to empower underrepresented students
                         passionate about technology by providing hands-on
                         learning experiences, networking opportunities, and
@@ -36,7 +44,6 @@ export default function AboutUs() {
                         development and professional connections.
                     </p>
                 </article>
-                <div className="md:hidden bg-[url('./assets/Scene3/s3Full.png')] bg-contain bg-bottom bg-no-repeat lg:w-[30rem] lg:h-[30rem] w-full h-60 lg:mt-0"></div>
             </section>
         </>
     );
