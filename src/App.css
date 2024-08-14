@@ -4,9 +4,9 @@
 
 .slash-l {
     border-radius: 0px 100px 100px 0px;
-    clip-path: polygon(25% 1%, 100% 1%, 100% 101%, 0% 101%);
+    clip-path: polygon(25% 1%, 100% 1%, 100% 101%, 0% 100%);
     margin: 15px 0px 0px -65px;
-    backdrop-filter: blur(3px) brightness(85%);
+    backdrop-filter: blur(3px) brightness(85%) !important;
 }
 
 .slash-l::before {
@@ -14,14 +14,14 @@
     height: 100px;
     width: 100px;
     position: absolute;
-    transform: rotate(40deg) translateX(-37px) translateY(15px);
+    transform: rotate(40deg) translateX(-36px) translateY(11px);
     border-left: white solid 2px;
 }
 
 @media screen and (max-width: 1023px){
     .slash-l {
         border-radius: 0px 100px 100px 0px;
-        clip-path: polygon(25% 1%, 100% 1%, 100% 101%, 0% 101%);
+        clip-path: polygon(25% 1%, 100% 1%, 100% 100%, 0% 100%);
         margin: 15px 0px 0px -45px;
     }
 
@@ -30,7 +30,7 @@
         height: 100px;
         width: 100px;
         position: absolute;
-        transform: rotate(38deg) translateX(-30px) translateY(15px);
+        transform: rotate(38deg) translateX(-29px) translateY(15px);
         border-left: white solid 2px;
     }
 }
@@ -48,9 +48,11 @@
     z-index: 10;
 }
 
-.mobile-fix {
+.art-fix {
+    margin-right: -30px;
+
     @media screen and (max-width: 624px){
-        width: 150% !important;
+        width: 180% !important;
     }
 }
 
