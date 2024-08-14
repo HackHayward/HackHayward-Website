@@ -17,7 +17,7 @@ function SocialButtons() {
                 <li key={index} className="px-2 lg:hover:scale-110 transition">
                     <a
                         href={`#${link.href}`}
-                        className="text-white text-xl font-['Space_Grotesk'] font-medium"
+                        className="text-white text-xl font-grotesk font-medium"
                     >
                         <link.icon className="h-12 w-auto" />
                     </a>
@@ -36,7 +36,8 @@ function NavButtons() {
                 <li key={index} className="px-2 lg:hover:scale-110 transition">
                     <a
                         href={`#${link.text.toLowerCase().replace(' ', '-')}`}
-                        className="text-white lg:text-lg text-sm font-['Space_Grotesk'] font-light text-nowrap"
+                        className="text-white lg:text-lg text-sm font-grotesk
+                         font-light text-nowrap"
                     >
                         {link.text}
                     </a>
@@ -61,7 +62,7 @@ export default function Footer() {
                             alt="HackHayward logo"
                             className="h-full"
                         />
-                        <p className="text-white text-xl font-['Exo_2'] font-medium pl-6 max-sm:hidden">
+                        <p className="text-white text-xl font-exo2 font-medium pl-6 max-sm:hidden">
                             HackHayward
                         </p>
                     </a>
@@ -70,7 +71,7 @@ export default function Footer() {
                 <nav className="flex flex-col items-end">
                     {/* Email */}
                     <div className="pb-1">
-                        <p className="lg:text-lg text-sm font-['Space_Grotesk'] font-thin text-pretty text-white text-end">
+                        <p className="lg:text-lg text-sm font-grotesk font-thin text-pretty text-white text-end">
                             Reach out to us at{' '}
                             <a
                                 href="mailto:hackhayward@gmail.com"
@@ -90,7 +91,7 @@ export default function Footer() {
             <section className="navbar p-8 place-content-between max-sm:flex-col">
                 {/* Text */}
                 <div className="lg:navbar-start">
-                    <p className="text-white lg:text-lg text-sm font-['Space_Grotesk'] font-light max-sm:pb-6">
+                    <p className="text-white lg:text-lg text-sm font-grotesk font-light max-sm:pb-6">
                         MLH Code of Conduct
                     </p>
                 </div>
@@ -101,7 +102,7 @@ export default function Footer() {
                         <li className="px-2 lg:hover:scale-110 transition">
                             <a
                                 href=""
-                                className="bg-[#c593e9] hover:bg-[#cfb0e8] rounded-full p-3 transition text-white lg:text-lg text-sm font-['Space_Grotesk'] font-medium text-nowrap"
+                                className="bg-[#c593e9] hover:bg-[#cfb0e8] rounded-full p-3 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap"
                             >
                                 Pre-Register
                             </a>
@@ -109,7 +110,7 @@ export default function Footer() {
                     </ul>
                 </nav>
             </section>
-            <section className="flex justify-center bg-white text-black font-medium font-['Space_Grotesk']">
+            <section className="flex justify-center bg-white text-black font-medium font-grotesk">
                 <p className="flex flex-row gap-2">
                     Made with
                     <img src="./assets/heart.png" alt="icon" />

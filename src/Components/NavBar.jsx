@@ -7,7 +7,7 @@ function NavButtons() {
                 <li key={index} className="px-2 lg:hover:scale-110 transition">
                     <a
                         href={`#${link.text.toLowerCase().replace(' ', '-')}`}
-                        className="text-white text-xl font-['Roboto'] font-medium"
+                        className="text-white text-xl font-robo font-medium"
                     >
                         {link.text}
                     </a>
