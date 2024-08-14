@@ -13,13 +13,13 @@ function SocialButtons() {
 
     return (
         <>
-            {links.map((links, index) => (
+            {links.map((link, index) => (
                 <li key={index} className="px-2 lg:hover:scale-110 transition">
                     <a
-                        href={`#${links.href}`}
+                        href={`#${link.href}`}
                         className="text-white text-xl font-['Space_Grotesk'] font-medium"
                     >
-                        <links.icon className="h-12 w-auto" />
+                        <link.icon className="h-12 w-auto" />
                     </a>
                 </li>
             ))}
@@ -32,13 +32,13 @@ function NavButtons() {
 
     return (
         <>
-            {links.map((links, index) => (
+            {links.map((link, index) => (
                 <li key={index} className="px-2 lg:hover:scale-110 transition">
                     <a
-                        href={`#${links.text}`}
+                        href={`#${link.text.toLowerCase().replace(' ', '-')}`}
                         className="text-white lg:text-lg text-sm font-['Space_Grotesk'] font-light text-nowrap"
                     >
-                        {links.text}
+                        {link.text}
                     </a>
                 </li>
             ))}
@@ -48,10 +48,10 @@ function NavButtons() {
 
 export default function Footer() {
     return (
-        <>
-            <div className="navbar p-8 place-content-between">
+        <footer className="bg-[#30252d] text-white">
+            <section className="navbar p-8 place-content-between">
                 {/* Logo */}
-                <div className="max-lg:navbar-start ">
+                <div className="max-lg:navbar-start">
                     <a
                         href="#home"
                         className="h-20 max-lg:h-16 max-sm:h-14 hover:scale-105 transition flex items-center"
@@ -67,7 +67,7 @@ export default function Footer() {
                     </a>
                 </div>
                 {/* Socials */}
-                <div className="flex flex-col items-end">
+                <nav className="flex flex-col items-end">
                     {/* Email */}
                     <div className="pb-1">
                         <p className="lg:text-lg text-sm font-['Space_Grotesk'] font-thin text-pretty text-white text-end">
@@ -81,41 +81,41 @@ export default function Footer() {
                         </p>
                     </div>
                     {/* Icons */}
-                    <div>
-                        <ul className="menu-horizontal px-1">
-                            <SocialButtons />
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                    <ul className="menu-horizontal px-1">
+                        <SocialButtons />
+                    </ul>
+                </nav>
+            </section>
             <hr className="mx-8" />
-            <div className="navbar p-8 place-content-between max-sm:flex-col">
+            <section className="navbar p-8 place-content-between max-sm:flex-col">
                 {/* Text */}
-                <div className="lg:navbar-start ">
+                <div className="lg:navbar-start">
                     <p className="text-white lg:text-lg text-sm font-['Space_Grotesk'] font-light max-sm:pb-6">
                         MLH Code of Conduct
                     </p>
                 </div>
                 {/* Nav Buttons */}
-                <div className="flex flex-col items-end">
-                    <div>
-                        <ul className="menu-horizontal px-1 gap-2">
-                            <NavButtons />
-                            <li className="px-2 lg:hover:scale-110 transition">
-                                <a
-                                    href=""
-                                    className="bg-[#c593e9] hover:bg-[#cfb0e8] rounded-full p-3 transition text-white lg:text-lg text-sm font-['Space_Grotesk'] font-medium text-nowrap"
-                                >
-                                    Pre-Register
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div className="flex justify-center bg-white text-black font-medium font-['Space_Grotesk']">
-                <p className="flex">Made with ❤ by HackHayward</p>
-            </div>
-        </>
+                <nav className="flex flex-col items-end">
+                    <ul className="menu-horizontal px-1 gap-2">
+                        <NavButtons />
+                        <li className="px-2 lg:hover:scale-110 transition">
+                            <a
+                                href=""
+                                className="bg-[#c593e9] hover:bg-[#cfb0e8] rounded-full p-3 transition text-white lg:text-lg text-sm font-['Space_Grotesk'] font-medium text-nowrap"
+                            >
+                                Pre-Register
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section className="flex justify-center bg-white text-black font-medium font-['Space_Grotesk']">
+                <p className="flex flex-row gap-2">
+                    Made with
+                    <img src="./assets/heart.png" alt="icon" />
+                    by HackHayward
+                </p>
+            </section>
+        </footer>
     );
 }
