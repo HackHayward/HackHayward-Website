@@ -32,6 +32,7 @@ export default function Hero() {
             {/* Artwork */}
             <aside
                 className='bg-[url("./assets/New.cave_3.0sl.png")] bg-no-repeat bg-contain bg-right-bottom
+
                 top-0 right-0 z-0 h-full w-full absolute art-fix overflow-hidden'
             >
                 <span className="flex justify-end items-end w-full h-full">
@@ -42,6 +43,9 @@ export default function Hero() {
                         animate-wiggle animate-infinite animate-duration-[10000ms] animate-delay-1000 animate-ease-in-out"
                     />
                 </span>
+
+              
+
             </aside>
         </>
     );
