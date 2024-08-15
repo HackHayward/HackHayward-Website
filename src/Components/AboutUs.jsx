@@ -1,12 +1,16 @@
 export default function AboutUs() {
     return (
         <>
-            <section className="grid xl:grid-cols-2 items-center justify-items-center lg:gap-4 gap-12 text-white mt-10">
+
+            <section className="grid xl:grid-cols-2 items-center justify-items-center lg:gap-4 gap-12 text-white max-w-screen-2xl mx-auto">
                 <article className="animate-fade-right ">
-                    <h2 className="text-5xl font-bold font-exo2 text-center">
+                    <h2 className="text-5xl max-[340px]:text-4xl font-bold font-exo2 text-center mb-9">
                         About Us
                     </h2>
-                    <p className="text-2xl  font-grotesk mt-4">
+                    <p className="lg:text-xl sm:text-lg font-grotesk text-pretty">
+
+           
+
                         HackHayward, hosted at California State University, East
                         Bay, is the first collegiate hackathon in the Hayward,
                         California area. We challenge students to work
@@ -21,22 +25,26 @@ export default function AboutUs() {
                 <div className="">
                     <img
                         src="./assets/Scene2/s2Full.png"
-                        className="	rounded-2xl	 shadow-cyan-500/50"
+
+                        className="	rounded-2xl shadow-cyan-500/50"
                     />
                 </div>
             </section>
-            <section className="grid xl:grid-cols-2 items-center justify-items-center lg:gap-4 gap-12 text-white mt-20">
+            <section className="grid xl:grid-cols-2 items-center justify-items-center lg:gap-4 gap-12 text-white mt-20 max-w-screen-2xl mx-auto">
                 <div className="">
                     <img
                         src="./assets/Scene3/s3Full.png"
-                        className="rounded-2xl	 shadow-lg shadow-cyan-500/50"
+                        className="rounded-2xl shadow-cyan-500/50"
                     />
                 </div>
-                <article className="animate-fade-left row-start-1 row-end-2 xl:col-start-2 xl:col-end-3 ">
-                    <h2 className="text-5xl font-bold font-exo2 text-center	">
+                <article className="animate-fade-left row-start-1 row-end-2 xl:col-start-2 xl:col-end-3">
+                    <h2 className="text-5xl max-[340px]:text-4xl font-bold font-exo2 text-center mb-9">
                         Our Mission
                     </h2>
-                    <p className="text-2xl font-grotesk mt-4">
+                    <p className="lg:text-xl sm:text-lg font-grotesk text-pretty">
+
+                
+
                         Our mission is to empower underrepresented students
                         passionate about technology by providing hands-on
                         learning experiences, networking opportunities, and

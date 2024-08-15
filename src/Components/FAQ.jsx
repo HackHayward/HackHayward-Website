@@ -45,7 +45,7 @@ function FaqAccordion() {
 export default function FQA() {
     return (
         <>
-            <header className="text-white text-center font-exo2 flex flex-col gap-9 z-10">
+            <header className="text-white text-center font-exo2 flex flex-col gap-9 z-10 max-w-screen-2xl mx-auto">
                 <h1 className="hidden md:block text-5xl text-balance max-lg:mx-28 font-bold">
                     FREQUENTLY ASKED QUESTIONS
                 </h1>

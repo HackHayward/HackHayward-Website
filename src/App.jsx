@@ -20,6 +20,7 @@ function App() {
                         <Hero />
                     </div>
                 </header>
+                <div className="bg-[#c593e9] h-6"></div>
                 <main className="">
                     {/* <span
                         className="h-full w-full bg-cover bg-center bg-local bg-no-repeat absolute z-0
@@ -27,16 +28,24 @@ function App() {
                     ></span> */}
                     {/* about us */}
                     <section
-                        className=" p-10 
-                        bg-[url(./assets/Background/BBackground.png)]  bg-center bg-cover bg-no-repeat  bg-fixed "
+
+                        className="pt-32 lg:px-16 px-6 gap-12 
+                        bg-[url(./assets/Background/BBackground.png)] bg-center bg-cover bg-no-repeat bg-fixed"
+
+                      
+
                         id="about"
                     >
                         <AboutUs />
                     </section>
                     {/* FAQ */}
                     <section
-                        className=" flex flex-col items-center py-20 px-10 gap-12 
-                        bg-[url(./assets/Background/BBackground.png)] bg-center bg-cover bg-no-repeat bg-fixed "
+
+                        className="flex flex-col items-center py-20 lg:px-16 px-6 gap-12
+                        bg-[url(./assets/Background/BBackground.png)] bg-center bg-cover bg-no-repeat bg-fixed"
+
+                     
+
                         id="faq"
                     >
                         <FAQ />
@@ -45,6 +54,7 @@ function App() {
                     <section></section>
                 </main>
                 {/* footer */}
+                <aside className="bg-[#c593e9] h-6"></aside>
                 <footer className="bg-[rgb(48,37,45)]">
                     <Footer />
                 </footer>
