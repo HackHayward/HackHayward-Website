@@ -23,8 +23,9 @@ export default function Sponsor() {
                     </p>
                     
                 </div>
-                <button className="btn rounded-full bg-[#c593e9] text-white relative h-14 text-center text-[20px] btn-xs sm:btn-sm md:btn-md lg:btn-lg font-grotesk">Sponsor Us</button>
-
+                <a href="/sponsor" className="btn rounded-full bg-[#c593e9] text-white relative h-14 text-center text-[20px] btn-xs sm:btn-sm md:btn-md lg:btn-lg font-grotesk">
+                     Sponsor Us
+                </a>
                 </section>
             </div>
         </>
