@@ -40,6 +40,16 @@
     clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
 }
 
+.line-1::after {
+    content: "";
+    height: 60px;
+    width: 75px;
+    position: absolute;
+    margin-left: -50px;
+    border-bottom: white solid 5px;
+    z-index: 5;
+}
+
 .z-fix-100 {
     z-index: 100;
 }
