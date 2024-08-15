@@ -1,8 +1,8 @@
 export default function AboutUs() {
     return (
         <>
-            <div className="grid place-content-center">
-                <section className="grid xl:grid-cols-2 items-center justify-items-center gap-4 text-white relative max-w-7xl">
+            <div className="grid place-content-center gap-3">
+                <section className="grid xl:grid-cols-2 items-center justify-items-center gap-4 text-white max-w-7xl">
                     <article className="animate-fade-right max-w-xl z-20">
                         <h2 className="text-5xl font-bold font-exo2">
                             About Us
@@ -25,7 +25,7 @@ export default function AboutUs() {
                             className="rounded-md shadow-lg shadow-cyan-500/50"
                         />
                     </div>
-                    <div className="opacity-50 absolute top-[25%] right-[-10%] h-[20%] w-[20%]">
+                    <div className="opacity-50 absolute top-[10%] right-[-10%] h-[20%] w-[20%]">
                         <img
                             src="../assets/Background/Uranus.png"
                             className="object-cover"
@@ -39,7 +39,7 @@ export default function AboutUs() {
                             className="rounded-md shadow-lg shadow-cyan-500/50"
                         />
                     </div>
-                    <article className="animate-fade-left row-start-1 row-end-2 xl:col-start-2 xl:col-end-3 max-w-xl z-20 relative">
+                    <article className="animate-fade-left row-start-1 row-end-2 xl:col-start-2 xl:col-end-3 max-w-xl z-20">
                         <h2 className="text-5xl font-bold font-exo2">
                             Our Mission
                         </h2>
