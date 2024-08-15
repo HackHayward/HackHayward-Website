@@ -4,6 +4,7 @@ import Hero from './Components/Hero';
 import FAQ from './Components/FAQ';
 import AboutUs from './Components/AboutUs';
 import Footer from './Components/Footer';
+import Sponsor from './Components/Sponsor';
 
 function App() {
     return (
@@ -43,7 +44,12 @@ function App() {
                         <FAQ />
                     </section>
                     {/* sponsor */}
-                    <section></section>
+                    <section
+                        className="flex flex-col items-center py-20 lg:px-16 px-6 gap-12  bg-black/50"
+                        id="sponsor"
+                    >
+                        <Sponsor />
+                    </section>
                 </main>
                 {/* footer */}
                 <aside className="bg-[#c593e9] h-6"></aside>
