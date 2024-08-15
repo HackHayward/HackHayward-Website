@@ -31,7 +31,7 @@ export default function Hero() {
             </header>
             {/* Artwork */}
             <aside
-                className='bg-[url("./assets/New.cave_3.0sl.png")] bg-no-repeat bg-contain bg-right-bottom
+                className='bg-[url("./assets/HeroScene.png")] bg-no-repeat bg-contain bg-right-bottom
 
                 top-0 right-0 z-0 h-full w-full absolute art-fix overflow-hidden'
             >
