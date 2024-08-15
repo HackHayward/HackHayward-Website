@@ -21,8 +21,9 @@ export default function Sponsor() {
                     By taking care of these logistics, we will create an environment where participants can fully immerse themselves in the creative process. 
                     This support allows hackers to develop and launch their innovative ideas, without worrying about any concerns.
                     </p>
+                    
                 </div>
-                
+                <button className="btn rounded-full bg-[#c593e9] text-white relative h-14 text-center text-[20px] btn-xs sm:btn-sm md:btn-md lg:btn-lg font-grotesk">Sponsor Us</button>
 
                 </section>
             </div>
