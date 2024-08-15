@@ -28,16 +28,24 @@ function App() {
                     ></span> */}
                     {/* about us */}
                     <section
+
                         className="pt-32 lg:px-16 px-6 gap-12 
                         bg-[url(./assets/Background/BBackground.png)] bg-center bg-cover bg-no-repeat bg-fixed"
+
+                      
+
                         id="about"
                     >
                         <AboutUs />
                     </section>
                     {/* FAQ */}
                     <section
+
                         className="flex flex-col items-center py-20 lg:px-16 px-6 gap-12
                         bg-[url(./assets/Background/BBackground.png)] bg-center bg-cover bg-no-repeat bg-fixed"
+
+                     
+
                         id="faq"
                     >
                         <FAQ />

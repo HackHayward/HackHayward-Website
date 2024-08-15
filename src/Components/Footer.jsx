@@ -107,7 +107,11 @@ export default function Footer() {
                             <li className="pl-2 hover:scale-110 transition">
                                 <a
                                     href=""
+
                                     className="bg-[#c593e9] hover:bg-[#cfb0e8] rounded-full p-3 px-6 max-[410px]:px-3 transition text-white lg:text-lg text-sm"
+
+                                 
+
                                 >
                                     Pre-Register
                                 </a>
