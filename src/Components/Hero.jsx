@@ -14,6 +14,21 @@ export default function Hero() {
                     <p className="lg:text-4xl text-2xl max-lg:text-center">
                         Spring 2025
                     </p>
+                    <div className="flex gap-5 mt-5 max-lg:justify-center">
+                        <a
+                            className="bg-[#c593e9] text-white lg:h-16 lg:px-14 lg:py-4 h-12 px-6 pr-9
+                    hover:bg-[#cfb0e8] transition max-lg:text-sm slash-r animate-flip-up"
+                        >
+                            Pre-Register
+                        </a>
+
+                        <a
+                            className="border-2 border-white text-white lg:h-16 lg:px-14 lg:py-4 h-12 px-6 pl-9
+                    hover:bg-gray-700 transition max-lg:text-sm slash-l animate-flip-down backdrop-blur-sm"
+                        >
+                            Sponsor Us
+                        </a>
+                    </div>
                 </div>
                 <div className="col-[1/11] row-[1] place-self-end">
                     <div className="relative">

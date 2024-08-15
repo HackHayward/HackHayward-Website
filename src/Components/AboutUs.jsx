@@ -1,7 +1,7 @@
 export default function AboutUs() {
     return (
         <>
-            <div className="grid place-content-center gap-3">
+            <div className="grid place-content-center gap-3 relative">
                 <section className="grid xl:grid-cols-2 items-center justify-items-center gap-4 text-white max-w-7xl">
                     <article className="animate-fade-right max-w-xl z-20">
                         <h2 className="text-5xl font-bold font-exo2">
