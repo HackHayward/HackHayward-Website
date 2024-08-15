@@ -8,10 +8,13 @@ import Footer from './Components/Footer';
 function App() {
     return (
         <>
-            <header>
+            <header id="navbar">
                 <NavBar />
             </header>
-            <main className="bg-[url(./assets/Background/BBackground.png)] bg-contain bg-repeat-y overflow-hidden">
+            <main
+                className="bg-[url(./assets/Background/BBackground.png)] bg-contain bg-repeat-y overflow-hidden"
+                id="home"
+            >
                 <section>
                     <Hero />
                 </section>
