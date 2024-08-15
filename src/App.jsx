@@ -11,23 +11,16 @@ function App() {
             <header>
                 <NavBar />
             </header>
-            <main>
+            <main className="bg-[url(./assets/Background/BBackground.png)] bg-contain bg-repeat-y overflow-hidden">
                 <section>
                     <Hero />
                 </section>
                 {/* about us */}
-                <section
-                    className="bg-[url(./assets/Background/BBackground.png)]  bg-center bg-cover bg-no-repeat p-10"
-                    id="about"
-                >
+                <section className="p-10 bg-black/50 relative" id="about">
                     <AboutUs />
                 </section>
                 {/* FAQ */}
-                <section
-                    className="flex flex-col items-center gap-12 p-10
-                        bg-[url(./assets/Background/BBackground.png)] bg-center bg-cover bg-no-repeat"
-                    id="faq"
-                >
+                <section className="p-10 bg-black/50" id="faq">
                     <FAQ />
                 </section>
                 {/* sponsor */}

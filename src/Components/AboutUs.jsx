@@ -1,8 +1,8 @@
 export default function AboutUs() {
     return (
         <>
-            <section className="grid xl:grid-cols-2 items-center justify-items-center gap-4 text-white">
-                <article className="animate-fade-right max-w-xl">
+            <section className="grid xl:grid-cols-2 items-center justify-items-center gap-4 text-white relative">
+                <article className="animate-fade-right max-w-xl z-20">
                     <h2 className="text-5xl font-bold font-exo2">About Us</h2>
                     <p className="text-xl max-w-xl	font-grotesk mt-4">
                         HackHayward, hosted at California State University, East
@@ -16,21 +16,27 @@ export default function AboutUs() {
                         participants.
                     </p>
                 </article>
-                <div className="">
+                <div className="z-20">
                     <img
                         src="./assets/Scene2/s2Full.png"
                         className="rounded-md shadow-lg shadow-cyan-500/50"
                     />
                 </div>
+                <div className="opacity-50 absolute top-[25%] right-[-10%] h-[20%] w-[20%]">
+                    <img
+                        src="../assets/Background/Uranus.png"
+                        className="object-cover"
+                    />
+                </div>
             </section>
             <section className="grid xl:grid-cols-2 items-center justify-items-center gap-4 text-white mt-4">
-                <div className="">
+                <div className="z-20">
                     <img
                         src="./assets/Scene3/s3Full.png"
                         className="rounded-md shadow-lg shadow-cyan-500/50"
                     />
                 </div>
-                <article className="animate-fade-left row-start-1 row-end-2 xl:col-start-2 xl:col-end-3 max-w-xl">
+                <article className="animate-fade-left row-start-1 row-end-2 xl:col-start-2 xl:col-end-3 max-w-xl z-20 relative">
                     <h2 className="text-5xl font-bold font-exo2">
                         Our Mission
                     </h2>
@@ -44,6 +50,12 @@ export default function AboutUs() {
                         development and professional connections.
                     </p>
                 </article>
+                <div className="opacity-50 absolute bottom-[20%] left-[-20%] max-h-[40%] max-w-[40%]">
+                    <img
+                        src="../assets/Background/Saturn.png"
+                        className="object-cover"
+                    />
+                </div>
             </section>
         </>
     );
