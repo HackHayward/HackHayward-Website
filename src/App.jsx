@@ -21,22 +21,22 @@ function App() {
                     </div>
                 </header>
                 <main className="">
-                    <span
+                    {/* <span
                         className="h-full w-full bg-cover bg-center bg-local bg-no-repeat absolute z-0
                         brightness-50 saturate-150"
-                    ></span>
+                    ></span> */}
                     {/* about us */}
                     <section
-                        className="h-full flex flex-col items-center gap-10 lg:pt-20 p-10 
-                        bg-[url(./assets/Background/BBackground.png)]  bg-center bg-cover bg-no-repeat"
+                        className=" p-10 
+                        bg-[url(./assets/Background/BBackground.png)]  bg-center bg-cover bg-no-repeat  bg-fixed "
                         id="about"
                     >
                         <AboutUs />
                     </section>
                     {/* FAQ */}
                     <section
-                        className="h-screen flex flex-col items-center lg:pt-32 p-10 gap-12 
-                        bg-[url(./assets/Background/BBackground.png)] bg-center bg-cover bg-no-repeat"
+                        className=" flex flex-col items-center py-20 px-10 gap-12 
+                        bg-[url(./assets/Background/BBackground.png)] bg-center bg-cover bg-no-repeat bg-fixed "
                         id="faq"
                     >
                         <FAQ />

@@ -43,9 +43,6 @@ export default function Hero() {
                         animate-wiggle animate-infinite animate-duration-[10000ms] animate-delay-1000 animate-ease-in-out"
                     />
                 </span>
-
-              
-
             </aside>
         </>
     );

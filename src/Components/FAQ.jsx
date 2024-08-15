@@ -52,7 +52,7 @@ export default function FQA() {
                 <h1 className="md:hidden text-5xl max-[340px]:text-4xl font-bold">
                     FAQ
                 </h1>
-                <p className="lg:text-xl sm:text-lg font-grotesk font-light text-pretty">
+                <p className="lg:text-xl text-lg font-grotesk font-light text-pretty">
                     If we missed anything, please contact us at{' '}
                     <a
                         href="mailto:hackhayward@gmail.com"
