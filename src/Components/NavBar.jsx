@@ -54,7 +54,7 @@ export default function NavBar() {
                     </button>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm menu-fix dropdown-content bg-[#261e24] rounded-box z-[1] mt-3 w-52 p-2 shadow "
+                        className="menu menu-sm menu-fix dropdown-content bg-[#261e24] rounded-box z-[1] mt-3 w-72 p-2 shadow  right-[50%] top-32 flex flex-col justify-center items-center "
                     >
                         <NavButtons />
                     </ul>
