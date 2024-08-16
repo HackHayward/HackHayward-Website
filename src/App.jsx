@@ -4,7 +4,11 @@ import Hero from './Components/Hero';
 import FAQ from './Components/FAQ';
 import AboutUs from './Components/AboutUs';
 import Footer from './Components/Footer';
+
 import Sponsor from './Components/Sponsor';
+
+
+
 
 function App() {
     return (
@@ -21,8 +25,8 @@ function App() {
                         <Hero />
                     </div>
                 </header>
-                <div className="bg-[#c593e9] h-6"></div>
-                <main className="bg-[url(./assets/Background/BBackground.png)] bg-contain bg-repeat-y overflow-hidden">
+
+                <main className="bg-[url(./assets/Background/BBackground.png)] bg-contain bg-repeat-y overflow-hidden border-t-[15px] border-b-[15px] border-[#c593e9] ">
                     {/* <span
                         className="h-full w-full bg-cover bg-center bg-local bg-no-repeat absolute z-0
                         brightness-50 saturate-150"
@@ -44,15 +48,19 @@ function App() {
                         <FAQ />
                     </section>
                     {/* sponsor */}
+
                     <section
                         className="flex flex-col items-center py-20 lg:px-16 px-6 gap-12  bg-black/50"
                         id="sponsor"
                     >
                         <Sponsor />
+
+                  
+
                     </section>
                 </main>
                 {/* footer */}
-                <aside className="bg-[#c593e9] h-6"></aside>
+
                 <footer className="bg-[rgb(48,37,45)]">
                     <Footer />
                 </footer>
