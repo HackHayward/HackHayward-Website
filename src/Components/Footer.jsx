@@ -6,9 +6,15 @@ import {
 
 function SocialButtons() {
     const links = [
-        { icon: BiLogoDiscord, href: '' },
-        { icon: BiLogoInstagram, href: '' },
-        { icon: BiLogoLinkedinSquare, href: '' },
+        { icon: BiLogoDiscord, href: 'https://discord.com/invite/eMHWYfMKDd' },
+        {
+            icon: BiLogoInstagram,
+            href: 'https://www.instagram.com/hackhayward/',
+        },
+        {
+            icon: BiLogoLinkedinSquare,
+            href: 'https://www.linkedin.com/company/hackhayward/mycompany/',
+        },
     ];
 
     return (
@@ -16,7 +22,7 @@ function SocialButtons() {
             {links.map((link, index) => (
                 <li key={index} className="px-2 lg:hover:scale-110 transition">
                     <a
-                        href={`#${link.href}`}
+                        href={`${link.href}`}
                         className="text-white text-xl font-grotesk font-medium"
                     >
                         <link.icon className="h-12 w-auto" />
