@@ -21,7 +21,7 @@ export default function AboutUs() {
                 <div className="z-20">
                     <img
                         src="./assets/Scene2/s2Full.png"
-                        className="rounded-md shadow-lg shadow-cyan-500/50"
+                        className="rounded-md shadow-lg"
                     />
                 </div>
                 <div className="opacity-50 absolute top-[10%] right-[-10%] h-[20%] w-[20%]">
@@ -35,7 +35,7 @@ export default function AboutUs() {
                 <div className="">
                     <img
                         src="./assets/Scene3/s3Full.png"
-                        className="rounded-2xl shadow-lg shadow-cyan-500/50"
+                        className="rounded-2xl shadow-lg "
                     />
                 </div>
                 <article className="animate-fade-left row-start-1 row-end-2 xl:col-start-2 xl:col-end-3">

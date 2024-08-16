@@ -4,12 +4,9 @@ import Hero from './Components/Hero';
 import FAQ from './Components/FAQ';
 import AboutUs from './Components/AboutUs';
 import Footer from './Components/Footer';
-
 import Sponsor from './Components/Sponsor';
-
-
-
-
+import PilotFalcon from './Components/PilotFalcon';
+import MLH from './Components/MLH';
 function App() {
     return (
         <>
@@ -21,6 +18,7 @@ function App() {
                 >
                     {/* navbar & title section*/}
                     <NavBar />
+                    <MLH />
                     <div className="lg:w-1/2 flex flex-col justify-center lg:ml-16 h-full">
                         <Hero />
                     </div>
@@ -51,12 +49,12 @@ function App() {
 
                     <section
                         className="flex flex-col items-center py-20 lg:px-16 px-6 gap-12  bg-black/50"
-                        id="sponsor"
+                        id="sponsor-us"
                     >
                         <Sponsor />
-
-                  
-
+                    </section>
+                    <section>
+                        <PilotFalcon />
                     </section>
                 </main>
                 {/* footer */}

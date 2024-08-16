@@ -18,14 +18,14 @@ export default function Hero() {
                         className="bg-[#c593e9] text-white lg:h-16 lg:px-14 lg:py-4 h-12 px-6 pr-9
                     hover:bg-[#cfb0e8] transition max-lg:text-sm slash-r animate-flip-up"
                     >
-                        Pre-Register
+                        <a href="">Pre-Register</a>
                     </button>
 
                     <button
                         className="border-2 border-white text-white lg:h-16 lg:px-14 lg:py-4 h-12 px-6 pl-9
                     hover:bg-gray-700 transition max-lg:text-sm slash-l animate-flip-down backdrop-blur-sm"
                     >
-                        Sponsor Us
+                        <a href=""> Sponsor Us</a>
                     </button>
                 </nav>
             </section>
