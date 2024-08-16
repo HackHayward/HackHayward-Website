@@ -2,7 +2,7 @@ export default function Hero() {
     return (
         <>
             {/* Title */}
-            <header className="text-white flex flex-col lg:gap-4 gap-2 z-fix-10 font-exo2 animate-fade-up">
+            <section className="text-white flex flex-col lg:gap-4 gap-2 z-fix-10 font-exo2 animate-fade-up">
                 <h1 className="lg:text-8xl sm:text-6xl text-5xl max-[340px]:text-4xl font-bold z-3 max-lg:text-center">
                     HackHayward
                 </h1>
@@ -28,7 +28,7 @@ export default function Hero() {
                         Sponsor Us
                     </button>
                 </nav>
-            </header>
+            </section>
             {/* Artwork */}
             <aside
                 className='bg-[url("./assets/HeroScene.png")] bg-no-repeat bg-contain bg-right-bottom

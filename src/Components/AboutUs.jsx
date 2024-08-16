@@ -6,7 +6,7 @@ export default function AboutUs() {
                     <h2 className="text-5xl max-[340px]:text-4xl font-bold font-exo2 text-center mb-9">
                         About Us
                     </h2>
-                    <p className="lg:text-xl sm:text-lg font-grotesk text-pretty">
+                    <p className="lg:text-xl lg:px-28  sm:text-lg font-grotesk text-pretty ">
                         HackHayward, hosted at California State University, East
                         Bay, is the first collegiate hackathon in the Hayward,
                         California area. We challenge students to work
@@ -18,22 +18,15 @@ export default function AboutUs() {
                         participants.
                     </p>
                 </article>
-                <div className="">
+                <div className="z-20">
                     <img
                         src="./assets/Scene2/s2Full.png"
-                        className="	rounded-2xl shadow-cyan-500/50"
+                        className="rounded-md shadow-lg shadow-cyan-500/50"
                     />
                 </div>
-
-                <div className="opacity-80 absolute top-[10%] right-[-10%] h-[20%] w-[20%]">
+                <div className="opacity-50 absolute top-[10%] right-[-10%] h-[20%] w-[20%]">
                     <img
                         src="../assets/Background/Uranus.png"
-                        className="object-cover"
-                    />
-                </div>
-                <div className="opacity-80 absolute top-[55%] right-[1%] h-[10%] w-[10%]">
-                    <img
-                        src="../assets/Background/Mars.png"
                         className="object-cover"
                     />
                 </div>
@@ -42,14 +35,14 @@ export default function AboutUs() {
                 <div className="">
                     <img
                         src="./assets/Scene3/s3Full.png"
-                        className="rounded-2xl shadow-cyan-500/50"
+                        className="rounded-2xl shadow-lg shadow-cyan-500/50"
                     />
                 </div>
                 <article className="animate-fade-left row-start-1 row-end-2 xl:col-start-2 xl:col-end-3">
                     <h2 className="text-5xl max-[340px]:text-4xl font-bold font-exo2 text-center mb-9">
                         Our Mission
                     </h2>
-                    <p className="lg:text-xl sm:text-lg font-grotesk text-pretty">
+                    <p className="lg:text-xl lg:px-28 sm:text-lg font-grotesk text-pretty ">
                         Our mission is to empower underrepresented students
                         passionate about technology by providing hands-on
                         learning experiences, networking opportunities, and
@@ -59,7 +52,7 @@ export default function AboutUs() {
                         development and professional connections.
                     </p>
                 </article>
-                <div className="opacity-80 absolute bottom-[20%] left-[-25%] max-h-[40%] max-w-[40%]">
+                <div className="opacity-50 absolute bottom-[20%] left-[-20%] max-h-[40%] max-w-[40%]">
                     <img
                         src="../assets/Background/Saturn.png"
                         className="object-cover"
