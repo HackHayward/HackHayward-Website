@@ -18,8 +18,9 @@ function App() {
                 >
                     {/* navbar & title section*/}
                     <NavBar />
-                    <MLH />
+
                     <div className="lg:w-1/2 flex flex-col justify-center lg:ml-16 h-full">
+                        <MLH />
                         <Hero />
                     </div>
                 </header>
