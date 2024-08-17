@@ -11,11 +11,11 @@ import MLH from './Components/MLH';
 function App() {
     return (
         <>
-            <header id="home">
+            <header id="home" className="overflow-x-hidden">
                 <MLH />
                 <NavBar />
             </header>
-            <main className="bg-[url(./assets/Background/BBackground.png)] bg-contain bg-repeat-y">
+            <main className="bg-[url(./assets/Background/BBackground.png)] bg-contain bg-repeat-y overflow-x-hidden">
                 <section className="border-b-8 border-[#c593e9]">
                     <Hero />
                 </section>

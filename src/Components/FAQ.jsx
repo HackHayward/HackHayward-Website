@@ -57,7 +57,7 @@ export default function FAQ() {
                         If we missed anything, please contact us at{' '}
                         <a
                             href="mailto:hackhayward@gmail.com"
-                            className="font-bold text-[#c593e9]"
+                            className="font-bold text-[#c593e9] underline"
                         >
                             hackhayward@gmail.com
                         </a>
