@@ -20,7 +20,7 @@ function NavButtons() {
 export default function NavBar() {
     return (
         <>
-            <nav className="navbar absolute z-[9999]">
+            <nav className="navbar absolute z-[60]">
                 <div className="max-lg:flex-1">
                     <a
                         href="#home"
