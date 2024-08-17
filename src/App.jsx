@@ -6,13 +6,11 @@ import AboutUs from './Components/AboutUs';
 import Footer from './Components/Footer';
 import PilotFalcon from './Components/PilotFalcon';
 import Sponsor from './Components/Sponsor';
-import MLH from './Components/MLH';
 
 function App() {
     return (
         <>
             <header id="home" className="overflow-x-hidden">
-                <MLH />
                 <NavBar />
             </header>
             <main className="bg-[url(./assets/Background/BBackground.png)] bg-contain bg-repeat-y overflow-x-hidden">
