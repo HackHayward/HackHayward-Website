@@ -1,13 +1,10 @@
 function FaqAccordion() {
     const faqs = [
-      
-      
-         {
-                       question: 'What is a Hackathon? ',
+        {
+            question: 'What is a Hackathon? ',
             answer: 'A Hackathon is an event where participants come together and create a solution for a track presented in the event within the 48 hours!',
         },
         {
-
             question: 'Who’s allowed to sign up?',
             answer: 'Anyone who is in college/university or recent graduates aged 18 and up are invited to sign up!',
         },
@@ -24,8 +21,6 @@ function FaqAccordion() {
             answer: 'Nothing! HackHayward is a free event. Everyone is invited!',
         },
         {
-
- 
             question: 'Are teams required?',
             answer: 'They are encouraged not mandatory. Team up, find friends, make the best of this event!',
         },
@@ -100,6 +95,7 @@ export default function FAQ() {
                 <div className="opacity-50 absolute top-0 right-[-10%] max-h-[40%] max-w-[40%] ">
                     <img
                         src="../assets/Background/Saturn.png"
+                        alt="Saturn"
                         className="object-cover"
                     />
                 </div>
