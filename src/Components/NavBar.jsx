@@ -20,7 +20,7 @@ function NavButtons() {
 export default function NavBar() {
     return (
         <>
-            <nav className="navbar bg-[#30252d]">
+            <nav className="navbar absolute z-[9999]">
                 <div className="max-lg:flex-1">
                     <a
                         href="#home"
@@ -57,7 +57,7 @@ export default function NavBar() {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="card card-compact dropdown-content bg-accent-content p-2 z-[9999] mt-3 w-52 shadow"
+                            className="card card-compact dropdown-content bg-accent-content p-2 mt-3 w-52 shadow"
                         >
                             <NavButtons />
                         </ul>

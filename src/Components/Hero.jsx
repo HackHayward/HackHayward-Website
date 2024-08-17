@@ -57,7 +57,7 @@ export default function Hero() {
                             <img
                                 src="./assets/HeroScene.png"
                                 alt="background"
-                                className="object-contain max-h-[calc(100vh-8rem)]"
+                                className="object-contain max-h-[calc(100vh-2rem)]"
                             />
                         </picture>
                         <img
