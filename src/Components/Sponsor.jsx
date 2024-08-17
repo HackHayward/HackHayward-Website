@@ -21,7 +21,7 @@ export default function Sponsor() {
                             worrying about any concerns.
                         </p>
                     </div>
-                    <div className="opacity-50 absolute bottom-[10%] left-[-50%] max-h-[40%] max-w-[40%]">
+                    <div className="opacity-50 absolute bottom-[10%] left-[-55%] max-h-[40%] max-w-[40%]">
                         <img
                             src="../assets/Background/Uranus.png"
                             className="object-cover"
