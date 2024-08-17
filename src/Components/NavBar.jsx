@@ -1,3 +1,5 @@
+import MLH from './MLH';
+
 function NavButtons() {
     const links = [{ text: 'About' }, { text: 'FAQ' }, { text: 'Sponsor Us' }];
 
@@ -57,12 +59,13 @@ export default function NavBar() {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm menu-fix dropdown-content bg-[#261e24] rounded-box z-[1] mt-3 w-52 p-2 shadow "
+                            className="menu menu-sm menu-fix dropdown-content bg-[#261e24] rounded-box z-[100] mt-3 w-52 p-2 shadow "
                         >
                             <NavButtons />
                         </ul>
                     </div>
                 </div>
+                <MLH />
             </nav>
         </>
     );

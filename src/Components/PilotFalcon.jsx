@@ -11,7 +11,7 @@ export default function PilotFalcon() {
             />
             <img
                 src="/assets/Scene5/UFO.png"
-                className="absolute z-10 top-[0%] left-[28%] h-[25%] w-[25%] object-contain"
+                className="absolute z-10 top-[0%] left-[28%] max-h-[25%] max-w-[25%] object-contain"
             />
         </div>
     );
