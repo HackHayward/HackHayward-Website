@@ -1,24 +1,48 @@
 function FaqAccordion() {
     const faqs = [
         {
-            question: 'What is a Hackathon?',
-            answer: 'A hackathon is an event...',
+            question: 'Who’s allowed to sign up?',
+            answer: 'Anyone who is in college/university or recent graduates aged 18 and up are invited to sign up!',
         },
         {
-            question: 'How long is HackHayward?',
-            answer: 'HackHayward lasts for 24 hours.',
+            question: 'How do I sign up?',
+            answer: 'Fill in our pre-registration form and get informed when we open registration!',
         },
         {
-            question: 'Who can attend HackHayward?',
-            answer: 'Any student can attend.',
+            question: 'How long will HackHayward last?',
+            answer: 'We will be hacking over 2 days! Plenty of time to work on your project and join many of our workshops.',
         },
         {
-            question: 'Do I need to have a team?',
-            answer: 'You can join as an individual or as a team.',
+            question: 'What does it cost to join?',
+            answer: 'Nothing! HackHayward is a free event. Everyone is invited!',
         },
         {
-            question: 'How much experience do I need?',
-            answer: 'No experience is required.',
+            question: 'Are teams required?',
+            answer: 'They are encouraged not mandatory. Team up, find friends, make the best of this event!',
+        },
+        {
+            question: 'What can be submitted?',
+            answer: 'Any projects, technical or not, created within the 2 days of Hacking can be submitted!',
+        },
+        {
+            question: 'What do I need to bring to the event?',
+            answer: 'Picture ID, clothing (if you plan on staying over), water bottle, personal devices (laptop or PC), and chargers!',
+        },
+        {
+            question: 'What if I have no experience?',
+            answer: 'This event is still for you! No technical experience or not majoring in Computer Science? You are still invited! Create creative solutions to the problems in the Hackathon!',
+        },
+        {
+            question: 'What is HackHayward?',
+            answer: 'The first hackathon in Hayward, organized by CSU East Bay Students for all students in the Bay Area due to take place this coming Spring! Aimed towards spreading awareness for marginalized communities, we are open to everyone!',
+        },
+        {
+            question: 'Who are the organizers?',
+            answer: 'Our team is 100% CSU East Bay Students, learn more here!',
+        },
+        {
+            question: 'Where will the Hackathon take place?',
+            answer: 'We are taking place in Hayward, CA. ',
         },
     ];
 
@@ -45,16 +69,12 @@ function FaqAccordion() {
 export default function FAQ() {
     return (
         <>
-            <div className="relative pt-4">
+            <div className="relative">
                 <div className="text-white text-center font-exo2 flex flex-col gap-9 z-10">
                     <h2 className="hidden md:block text-5xl text-balance max-lg:mx-28 font-bold">
                         FREQUENTLY ASKED QUESTIONS
                     </h2>
-
-                    <p className="md:hidden text-5xl font-bold">
-
-                    
-
+                    <p className="md:hidden text-5xl max-[340px]:text-4xl font-bold">
                         FAQ
                     </p>
                     <p className="lg:text-xl sm:text-lg font-grotesk font-light text-pretty">
@@ -68,15 +88,9 @@ export default function FAQ() {
                     </p>
                 </div>
                 <FaqAccordion />
-                <div className="opacity-50 absolute top-0 right-[-80%] max-h-[70%] max-w-[70%]">
+                <div className="opacity-50 absolute top-0 right-[-10%] max-h-[40%] max-w-[40%] ">
                     <img
-                        src="../assets/Background/Jupiter.png"
-                        className="object-cover"
-                    />
-                </div>
-                <div className="opacity-50 absolute bottom-[20%] left-[-30%] max-h-[20%] max-w-[20%]">
-                    <img
-                        src="../assets/Background/Mars.png"
+                        src="../assets/Background/Saturn.png"
                         className="object-cover"
                     />
                 </div>
