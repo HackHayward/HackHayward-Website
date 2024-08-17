@@ -13,7 +13,6 @@ function App() {
         <>
             <header>
                 <NavBar />
-                <MLH />
             </header>
             <main className="bg-[url(./assets/Background/BBackground.png)] bg-contain bg-repeat-y">
                 <section className="border-b-8 border-[#c593e9]">
