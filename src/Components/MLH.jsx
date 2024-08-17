@@ -5,7 +5,7 @@ export default function MLH() {
                 id="mlh-trust-badge"
                 href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=white"
                 target="_blank"
-                className="absolute z-[70] w-28 max-sm:w-20 top-0 right-20"
+                className="absolute z-[70] w-28 max-sm:w-20 top-0 right-20 hidden"
             >
                 <img
                     src="/assets/mlh-trust-badge-2025-white.svg"
