@@ -14,38 +14,24 @@ export default function Hero() {
                     <p className="lg:text-4xl text-2xl max-lg:text-center">
                         Spring 2025
                     </p>
-                    {/* <div className="flex gap-5 mt-5 max-lg:justify-center">
+
+                    <div className="flex gap-4 max-lg:justify-center lg:mt-4 mt-2 font-mono">
                         <a
-                            className="bg-[#c593e9] text-white lg:h-16 lg:px-14 lg:py-4 h-12 px-6 pr-9
-                    hover:bg-[#cfb0e8] transition max-lg:text-sm slash-r animate-flip-up"
+                            className="bg-[#c593e9] text-white lg:h-16 lg:px-14 h-12 px-6 pr-9 
+                    hover:bg-[#cfb0e8] transition max-lg:text-sm slash-r animate-flip-up text-center flex items-center"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSeU9aUxOy_6qdsvOSsVW1t91Z3ITRi5ziucR6b4joI-dKJLaQ/viewform"
                         >
                             Pre-Register
                         </a>
 
                         <a
                             className="border-2 border-white text-white lg:h-16 lg:px-14 lg:py-4 h-12 px-6 pl-9
-                    hover:bg-gray-700 transition max-lg:text-sm slash-l animate-flip-down backdrop-blur-sm"
+                    hover:bg-gray-700 transition max-lg:text-sm slash-l animate-flip-down text-center flex items-center"
+                            href=""
                         >
                             Sponsor Us
                         </a>
-                    </div> */}
-                    <nav className="flex gap-4 max-lg:justify-center lg:mt-4 mt-2 font-mono">
-                        <button
-                            className="bg-[#c593e9] text-white lg:h-16 lg:px-14 lg:py-4 h-12 px-6 pr-9
-                    hover:bg-[#cfb0e8] transition max-lg:text-sm slash-r animate-flip-up"
-                        >
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeU9aUxOy_6qdsvOSsVW1t91Z3ITRi5ziucR6b4joI-dKJLaQ/viewform">
-                                Pre-Register
-                            </a>
-                        </button>
-                        <span className="slash-l-line"></span>
-                        <button
-                            className="border-2 border-white text-white lg:h-16 lg:px-14 lg:py-4 h-12 px-6 pl-9
-                    hover:bg-gray-700 transition max-lg:text-sm slash-l animate-flip-down"
-                        >
-                            <a href=""> Sponsor Us</a>
-                        </button>
-                    </nav>
+                    </div>
                 </div>
                 <div className="col-[1/11] row-[1] place-self-end">
                     <div className="relative">

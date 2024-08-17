@@ -1,4 +1,4 @@
-*{
+* {
     scroll-behavior: smooth;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .slash-l::before {
-    content: "";
+    content: '';
     height: 100px;
     width: 100px;
     position: absolute;
@@ -18,7 +18,7 @@
     border-left: white solid 2px;
 }
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1023px) {
     .slash-l {
         border-radius: 0px 100px 100px 0px;
         clip-path: polygon(25% 1%, 100% 1%, 100% 101%, 0% 101%);
@@ -26,7 +26,7 @@
     }
 
     .slash-l::before {
-        content: "";
+        content: '';
         height: 100px;
         width: 100px;
         position: absolute;
@@ -49,7 +49,7 @@
 }
 
 .mobile-fix {
-    @media screen and (max-width: 624px){
+    @media screen and (max-width: 624px) {
         width: 150% !important;
     }
 }
