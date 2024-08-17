@@ -6,7 +6,11 @@
     border-radius: 0px 100px 100px 0px;
     clip-path: polygon(26% 1%, 100% 1%, 100% 101%, 0% 100%);
     margin: 1rem 0px 0px -5rem;
-    backdrop-filter: blur(3px) brightness(85%) !important;
+
+    backdrop-filter: blur(3px) brightness(75%);
+
+   
+
     z-index: 9;
 }
 
@@ -28,7 +32,9 @@
 
     .slash-l-line {
         clip-path: polygon(0 2%, 100% 0%, 100% 100%, 0% 100%);
-        transform: rotate(39deg) translateX(0.5em) translateY(0.35rem);
+
+        transform: rotate(39deg) translateX(0.6em) translateY(0.25rem);
+
         height: 3.8rem;
     }
 }
@@ -36,32 +42,4 @@
 .slash-r {
     border-radius: 100px 0px 0px 100px;
     clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
-}
-
-.line-1::after {
-    content: "";
-    height: 60px;
-    width: 75px;
-    position: absolute;
-    margin-left: -50px;
-    border-bottom: white solid 5px;
-    z-index: 5;
-}
-
-.z-fix-100 {
-    z-index: 100;
-}
-
-.z-fix-10 {
-    z-index: 10;
-}
-
-.art-fix {
-    @media screen and (max-width: 624px){
-        width: 130% !important;
-    }
-}
-
-.menu-fix {
-    margin-left: -150px;
 }
