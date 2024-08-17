@@ -64,13 +64,13 @@ export default function FAQ() {
                     </p>
                 </div>
                 <FaqAccordion />
-                <div className="opacity-50 absolute top-0 right-[-10%] max-h-[18%] max-w-[18%]">
+                <div className="opacity-50 absolute top-0 right-[-80%] max-h-[70%] max-w-[70%]">
                     <img
                         src="../assets/Background/Jupiter.png"
                         className="object-cover"
                     />
                 </div>
-                <div className="opacity-50 absolute bottom-[20%] left-[-30%] max-h-[40%] max-w-[40%]">
+                <div className="opacity-50 absolute bottom-[20%] left-[-30%] max-h-[20%] max-w-[20%]">
                     <img
                         src="../assets/Background/Mars.png"
                         className="object-cover"

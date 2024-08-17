@@ -21,7 +21,7 @@ export default function AboutUs() {
                 <div className="z-20">
                     <img
                         src="./assets/Scene2/s2Full.png"
-                        className="rounded-md shadow-lg"
+                        className="rounded-2xl shadow-lg"
                     />
                 </div>
                 <div className="opacity-50 absolute top-[10%] right-[-10%] h-[20%] w-[20%]">
@@ -31,7 +31,7 @@ export default function AboutUs() {
                     />
                 </div>
             </section>
-            <section className="grid xl:grid-cols-2 items-center justify-items-center lg:gap-4 gap-12 text-white mt-20 max-w-screen-2xl mx-auto">
+            <section className="grid xl:grid-cols-2 items-center justify-items-center lg:gap-4 gap-12 text-white mt-20 max-w-screen-2xl mx-auto ">
                 <div className="">
                     <img
                         src="./assets/Scene3/s3Full.png"
@@ -52,7 +52,7 @@ export default function AboutUs() {
                         development and professional connections.
                     </p>
                 </article>
-                <div className="opacity-50 absolute bottom-[20%] left-[-20%] max-h-[40%] max-w-[40%]">
+                <div className="opacity-50 absolute bottom-[20%] left-[-20%] max-h-[40%] max-w-[40%] ">
                     <img
                         src="../assets/Background/Saturn.png"
                         className="object-cover"
