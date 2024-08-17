@@ -20,11 +20,13 @@ export default function Hero() {
                     >
                         <a href="">Pre-Register</a>
                     </button>
-
+                    <span className="slash-l-line"></span>
                     <button
                         className="border-2 border-white text-white lg:h-16 lg:px-14 lg:py-4 h-12 px-6 pl-9
-                    hover:bg-gray-700 transition max-lg:text-sm slash-l animate-flip-down backdrop-blur-sm"
+                    hover:bg-gray-700 transition max-lg:text-sm slash-l animate-flip-down"
                     >
+                        
+                        
                         <a href=""> Sponsor Us</a>
                     </button>
                 </nav>
@@ -32,8 +34,6 @@ export default function Hero() {
             {/* Artwork */}
             <aside
                 className='bg-[url("./assets/HeroScene.png")] bg-no-repeat bg-contain bg-right-bottom
-
-
                 top-0 right-0 z-0 h-full w-full absolute art-fix overflow-hidden'
             >
                 <span className="grid items-end justify-items-end w-full h-full">

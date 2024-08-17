@@ -4,34 +4,32 @@
 
 .slash-l {
     border-radius: 0px 100px 100px 0px;
-    clip-path: polygon(25% 1%, 100% 1%, 100% 101%, 0% 100%);
-    margin: 15px 0px 0px -65px;
+    clip-path: polygon(26% 1%, 100% 1%, 100% 101%, 0% 100%);
+    margin: 1rem 0px 0px -5rem;
     backdrop-filter: blur(3px) brightness(85%) !important;
+    z-index: 9;
 }
 
-.slash-l::before {
-    content: "";
-    height: 100px;
-    width: 100px;
+.slash-l-line {
+    background-color: white;
+    clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0% 100%);
+    transform: rotate(41deg) translateX(9.4rem) translateY(-7.6rem);
+    height: 5.2rem;
+    width: 2px;
     position: absolute;
-    transform: rotate(40deg) translateX(-36px) translateY(11px);
-    border-left: white solid 2px;
+    z-index: 10;
 }
 
 @media screen and (max-width: 1023px){
     .slash-l {
-        border-radius: 0px 100px 100px 0px;
-        clip-path: polygon(25% 1%, 100% 1%, 100% 100%, 0% 100%);
-        margin: 15px 0px 0px -45px;
+        clip-path: polygon(26% 1%, 100% 1%, 100% 101%, 0% 100%);
+        margin: 1rem 0px 0px -4rem;
     }
 
-    .slash-l::before {
-        content: "";
-        height: 100px;
-        width: 100px;
-        position: absolute;
-        transform: rotate(38deg) translateX(-29px) translateY(15px);
-        border-left: white solid 2px;
+    .slash-l-line {
+        clip-path: polygon(0 2%, 100% 0%, 100% 100%, 0% 100%);
+        transform: rotate(39deg) translateX(0.5em) translateY(0.35rem);
+        height: 3.8rem;
     }
 }
 
