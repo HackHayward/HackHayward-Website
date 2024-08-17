@@ -48,11 +48,17 @@ export default function Hero() {
                                 className="object-contain max-h-[calc(100vh-2rem)]"
                             />
                         </picture>
-                        <img
+                        {/* <img
                             src="./assets/Astro_S1_2.0.svg"
                             alt="A cartoon astronaut falcon mascot in a space suit, floating in space"
                             className="absolute bottom-[5%] right-[10%] lg:h-[60%] lg:w-[60%] h-[80%] w-[80%] object-cover
         animate-wiggle animate-infinite animate-duration-[10000ms] animate-delay-1000 animate-ease-in-out z"
+                        /> */}
+                        <img
+                            src="./assets/Astro_S1.png"
+                            alt="mascot"
+                            className="absolute bottom-[20%] right-[20%] h-[40%] w-[40%] object-contain
+        animate-wiggle animate-infinite animate-duration-[10000ms] animate-delay-1000 animate-ease-in-out"
                         />
                     </div>
                 </div>
