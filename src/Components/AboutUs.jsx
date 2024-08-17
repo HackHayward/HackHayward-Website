@@ -25,9 +25,9 @@ export default function AboutUs() {
                             className="rounded-2xl shadow-lg"
                         />
                     </div>
-                    <div className="opacity-50 absolute top-[10%] right-[-10%] h-[20%] w-[20%]">
+                    <div className="opacity-50 absolute top-[10%] right-[-5%] h-[10%] w-[10%]">
                         <img
-                            src="../assets/Background/Uranus.png"
+                            src="../assets/Background/Mars.png"
                             className="object-cover"
                         />
                     </div>
@@ -54,9 +54,9 @@ export default function AboutUs() {
                             connections.
                         </p>
                     </article>
-                    <div className="opacity-50 absolute bottom-[20%] left-[-20%] max-h-[40%] max-w-[40%] ">
+                    <div className="opacity-50 absolute bottom-[20%] left-[-10%] max-h-[28%] max-w-[28%] ">
                         <img
-                            src="../assets/Background/Saturn.png"
+                            src="../assets/Background/Jupiter.png"
                             className="object-cover"
                         />
                     </div>

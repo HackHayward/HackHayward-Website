@@ -21,7 +21,12 @@ export default function Sponsor() {
                             worrying about any concerns.
                         </p>
                     </div>
-
+                    <div className="opacity-50 absolute bottom-[10%] left-[-50%] max-h-[40%] max-w-[40%]">
+                        <img
+                            src="../assets/Background/Uranus.png"
+                            className="object-cover"
+                        />
+                    </div>
                     <a
                         href=""
                         className="bg-[#c593e9] hover:bg-[#cfb0e8] rounded-full p-4 px-8 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap z-50"

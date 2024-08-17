@@ -18,15 +18,15 @@ export default function Hero() {
                         className="bg-[#c593e9] text-white lg:h-16 lg:px-14 lg:py-4 h-12 px-6 pr-9
                     hover:bg-[#cfb0e8] transition max-lg:text-sm slash-r animate-flip-up"
                     >
-                        <a href="">Pre-Register</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeU9aUxOy_6qdsvOSsVW1t91Z3ITRi5ziucR6b4joI-dKJLaQ/viewform">
+                            Pre-Register
+                        </a>
                     </button>
                     <span className="slash-l-line"></span>
                     <button
                         className="border-2 border-white text-white lg:h-16 lg:px-14 lg:py-4 h-12 px-6 pl-9
                     hover:bg-gray-700 transition max-lg:text-sm slash-l animate-flip-down"
                     >
-                        
-                        
                         <a href=""> Sponsor Us</a>
                     </button>
                 </nav>
