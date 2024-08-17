@@ -43,7 +43,7 @@ function NavButtons() {
                     <a
                         href={`#${link.text.toLowerCase().replace(' ', '-')}`}
                         className="text-white lg:text-lg text-sm font-grotesk
-                         font-light text-nowrap"
+                         font-bold text-nowrap"
                     >
                         {link.text}
                     </a>
@@ -110,7 +110,7 @@ export default function Footer() {
                         <NavButtons />
                         <li className="px-2 max-[310px]:px-0 lg:hover:scale-110 transition">
                             <a
-                                href=""
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSeU9aUxOy_6qdsvOSsVW1t91Z3ITRi5ziucR6b4joI-dKJLaQ/viewform"
                                 className="bg-[#c593e9] hover:bg-[#cfb0e8] rounded-full p-3 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap"
                             >
                                 Pre-Register

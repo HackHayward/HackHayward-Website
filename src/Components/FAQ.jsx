@@ -50,9 +50,8 @@ export default function FAQ() {
                     <h2 className="hidden md:block text-5xl text-balance max-lg:mx-28 font-bold">
                         FREQUENTLY ASKED QUESTIONS
                     </h2>
-                    <p className="md:hidden text-5xl font-bold">
-                        FAQ
-                    </p>
+
+                    <p className="md:hidden text-5xl font-bold">FAQ</p>
                     <p className="lg:text-xl sm:text-lg font-grotesk font-light text-pretty">
                         If we missed anything, please contact us at{' '}
                         <a
@@ -64,15 +63,9 @@ export default function FAQ() {
                     </p>
                 </div>
                 <FaqAccordion />
-                <div className="opacity-50 absolute top-0 right-[-80%] max-h-[70%] max-w-[70%]">
+                <div className="opacity-50 absolute top-0 right-[-80%] max-h-[100%] max-w-[100%]">
                     <img
-                        src="../assets/Background/Jupiter.png"
-                        className="object-cover"
-                    />
-                </div>
-                <div className="opacity-50 absolute bottom-[20%] left-[-30%] max-h-[20%] max-w-[20%]">
-                    <img
-                        src="../assets/Background/Mars.png"
+                        src="../assets/Background/Saturn.png"
                         className="object-cover"
                     />
                 </div>
