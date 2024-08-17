@@ -49,7 +49,7 @@ export default function Hero() {
                         <img
                             src="./assets/Astro_S1.png"
                             alt="mascot"
-                            className="absolute bottom-[35%] right-[20%] h-[25%] w-[25%] object-cover
+                            className="absolute bottom-[20%] right-[20%] h-[40%] w-[40%] object-cover
         animate-wiggle animate-infinite animate-duration-[10000ms] animate-delay-1000 animate-ease-in-out"
                         />
                     </div>
