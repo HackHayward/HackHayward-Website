@@ -45,25 +45,26 @@ function FaqAccordion() {
 export default function FAQ() {
     return (
         <>
-            <div className="relative pt-4">
+            <div className="relative">
                 <div className="text-white text-center font-exo2 flex flex-col gap-9 z-10">
                     <h2 className="hidden md:block text-5xl text-balance max-lg:mx-28 font-bold">
                         FREQUENTLY ASKED QUESTIONS
                     </h2>
-
-                    <p className="md:hidden text-5xl font-bold">FAQ</p>
+                    <p className="md:hidden text-5xl max-[340px]:text-4xl font-bold">
+                        FAQ
+                    </p>
                     <p className="lg:text-xl sm:text-lg font-grotesk font-light text-pretty">
                         If we missed anything, please contact us at{' '}
                         <a
                             href="mailto:hackhayward@gmail.com"
-                            className="font-bold text-[#c593e9] underline"
+                            className="font-bold text-[#c593e9]"
                         >
                             hackhayward@gmail.com
                         </a>
                     </p>
                 </div>
                 <FaqAccordion />
-                <div className="opacity-50 absolute top-0 right-[-80%] max-h-[100%] max-w-[100%]">
+                <div className="opacity-50 absolute top-0 right-[-10%] max-h-[40%] max-w-[40%] ">
                     <img
                         src="../assets/Background/Saturn.png"
                         className="object-cover"
