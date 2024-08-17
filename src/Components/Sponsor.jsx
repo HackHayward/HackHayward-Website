@@ -1,14 +1,17 @@
 export default function Sponsor() {
     return (
         <>
-            <div className="relative ">
-                <section className="flex flex-col items-center justify-items-center gap-10 text-white max-w-screen-2xl mx-auto">
-                    <div className="text-white text-center font-exo2 flex flex-col gap-9 ">
-                        <h2 className=" text-5xl text-balance max-lg:mx-28 font-bold">
+
+            <div className="relative">
+                <section className="flex flex-col items-center justify-items-center gap-10 text-white max-w-screen-lg">
+                    <div className="text-white text-center font-exo2 flex flex-col gap-9">
+                        <h2 className="text-5xl text-balance font-bold">
                             SPONSOR
                         </h2>
 
-                        <p className="lg:text-xl sm:text-lg font-grotesk text-pretty px-10">
+                        <p className="lg:text-xl sm:text-lg font-grotesk text-pretty sm:px-10">
+
+
                             Your sponsorship is crucial in bringing this event
                             to life. Every contribution you make will be
                             allocated to cover essential expenses, including
@@ -24,7 +27,9 @@ export default function Sponsor() {
 
                     <a
                         href=""
-                        className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg rounded-full hover:bg-[#cfb0e8] bg-[#C593E9] text-white"
+
+                        className="bg-[#c593e9] hover:bg-[#cfb0e8] rounded-full p-4 px-8 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap z-50"
+
                     >
                         Sponsor Us
                     </a>

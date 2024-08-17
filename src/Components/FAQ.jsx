@@ -50,7 +50,11 @@ export default function FAQ() {
                     <h2 className="hidden md:block text-5xl text-balance max-lg:mx-28 font-bold">
                         FREQUENTLY ASKED QUESTIONS
                     </h2>
-                    <p className="md:hidden text-5xl max-[340px]:text-4xl font-bold">
+
+                    <p className="md:hidden text-5xl font-bold">
+
+                    
+
                         FAQ
                     </p>
                     <p className="lg:text-xl sm:text-lg font-grotesk font-light text-pretty">
