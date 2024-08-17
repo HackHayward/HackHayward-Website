@@ -15,9 +15,9 @@ export default function Hero() {
                         Spring 2025
                     </p>
 
-                    <div className="flex gap-4 max-lg:justify-center lg:mt-4 mt-2 font-mono">
+                    <div className="flex gap-4 max-lg:justify-center lg:mt- mt-2 font-mono">
                         <a
-                            className="bg-[#c593e9] text-white lg:h-16 lg:px-14 h-12 px-6 pr-9 
+                            className="bg-[#c593e9] text-white lg:h-16 lg:px-14 h-12 px-6 pr-10 
                     hover:bg-[#cfb0e8] transition max-lg:text-sm slash-r animate-flip-up text-center flex items-center"
                             href="https://docs.google.com/forms/d/e/1FAIpQLSeU9aUxOy_6qdsvOSsVW1t91Z3ITRi5ziucR6b4joI-dKJLaQ/viewform"
                         >
