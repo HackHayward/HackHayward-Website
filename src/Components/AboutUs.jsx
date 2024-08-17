@@ -32,7 +32,7 @@ export default function AboutUs() {
                 </div>
             </section>
             <section className="grid xl:grid-cols-2 items-center justify-items-center lg:gap-4 gap-12 text-white mt-20 max-w-screen-2xl mx-auto ">
-                <div className="">
+                <div className="z-20">
                     <img
                         src="./assets/Scene3/s3Full.png"
                         className="rounded-2xl shadow-lg "
