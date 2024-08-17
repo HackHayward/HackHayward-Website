@@ -19,20 +19,12 @@ function NavButtons() {
 
 export default function NavBar() {
     return (
-
-        <nav className="navbar lg:px-16 lg:pt-16 px-6 pt-6 absolute z-fix-100 animate-fade-right ">
-
-     
-
+        <nav className="navbar lg:px-16 lg:pt-8 px-6 pt-6 absolute z-fix-100 animate-fade-right ">
             {/* Logo */}
             <div className="max-lg:navbar-start">
                 <a
                     href="#home"
-
                     className="max-lg:h-20 max-sm:h-16 hover:scale-105 transition"
-
-                   
-
                 >
                     <img
                         src="./assets/Monotone Logo.png"
@@ -43,7 +35,7 @@ export default function NavBar() {
             </div>
             {/* Desktop Nav-Links */}
             <div className="hidden lg:flex">
-                <ul className="flex gap-9 menu-horizontal pl-10">
+                <ul className="flex gap-9 menu-horizontal pl-10 ">
                     <NavButtons />
                 </ul>
             </div>
@@ -62,11 +54,7 @@ export default function NavBar() {
                     </button>
                     <ul
                         tabIndex={0}
-
-                        className="menu menu-sm menu-fix dropdown-content bg-[#261e24] rounded-box z-[1] mt-3 w-52 p-2 shadow"
-
-                     
-
+                        className="menu menu-sm menu-fix dropdown-content bg-[#261e24] rounded-box z-[1] mt-3 w-52 p-2 shadow "
                     >
                         <NavButtons />
                     </ul>

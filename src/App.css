@@ -59,10 +59,8 @@
 }
 
 .art-fix {
-    margin-right: -30px;
-
     @media screen and (max-width: 624px){
-        width: 180% !important;
+        width: 130% !important;
     }
 }
 
