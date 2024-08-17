@@ -1,7 +1,7 @@
 export default function Sponsor() {
     return (
         <>
-            <div className="relative">
+            <div className="relative flex justify-center">
                 <section className="flex flex-col items-center justify-items-center gap-10 text-white max-w-screen-lg">
                     <div className="text-white text-center font-exo2 flex flex-col gap-9">
                         <h2 className="text-5xl text-balance font-bold">
@@ -21,12 +21,6 @@ export default function Sponsor() {
                             worrying about any concerns.
                         </p>
                     </div>
-                    <div className="opacity-50 absolute bottom-[10%] left-[-55%] max-h-[40%] max-w-[40%]">
-                        <img
-                            src="../assets/Background/Uranus.png"
-                            className="object-cover"
-                        />
-                    </div>
                     <a
                         href=""
                         className="bg-[#c593e9] hover:bg-[#cfb0e8] rounded-full p-4 px-8 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap z-50"
@@ -34,6 +28,12 @@ export default function Sponsor() {
                         Sponsor Us
                     </a>
                 </section>
+                <div className="opacity-50 absolute bottom-[30%] left-[-8%] max-h-[30%] max-w-[30%]">
+                    <img
+                        src="../assets/Background/Uranus.png"
+                        className="object-cover"
+                    />
+                </div>
             </div>
         </>
     );
