@@ -32,6 +32,8 @@ export default function Hero() {
             {/* Artwork */}
             <aside
                 className='bg-[url("./assets/HeroScene.png")] bg-no-repeat bg-contain bg-right-bottom
+
+
                 top-0 right-0 z-0 h-full w-full absolute art-fix overflow-hidden'
             >
                 <span className="grid items-end justify-items-end w-full h-full">
