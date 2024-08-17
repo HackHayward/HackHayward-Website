@@ -1,6 +1,10 @@
 function FaqAccordion() {
     const faqs = [
         {
+            question: 'What is a Hackathon? ',
+            answer: 'A Hackathon is an event where participants come together and create a solution for a track presented in the event within the 48 hours!',
+        },
+        {
             question: 'Who’s allowed to sign up?',
             answer: 'Anyone who is in college/university or recent graduates aged 18 and up are invited to sign up!',
         },
@@ -77,7 +81,7 @@ export default function FAQ() {
                     <p className="md:hidden text-5xl max-[340px]:text-4xl font-bold">
                         FAQ
                     </p>
-                    <p className="lg:text-xl sm:text-lg font-grotesk font-light text-pretty">
+                    <p className="lg:text-xl sm:text-lg font-grotesk font-light text-pretty z-40">
                         If we missed anything, please contact us at{' '}
                         <a
                             href="mailto:hackhayward@gmail.com"
