@@ -81,7 +81,7 @@ export default function Footer() {
                             Reach out to us at{' '}
                             <a
                                 href="mailto:hackhayward@gmail.com"
-                                className="font-black text-[#c593e9]"
+                                className="font-black text-[#c593e9] underline	"
                             >
                                 hackhayward@gmail.com
                             </a>
@@ -101,14 +101,14 @@ export default function Footer() {
                         href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf
 
 "
-                        className="text-white lg:text-lg text-sm font-grotesk font-light max-sm:pb-6"
+                        className="text-white lg:text-lg text-sm font-grotesk font-light max-sm:pb-6 underline	"
                     >
                         MLH Code of Conduct
                     </a>
                 </div>
                 {/* Nav Buttons */}
                 <nav className="flex flex-col items-end">
-                    <ul className="menu-horizontal px-1 gap-2">
+                    <ul className="menu-horizontal px-1 gap-2 font-extrabold		">
                         <NavButtons />
                         <li className="px-2 lg:hover:scale-110 transition">
                             <a

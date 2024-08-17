@@ -7,7 +7,7 @@ export default function Hero() {
                     HackHayward
                 </h1>
                 <p className="lg:text-4xl text-2xl mt-2 max-lg:text-center">
-                    In-Person @ CSU East Bay
+                    Hosted by CSU East Bay
                 </p>
                 <p className="lg:text-4xl text-2xl max-lg:text-center">
                     Spring 2025

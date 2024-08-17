@@ -21,9 +21,10 @@ export default function Sponsor() {
                             worrying about any concerns.
                         </p>
                     </div>
+
                     <a
                         href=""
-                        className="btn rounded-full px-6 bg-[#c593e9] hover:bg-[#cfb0e8] hover:scale-[1.1] duration-200		 text-white  h-14 text-center text-[20px] font-grotesk"
+                        className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg rounded-full hover:bg-[#cfb0e8] bg-[#C593E9] text-white"
                     >
                         Sponsor Us
                     </a>

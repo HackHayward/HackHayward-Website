@@ -19,7 +19,7 @@ function NavButtons() {
 
 export default function NavBar() {
     return (
-        <nav className="navbar lg:px-16 lg:pt-16 px-6 pt-6 absolute z-fix-100 animate-fade-right ">
+        <nav className="navbar lg:px-16 lg:pt-8 px-6 pt-6 absolute z-fix-100 animate-fade-right ">
             {/* Logo */}
             <div className="max-lg:navbar-start">
                 <a
