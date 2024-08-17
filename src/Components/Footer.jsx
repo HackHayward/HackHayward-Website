@@ -121,7 +121,11 @@ export default function Footer() {
             </section>
             <section className="flex justify-center bg-white text-black font-medium font-grotesk">
                 <p className="flex flex-row gap-2">
-                    Made with ❤️ by HackHayward
+                    Made with
+                    <span role="img" aria-label="heart">
+                        ❤️
+                    </span>
+                    by HackHayward
                 </p>
             </section>
         </footer>
