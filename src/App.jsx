@@ -13,13 +13,13 @@ function App() {
             <header id="home" className="overflow-x-hidden">
                 <NavBar />
             </header>
-            <main className="bg-[url(./assets/Background/BBackground.png)] bg-contain bg-repeat-y overflow-x-hidden">
+            <main className="bg-[url(./assets/Background/BBackground.webp)] bg-contain bg-repeat-y overflow-x-hidden">
                 <section className="border-b-8 border-[#c593e9]">
                     <Hero />
                 </section>
                 {/* about us */}
                 <section
-                    className="p-10 bg-black/50 overflow-hidden"
+                    className="pt-16 p-10 bg-black/50 overflow-hidden"
                     id="about"
                 >
                     <AboutUs />
@@ -30,7 +30,7 @@ function App() {
                 </section>
                 {/* sponsor */}
                 <section
-                    className="p-10 bg-black/50 overflow-hidden"
+                    className="pb-16 p-10 bg-black/50 overflow-hidden"
                     id="sponsor-us"
                 >
                     <Sponsor />

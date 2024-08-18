@@ -22,14 +22,14 @@ function NavButtons() {
 export default function NavBar() {
     return (
         <>
-            <nav className="navbar absolute z-[9999] lg:p-10 p-5">
+            <nav className="navbar absolute z-[9999] lg:p-10 ">
                 <div className="max-lg:flex-1">
                     <a
                         href="#home"
                         className="max-lg:h-20 max-sm:h-16 hover:scale-110 transition"
                     >
                         <img
-                            src="./assets/Monotone Logo.png"
+                            src="./assets/others/Monotone Logo.png"
                             alt="HackHayward logo"
                             className="h-full"
                         />
@@ -43,7 +43,7 @@ export default function NavBar() {
                 </div>
                 {/* Mobile Nav-Links */}
                 <div className="flex-none">
-                    <div className="dropdown dropdown-end">
+                    <div className="dropdown dropdown-end shadow-drop-sm">
                         <div
                             tabIndex={0}
                             role="button"
@@ -51,7 +51,7 @@ export default function NavBar() {
                         >
                             <div className="indicator">
                                 <img
-                                    src="../../assets/hamburger_Icon.svg"
+                                    src="../../assets/others/hamburger_Icon.svg"
                                     alt="Menu"
                                     className="h-8 w-8"
                                 />

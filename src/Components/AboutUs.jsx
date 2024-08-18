@@ -1,7 +1,7 @@
 export default function AboutUs() {
     return (
         <>
-            <div className="grid place-content-center gap-3 relative">
+            <div className="grid place-content-center gap-3 relative shadow-text-sm">
                 <section className="grid xl:grid-cols-2 items-center justify-items-center gap-4 text-white max-w-7xl">
                     <article className="animate-fade-right max-w-xl z-20">
                         <h2 className="text-5xl font-bold font-exo2">
@@ -22,12 +22,14 @@ export default function AboutUs() {
                     <div className="z-20">
                         <img
                             src="./assets/Scene2/s2Full.png"
+                            alt="The cartoon space falcon being escorted by green owl-like aliens through the hallway after being kidnapped"
                             className="rounded-md shadow-lg shadow-cyan-500/50"
                         />
                     </div>
                     <div className="opacity-50 absolute top-[10%] right-[-5%] h-[10%] w-[10%]">
                         <img
-                            src="../assets/Background/Mars.png"
+                            src="../assets/Background/Mars.webp"
+                            alt="Mars"
                             className="object-cover"
                         />
                     </div>
@@ -36,6 +38,7 @@ export default function AboutUs() {
                     <div className="z-20">
                         <img
                             src="./assets/Scene3/s3Full.png"
+                            alt="The cartoon space falcon sitting on the spaceship, watching the yellow robot navigate the spacecraft"
                             className="rounded-md shadow-lg shadow-cyan-500/50"
                         />
                     </div>
@@ -56,7 +59,8 @@ export default function AboutUs() {
                     </article>
                     <div className="opacity-50 absolute bottom-[45%] left-[-15%] max-h-[30%] max-w-[30%]">
                         <img
-                            src="../assets/Background/Jupiter.png"
+                            src="../assets/Background/Jupiter.webp"
+                            alt="Jupiter"
                             className="object-cover"
                         />
                     </div>
