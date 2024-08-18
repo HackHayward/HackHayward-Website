@@ -43,7 +43,7 @@ export default function NavBar() {
                 </div>
                 {/* Mobile Nav-Links */}
                 <div className="flex-none">
-                    <div className="dropdown dropdown-end">
+                    <div className="dropdown dropdown-end shadow-drop-sm">
                         <div
                             tabIndex={0}
                             role="button"

@@ -19,7 +19,7 @@ function App() {
                 </section>
                 {/* about us */}
                 <section
-                    className="p-10 bg-black/50 overflow-hidden"
+                    className="pt-16 p-10 bg-black/50 overflow-hidden"
                     id="about"
                 >
                     <AboutUs />
@@ -30,7 +30,7 @@ function App() {
                 </section>
                 {/* sponsor */}
                 <section
-                    className="p-10 bg-black/50 overflow-hidden"
+                    className="pb-16 p-10 bg-black/50 overflow-hidden"
                     id="sponsor-us"
                 >
                     <Sponsor />

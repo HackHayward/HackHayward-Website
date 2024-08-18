@@ -74,7 +74,7 @@ export default function FAQ() {
     return (
         <>
             <div className="relative">
-                <div className="text-white text-center font-exo2 flex flex-col gap-9 z-10">
+                <div className="text-white text-center font-exo2 flex flex-col gap-9 z-10 shadow-text-sm">
                     <h2 className="hidden md:block text-5xl text-balance max-lg:mx-28 font-bold">
                         FREQUENTLY ASKED QUESTIONS
                     </h2>
