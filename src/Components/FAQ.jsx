@@ -94,7 +94,7 @@ export default function FAQ() {
                 <FaqAccordion />
                 <div className="opacity-50 absolute top-0 right-[-10%] max-h-[40%] max-w-[40%] ">
                     <img
-                        src="../assets/Background/Saturn.png"
+                        src="../assets/Background/Saturn.webp"
                         alt="Saturn"
                         className="object-cover"
                     />

@@ -28,7 +28,7 @@ export default function AboutUs() {
                     </div>
                     <div className="opacity-50 absolute top-[10%] right-[-5%] h-[10%] w-[10%]">
                         <img
-                            src="../assets/Background/Mars.png"
+                            src="../assets/Background/Mars.webp"
                             alt="Mars"
                             className="object-cover"
                         />
@@ -59,7 +59,7 @@ export default function AboutUs() {
                     </article>
                     <div className="opacity-50 absolute bottom-[45%] left-[-15%] max-h-[30%] max-w-[30%]">
                         <img
-                            src="../assets/Background/Jupiter.png"
+                            src="../assets/Background/Jupiter.webp"
                             alt="Jupiter"
                             className="object-cover"
                         />

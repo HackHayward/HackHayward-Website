@@ -30,7 +30,7 @@ export default function Sponsor() {
                 </section>
                 <div className="opacity-50 absolute bottom-[30%] left-[-8%] max-h-[30%] max-w-[30%]">
                     <img
-                        src="../assets/Background/Uranus.png"
+                        src="../assets/Background/Uranus.webp"
                         alt="Uranus"
                         className="object-cover"
                     />

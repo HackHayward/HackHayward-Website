@@ -39,11 +39,11 @@ export default function Hero() {
                     <div className="relative">
                         <picture>
                             <source
-                                srcSet="./assets/HeroScene-mobile.png"
+                                srcSet="./assets//hero/HeroScene-mobile.webp"
                                 media="(max-width: 26.5625rem)"
                             />
                             <img
-                                src="./assets/HeroScene.png"
+                                src="./assets/hero/HeroScene.webp"
                                 alt="A space cave background scene with warm yellow lighting"
                                 className="object-contain max-h-[calc(100vh-2rem)]"
                             />
@@ -55,9 +55,9 @@ export default function Hero() {
         animate-wiggle animate-infinite animate-duration-[10000ms] animate-delay-1000 animate-ease-in-out z"
                         /> */}
                         <img
-                            src="./assets/Astro_S1.png"
+                            src="./assets/hero/Astro.webp"
                             alt="mascot"
-                            className="absolute bottom-[20%] right-[20%] h-[40%] w-[40%] object-contain
+                            className="absolute bottom-[1%] right-[3%] h-[80%] w-[80%] object-contain
         animate-wiggle animate-infinite animate-duration-[10000ms] animate-delay-1000 animate-ease-in-out"
                         />
                     </div>
