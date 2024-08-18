@@ -64,7 +64,7 @@ export default function Footer() {
                         className="h-20 max-lg:h-16 max-sm:h-14 hover:scale-105 transition flex items-center"
                     >
                         <img
-                            src="./assets/Monotone Logo.png"
+                            src="./assets/others/Monotone Logo.png"
                             alt="HackHayward logo"
                             className="h-full"
                         />
