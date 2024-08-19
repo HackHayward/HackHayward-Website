@@ -117,7 +117,7 @@ export default function Footer() {
                 </div>
                 {/* Nav Buttons */}
                 <nav className="flex flex-col items-end">
-                    <ul className="menu-horizontal px-1 gap-2 max-[410px]:gap-0 font-extrabold">
+                    <ul className="menu-horizontal px-1 gap-2 max-[410px]:gap-0 font-extrabold whitespace-nowrap">
                         <NavButtons />
                         <li className="px-2 max-[310px]:px-0 lg:hover:scale-110 transition">
                             <a

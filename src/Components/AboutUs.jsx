@@ -12,7 +12,7 @@ export default function AboutUs() {
                         <h2 className="text-5xl font-bold font-exo2">
                             About Us
                         </h2>
-                        <p className="text-xl max-w-xl	font-grotesk mt-4">
+                        <p className="lg:text-xl sm:text-lg max-w-xl	font-grotesk mt-4">
                             HackHayward, hosted at California State University,
                             East Bay, is the first collegiate hackathon in the
                             Hayward, California area. We challenge students to
@@ -47,7 +47,7 @@ export default function AboutUs() {
                         <h2 className="text-5xl font-bold font-exo2">
                             Our Mission
                         </h2>
-                        <p className="text-xl font-grotesk mt-4">
+                        <p className="lg:text-xl sm:text-lg font-grotesk mt-4">
                             Our mission is to empower underrepresented students
                             passionate about technology by providing hands-on
                             learning experiences, networking opportunities, and

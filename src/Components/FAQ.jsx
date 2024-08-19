@@ -85,18 +85,20 @@ export default function FAQ() {
     return (
         <>
             <div className="relative">
-                <div className="text-white text-center font-exo2 flex flex-col gap-9 z-10 shadow-text-sm">
+                <div className="text-white text-center font-exo2 flex flex-col items-center gap-9 z-10 shadow-text-sm">
                     <h2 className="hidden md:block text-5xl text-balance max-lg:mx-28 font-bold">
                         FREQUENTLY ASKED QUESTIONS
                     </h2>
-                    <p className="md:hidden text-5xl max-[340px]:text-4xl font-bold">
+                    <p className="md:hidden text-5xl font-bold">
                         FAQ
                     </p>
                     <p className="lg:text-xl sm:text-lg font-grotesk font-light text-pretty z-40">
                         If we missed anything, please contact us at{' '}
                         <a
-                            href="mailto:hacker@hackhayward.com
-"
+
+                            href="mailto:hacker@hackhayward.com"
+
+  
                             className="font-bold text-[#c593e9] underline"
                         >
                             hacker@hackhayward.com
