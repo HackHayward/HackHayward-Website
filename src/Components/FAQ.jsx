@@ -16,7 +16,7 @@ function FaqAccordion() {
                     <a
                         href="https://docs.google.com/forms/d/e/1FAIpQLSeU9aUxOy_6qdsvOSsVW1t91Z3ITRi5ziucR6b4joI-dKJLaQ/viewform"
                         target="_blank"
-                        className="text-[#c593e9] lg:text-lg text-sm font-grotesk font-light max-sm:pb-6 underline"
+                        className="text-[#c593e9] font-bold underline"
                     >
                         our pre-registration form
                     </a>{' '}
@@ -52,10 +52,7 @@ function FaqAccordion() {
             question: 'What is HackHayward?',
             answer: 'The first hackathon in Hayward, organized by CSU East Bay Students for all students in the Bay Area due to take place this coming Spring! Aimed towards spreading awareness for marginalized communities, we are open to everyone!',
         },
-        {
-            question: 'Who are the organizers?',
-            answer: 'Our team is 100% CSU East Bay Students, learn more here!',
-        },
+
         {
             question: 'Where will the Hackathon take place?',
             answer: 'We are taking place in Hayward, CA. ',
@@ -106,7 +103,7 @@ export default function FAQ() {
                 <FaqAccordion />
                 <div className="opacity-50 absolute top-0 right-[-10%] max-h-[40%] max-w-[40%] ">
                     <img
-                        src="../assets/Background/Saturn.webp"
+                        src="./public/assets/Background/Saturn.webp"
                         alt="Saturn"
                         className="object-cover"
                     />

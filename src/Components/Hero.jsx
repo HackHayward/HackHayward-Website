@@ -38,18 +38,18 @@ export default function Hero() {
                     <div className="relative">
                         <picture>
                             <source
-                                srcSet="./assets//hero/HeroScene-mobile.webp"
+                                srcSet="./public/assets/hero/HeroScene-mobile.webp"
                                 media="(max-width: 26.5625rem)"
                             />
                             <img
-                                src="./assets/hero/HeroScene.webp"
+                                src="./public/assets/hero/HeroScene.webp"
                                 alt="A space cave background scene with warm yellow lighting"
                                 className="object-contain max-h-[calc(100vh-2rem)]"
                             />
                         </picture>
 
                         <img
-                            src="./assets/hero/Astro.webp"
+                            src="./public/assets/hero/Astro.webp"
                             alt="A cartoon astronaut falcon mascot in a space suit, floating in space"
                             className="absolute bottom-[1%] right-[3%] h-[80%] w-[80%] object-contain
         animate-wiggle animate-infinite animate-duration-[10000ms] animate-delay-1000 animate-ease-in-out"

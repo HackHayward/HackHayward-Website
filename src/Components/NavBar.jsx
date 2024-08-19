@@ -29,7 +29,7 @@ export default function NavBar() {
                         className="max-lg:h-20 max-sm:h-16 hover:scale-110 transition"
                     >
                         <img
-                            src="./assets/others/Monotone Logo.webp"
+                            src="./public/assets/others/Monotone Logo.webp"
                             alt="HackHayward logo"
                             className="h-full"
                         />
@@ -51,7 +51,7 @@ export default function NavBar() {
                         >
                             <div className="indicator">
                                 <img
-                                    src="../../assets/others/hamburger_Icon.svg"
+                                    src="./public/assets/others/hamburger_Icon.svg"
                                     alt="Menu"
                                     className="h-8 w-8"
                                 />
