@@ -4,7 +4,6 @@ export default function Hero() {
             {/* Title */}
 
             <div className="bg-[#30252d] min-h-[calc(100vh-8rem)] grid grid-cols-10">
-
                 <div className="text-white col-[2/10] row-[1] place-content-center z-50 flex flex-col gap-3 ">
                     <h1 className="lg:text-8xl sm:text-6xl text-5xl max-[340px]:text-4xl font-bold z-3 max-lg:text-center font-exo2	animate-fade-up	shadow-text">
                         HackHayward
@@ -13,19 +12,13 @@ export default function Hero() {
                         Hosted by CSU East Bay
                     </p>
                     <p className="lg:text-4xl text-2xl max-lg:text-center font-grotesk animate-fade-up shadow-text">
-
-              
-
                         Spring 2025
                     </p>
                     <div className="flex gap-4 max-lg:justify-center lg:mt- mt-2 font-mono">
                         <a
-
                             className="bg-[#c593e9] text-white lg:h-16 lg:px-14 h-12 px-6 pr-10
                         hover:bg-[#cfb0e8] transition max-lg:text-sm slash-r animate-flip-up text-center flex items-center"
-
-                       
-
+                            target="_blank"
                             href="https://docs.google.com/forms/d/e/1FAIpQLSeU9aUxOy_6qdsvOSsVW1t91Z3ITRi5ziucR6b4joI-dKJLaQ/viewform"
                         >
                             Pre-Register
