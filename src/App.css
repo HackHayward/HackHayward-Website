@@ -1,4 +1,7 @@
+
 /* Smooth Scroll */
+
+
 * {
     scroll-behavior: smooth;
     -webkit-scroll-behavior: smooth;
@@ -39,9 +42,13 @@
         var(--tw-animate-iteration, 1);
 }
 
+
 /* Mobile View */
 @media screen and (max-width: 1023px) {
     /* Slash Left */
+
+
+
     .slash-l {
         clip-path: polygon(26% 1%, 100% 1%, 100% 101%, 0% 100%);
         -webkit-clip-path: polygon(26% 1%, 100% 1%, 100% 101%, 0% 100%);
@@ -86,16 +93,22 @@
 .shadow-drop {
     filter: drop-shadow(0.125rem 0.125rem 0.0625rem rgba(0, 0, 0, 0.7))
         drop-shadow(0rem -0.0625rem 0.1875rem rgba(0, 0, 0, 0.5))
+
         drop-shadow(0rem -0.0625rem 0.5rem rgba(0, 0, 0, 0.4));
     -webkit-filter: drop-shadow(0.125rem 0.125rem 0.0625rem rgba(0, 0, 0, 0.7))
         drop-shadow(0rem -0.0625rem 0.1875rem rgba(0, 0, 0, 0.5))
+
+
         drop-shadow(0rem -0.0625rem 0.5rem rgba(0, 0, 0, 0.4));
 }
 
 .shadow-drop-sm {
     filter: drop-shadow(0rem -0.0625rem 0.1875rem rgba(0, 0, 0, 0.8))
+
         drop-shadow(0rem -0.0625rem 0.5rem rgba(0, 0, 0, 0.4));
     -webkit-filter: drop-shadow(0rem -0.0625rem 0.1875rem rgba(0, 0, 0, 0.8))
+
+
         drop-shadow(0rem -0.0625rem 0.5rem rgba(0, 0, 0, 0.4));
 }
 
@@ -104,6 +117,7 @@
         width: 1px;
         transform: rotate(41deg) translate(11.1rem, -8.3rem) rotateX(-90deg)
             rotateZ(15deg);
+
         transform-origin: top;
     }
     100% {
@@ -118,6 +132,8 @@
         width: 1px;
         transform: rotate(41deg) translate(11.1rem, -8.3rem) rotateX(-90deg)
             rotateZ(15deg);
+
+
         transform-origin: top;
     }
     100% {
@@ -141,6 +157,7 @@
     }
 }
 
+
 @-webkit-keyframes down-flip-moblie {
     0% {
         width: 1px;
@@ -154,3 +171,8 @@
         transform-origin: top;
     }
 }
+
+.mainBackground {
+    background-image: url('./assets/imgs/Background/BBackground.webp');
+}
+

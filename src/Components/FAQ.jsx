@@ -95,7 +95,10 @@ export default function FAQ() {
                     <p className="lg:text-xl sm:text-lg font-grotesk font-light text-pretty z-40">
                         If we missed anything, please contact us at{' '}
                         <a
+
                             href="mailto:hacker@hackhayward.com"
+
+  
                             className="font-bold text-[#c593e9] underline"
                         >
                             hacker@hackhayward.com
