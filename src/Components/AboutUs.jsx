@@ -21,7 +21,7 @@ export default function AboutUs() {
                     </article>
                     <div className="z-20">
                         <img
-                            src="./assets/Scene2/s2Full.png"
+                            src="./assets/Scene2/s2Full.webp"
                             alt="The cartoon space falcon being escorted by green owl-like aliens through the hallway after being kidnapped"
                             className="rounded-md shadow-lg shadow-cyan-500/50"
                         />
@@ -37,7 +37,7 @@ export default function AboutUs() {
                 <section className="grid xl:grid-cols-2 items-center gap-4 text-white mt-4 justify-items-center max-w-7xl">
                     <div className="z-20">
                         <img
-                            src="./assets/Scene3/s3Full.png"
+                            src="./assets/Scene3/s3Full.webp"
                             alt="The cartoon space falcon sitting on the spaceship, watching the yellow robot navigate the spacecraft"
                             className="rounded-md shadow-lg shadow-cyan-500/50"
                         />

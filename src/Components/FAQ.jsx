@@ -2,7 +2,7 @@ function FaqAccordion() {
     const faqs = [
         {
             question: 'What is a Hackathon? ',
-            answer: 'A Hackathon is an event where participants come together and create a solution for a track presented in the event within the 48 hours!',
+            answer: 'A Hackathon is an event where participants come together and create a solution for a track presented in the event within a timeframe!',
         },
         {
             question: 'Who’s allowed to sign up?',
@@ -10,7 +10,19 @@ function FaqAccordion() {
         },
         {
             question: 'How do I sign up?',
-            answer: 'Fill in our pre-registration form and get informed when we open registration!',
+            answer: (
+                <>
+                    Fill in{' '}
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSeU9aUxOy_6qdsvOSsVW1t91Z3ITRi5ziucR6b4joI-dKJLaQ/viewform"
+                        target="_blank"
+                        className="text-[#c593e9] lg:text-lg text-sm font-grotesk font-light max-sm:pb-6 underline"
+                    >
+                        our pre-registration form
+                    </a>{' '}
+                    and get informed when we open registration!
+                </>
+            ),
         },
         {
             question: 'How long will HackHayward last?',
@@ -22,7 +34,7 @@ function FaqAccordion() {
         },
         {
             question: 'Are teams required?',
-            answer: 'They are encouraged not mandatory. Team up, find friends, make the best of this event!',
+            answer: 'They are encouraged not mandatory. Team up, find friends, make the best of this event! Teams are up to 4 people.',
         },
         {
             question: 'What can be submitted?',
@@ -57,7 +69,7 @@ function FaqAccordion() {
                     key={index}
                     className="collapse collapse-plus max-w-screen-md bg-white text-black z-10"
                 >
-                    <input type="checkbox" />
+                    <input type="checkbox" aria-label="Open Accordian"/>
                     <h2 className="collapse-title md:text-xl font-bold text-balance">
                         {faq.question}
                     </h2>
