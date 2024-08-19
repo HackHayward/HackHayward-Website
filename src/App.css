@@ -99,3 +99,7 @@
         transform-origin: top;
     }
 }
+
+.mainBackground {
+    background-image: url('./assets/imgs/Background/BBackground.webp');
+}
