@@ -100,6 +100,7 @@ export default function Footer() {
                     <a
                         href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
                         className="text-white lg:text-lg text-sm font-grotesk font-light max-sm:pb-6 underline	"
+                        target="_blank"
                     >
                         MLH Code of Conduct
                     </a>
@@ -112,6 +113,7 @@ export default function Footer() {
                             <a
                                 href="https://docs.google.com/forms/d/e/1FAIpQLSeU9aUxOy_6qdsvOSsVW1t91Z3ITRi5ziucR6b4joI-dKJLaQ/viewform"
                                 className="bg-[#c593e9] hover:bg-[#cfb0e8] rounded-full p-3 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap"
+                                target="_blank"
                             >
                                 Pre-Register
                             </a>
