@@ -1,3 +1,7 @@
+import heroMobile from '/src/assets/imgs/hero/HeroScene-mobile.webp';
+import heroDesktop from '/src/assets/imgs/hero/HeroScene.webp';
+import astro from '/src/assets/imgs/hero/Astro.webp';
+
 export default function Hero() {
     return (
         <>
@@ -28,7 +32,7 @@ export default function Hero() {
                             className="border-2 border-white text-white lg:h-16 lg:px-14 lg:py-4 h-12 px-6 pl-9
 
                     hover:bg-gray-700 transition max-lg:text-sm slash-l animate-flip-down text-center flex items-center"
-                            href=""
+                            href="mailto:sponsor@hackhayward.com"
                         >
                             Sponsor Us
                         </a>
@@ -38,18 +42,18 @@ export default function Hero() {
                     <div className="relative">
                         <picture>
                             <source
-                                srcSet="./assets//hero/HeroScene-mobile.webp"
+                                srcSet={heroMobile}
                                 media="(max-width: 26.5625rem)"
                             />
                             <img
-                                src="./assets/hero/HeroScene.webp"
+                                src={heroDesktop}
                                 alt="A space cave background scene with warm yellow lighting"
                                 className="object-contain max-h-[calc(100vh-2rem)]"
                             />
                         </picture>
 
                         <img
-                            src="./assets/hero/Astro.webp"
+                            src={astro}
                             alt="A cartoon astronaut falcon mascot in a space suit, floating in space"
                             className="absolute bottom-[1%] right-[3%] h-[80%] w-[80%] object-contain
         animate-wiggle animate-infinite animate-duration-[10000ms] animate-delay-1000 animate-ease-in-out"

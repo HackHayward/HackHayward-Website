@@ -1,3 +1,5 @@
+import uranus from '/src/assets/imgs/Background/Uranus.webp';
+
 export default function Sponsor() {
     return (
         <>
@@ -22,18 +24,14 @@ export default function Sponsor() {
                         </p>
                     </div>
                     <a
-                        href=""
+                        href="mailto:sponsor@hackhayward.com"
                         className="bg-[#c593e9] hover:bg-[#cfb0e8] rounded-full p-4 px-8 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap"
                     >
                         Sponsor Us
                     </a>
                 </section>
                 <div className="opacity-50 absolute bottom-[30%] left-[-8%] max-h-[30%] max-w-[30%]">
-                    <img
-                        src="../assets/Background/Uranus.webp"
-                        alt="Uranus"
-                        className="object-cover"
-                    />
+                    <img src={uranus} alt="Uranus" className="object-cover" />
                 </div>
             </div>
         </>

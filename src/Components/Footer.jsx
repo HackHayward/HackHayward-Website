@@ -1,3 +1,5 @@
+import logo from '/src/assets/imgs/others/Monotone Logo.webp';
+
 import {
     BiLogoDiscord,
     BiLogoInstagram,
@@ -6,17 +8,19 @@ import {
 
 function SocialButtons() {
     const links = [
-        {   icon: BiLogoDiscord,
-            name: "Discord", 
-            href: 'https://discord.com/invite/eMHWYfMKDd' },
+        {
+            icon: BiLogoDiscord,
+            name: 'Discord',
+            href: 'https://discord.com/invite/eMHWYfMKDd',
+        },
         {
             icon: BiLogoInstagram,
-            name: "Instagram",
+            name: 'Instagram',
             href: 'https://www.instagram.com/hackhayward',
         },
         {
             icon: BiLogoLinkedinSquare,
-            name: "LinkedIn",
+            name: 'LinkedIn',
             href: 'https://www.linkedin.com/company/hackhayward',
         },
     ];
@@ -69,7 +73,7 @@ export default function Footer() {
                         className="h-20 max-lg:h-16 max-sm:h-14 hover:scale-105 transition flex items-center"
                     >
                         <img
-                            src="./assets/others/Monotone Logo.webp"
+                            src={logo}
                             alt="HackHayward logo"
                             className="h-full"
                         />
@@ -85,10 +89,11 @@ export default function Footer() {
                         <p className="lg:text-lg font-grotesk font-thin text-pretty text-white lg:text-end text-center">
                             Reach out to us at{' '}
                             <a
-                                href="mailto:hackhayward@gmail.com"
-                                className="font-black text-[#c593e9] underline	"
+                                href="mailto:hacker@hackhayward.com
+"
+                                className="font-bold text-[#c593e9] underline"
                             >
-                                hackhayward@gmail.com
+                                hacker@hackhayward.com
                             </a>
                         </p>
                     </div>
@@ -112,7 +117,7 @@ export default function Footer() {
                 </div>
                 {/* Nav Buttons */}
                 <nav className="flex flex-col items-end">
-                    <ul className="menu-horizontal px-1 gap-2 max-[410px]:gap-0 font-extrabold">
+                    <ul className="menu-horizontal px-1 gap-2 max-[410px]:gap-0 font-extrabold whitespace-nowrap">
                         <NavButtons />
                         <li className="px-2 max-[310px]:px-0 lg:hover:scale-110 transition">
                             <a

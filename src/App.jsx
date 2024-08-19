@@ -13,7 +13,7 @@ function App() {
             <header id="home" className="overflow-x-hidden">
                 <NavBar />
             </header>
-            <main className="bg-[url(./assets/Background/BBackground.webp)] bg-contain bg-repeat-y overflow-x-hidden">
+            <main className="mainBackground bg-contain bg-repeat-y overflow-x-hidden">
                 <section className="border-b-8 border-[#c593e9]">
                     <Hero />
                 </section>

@@ -1,3 +1,5 @@
+import saturn from '/src/assets/imgs/Background/Saturn.webp';
+
 function FaqAccordion() {
     const faqs = [
         {
@@ -16,7 +18,7 @@ function FaqAccordion() {
                     <a
                         href="https://docs.google.com/forms/d/e/1FAIpQLSeU9aUxOy_6qdsvOSsVW1t91Z3ITRi5ziucR6b4joI-dKJLaQ/viewform"
                         target="_blank"
-                        className="text-[#c593e9] lg:text-lg text-sm font-grotesk font-light max-sm:pb-6 underline"
+                        className="text-[#c593e9] font-bold underline"
                     >
                         our pre-registration form
                     </a>{' '}
@@ -52,10 +54,7 @@ function FaqAccordion() {
             question: 'What is HackHayward?',
             answer: 'The first hackathon in Hayward, organized by CSU East Bay Students for all students in the Bay Area due to take place this coming Spring! Aimed towards spreading awareness for marginalized communities, we are open to everyone!',
         },
-        {
-            question: 'Who are the organizers?',
-            answer: 'Our team is 100% CSU East Bay Students, learn more here!',
-        },
+
         {
             question: 'Where will the Hackathon take place?',
             answer: 'We are taking place in Hayward, CA. ',
@@ -69,7 +68,7 @@ function FaqAccordion() {
                     key={index}
                     className="collapse collapse-plus max-w-screen-md bg-white text-black z-10"
                 >
-                    <input type="checkbox" aria-label="Open Accordian"/>
+                    <input type="checkbox" aria-label="Open Accordian" />
                     <h2 className="collapse-title md:text-xl font-bold text-balance">
                         {faq.question}
                     </h2>
@@ -86,30 +85,26 @@ export default function FAQ() {
     return (
         <>
             <div className="relative">
-                <div className="text-white text-center font-exo2 flex flex-col gap-9 z-10 shadow-text-sm">
+                <div className="text-white text-center font-exo2 flex flex-col items-center gap-9 z-10 shadow-text-sm">
                     <h2 className="hidden md:block text-5xl text-balance max-lg:mx-28 font-bold">
                         FREQUENTLY ASKED QUESTIONS
                     </h2>
-                    <p className="md:hidden text-5xl max-[340px]:text-4xl font-bold">
+                    <p className="md:hidden text-5xl font-bold">
                         FAQ
                     </p>
                     <p className="lg:text-xl sm:text-lg font-grotesk font-light text-pretty z-40">
                         If we missed anything, please contact us at{' '}
                         <a
-                            href="mailto:hackhayward@gmail.com"
+                            href="mailto:hacker@hackhayward.com"
                             className="font-bold text-[#c593e9] underline"
                         >
-                            hackhayward@gmail.com
+                            hacker@hackhayward.com
                         </a>
                     </p>
                 </div>
                 <FaqAccordion />
                 <div className="opacity-50 absolute top-0 right-[-10%] max-h-[40%] max-w-[40%] ">
-                    <img
-                        src="../assets/Background/Saturn.webp"
-                        alt="Saturn"
-                        className="object-cover"
-                    />
+                    <img src={saturn} alt="Saturn" className="object-cover" />
                 </div>
             </div>
         </>

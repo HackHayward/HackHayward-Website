@@ -1,4 +1,6 @@
 import MLH from './MLH';
+import logo from '/src/assets/imgs/others/Monotone Logo.webp';
+import hamburger from '/src/assets/imgs/others/hamburger_Icon.svg';
 
 function NavButtons() {
     const links = [{ text: 'About' }, { text: 'FAQ' }, { text: 'Sponsor Us' }];
@@ -29,7 +31,7 @@ export default function NavBar() {
                         className="max-lg:h-20 max-sm:h-16 hover:scale-110 transition"
                     >
                         <img
-                            src="./assets/others/Monotone Logo.webp"
+                            src={logo}
                             alt="HackHayward logo"
                             className="h-full"
                         />
@@ -51,7 +53,7 @@ export default function NavBar() {
                         >
                             <div className="indicator">
                                 <img
-                                    src="../../assets/others/hamburger_Icon.svg"
+                                    src={hamburger}
                                     alt="Menu"
                                     className="h-8 w-8"
                                 />
