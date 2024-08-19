@@ -29,7 +29,7 @@ export default function NavBar() {
                         className="max-lg:h-20 max-sm:h-16 hover:scale-110 transition"
                     >
                         <img
-                            src="./assets/others/Monotone Logo.png"
+                            src="./assets/others/Monotone Logo.webp"
                             alt="HackHayward logo"
                             className="h-full"
                         />
