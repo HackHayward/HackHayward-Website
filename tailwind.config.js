@@ -3,9 +3,6 @@ export default {
     content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
     theme: {
         extend: {
-            spacing: {
-                120: '59rem',
-            },
             fontFamily: {
                 grotesk: "'Space Grotesk','sans-serif'",
                 exo2: "'Exo 2','sans-serif'",
