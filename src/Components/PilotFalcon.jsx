@@ -9,7 +9,7 @@ export default function PilotFalcon() {
             <img
                 src="/assets/Scene5/SpaceShip.webp"
                 alt="A cartoon space falcon piloting the airship rapidly to escape"
-                className="absolute z-10 bottom-[0.1%] left-[4%] lg:h-[120%] lg:w-[120%]  h-[90%] w-[90%] object-contain -rotate-[22deg]  animate-wiggle animate-infinite animate-duration-[10000ms] animate-delay-1000 animate-ease-in-out"
+                className="absolute z-10 bottom-[0.1%] left-[4%] lg:h-[120%] lg:w-[120%]  h-[90%] w-[90%] object-contain animate-wiggle animate-infinite animate-duration-[10000ms] animate-delay-1000 animate-ease-in-out"
             />
             <img
                 src="/assets/Scene5/UFO.webp"
