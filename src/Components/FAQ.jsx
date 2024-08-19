@@ -66,7 +66,7 @@ function FaqAccordion() {
                     key={index}
                     className="collapse collapse-plus max-w-screen-md bg-white text-black z-10"
                 >
-                    <input type="checkbox" />
+                    <input type="checkbox" aria-label="Open Accordian"/>
                     <h2 className="collapse-title md:text-xl font-bold text-balance">
                         {faq.question}
                     </h2>
