@@ -1,3 +1,5 @@
+import saturn from '/src/assets/imgs/Background/Saturn.webp';
+
 function FaqAccordion() {
     const faqs = [
         {
@@ -103,11 +105,7 @@ export default function FAQ() {
                 </div>
                 <FaqAccordion />
                 <div className="opacity-50 absolute top-0 right-[-10%] max-h-[40%] max-w-[40%] ">
-                    <img
-                        src="src/assets/imgs/Background/Saturn.webp"
-                        alt="Saturn"
-                        className="object-cover"
-                    />
+                    <img src={saturn} alt="Saturn" className="object-cover" />
                 </div>
             </div>
         </>

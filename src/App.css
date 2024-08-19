@@ -1,4 +1,4 @@
-*{
+* {
     scroll-behavior: smooth;
 }
 
@@ -21,10 +21,12 @@
 }
 
 .animation-flip-down {
-    animation: down-flip var(--tw-animate-duration, 0.85s) var(--tw-animate-easing, ease) var(--tw-animate-delay, 0s) var(--tw-animate-iteration, 1);
+    animation: down-flip var(--tw-animate-duration, 0.85s)
+        var(--tw-animate-easing, ease) var(--tw-animate-delay, 0s)
+        var(--tw-animate-iteration, 1);
 }
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1023px) {
     .slash-l {
         clip-path: polygon(26% 1%, 100% 1%, 100% 101%, 0% 100%);
         margin: 1rem 0px 0px -4rem;
@@ -37,7 +39,9 @@
     }
 
     .animation-flip-down {
-        animation: down-flip-moblie var(--tw-animate-duration, 0.85s) var(--tw-animate-easing, ease) var(--tw-animate-delay, 0s) var(--tw-animate-iteration, 1);
+        animation: down-flip-moblie var(--tw-animate-duration, 0.85s)
+            var(--tw-animate-easing, ease) var(--tw-animate-delay, 0s)
+            var(--tw-animate-iteration, 1);
     }
 }
 
@@ -47,40 +51,37 @@
 }
 
 .shadow-text {
-    text-shadow: 
-        0.125rem 0.125rem 0.0625rem rgba(0, 0, 0, 0.7),
+    text-shadow: 0.125rem 0.125rem 0.0625rem rgba(0, 0, 0, 0.7),
         0rem -0.0625rem 0.1875rem rgba(0, 0, 0, 0.5),
         0rem -0.0625rem 0.5rem rgba(0, 0, 0, 0.4);
 }
 
 .shadow-text-sm {
-    text-shadow: 
-        0rem -0.0625rem 0.1875rem rgba(0, 0, 0, 0.8),
+    text-shadow: 0rem -0.0625rem 0.1875rem rgba(0, 0, 0, 0.8),
         0rem -0.0625rem 0.5rem rgba(0, 0, 0, 0.4);
 }
 
 .shadow-drop {
-    filter: 
-        drop-shadow(0.125rem 0.125rem 0.0625rem rgba(0, 0, 0, 0.7)) 
-        drop-shadow(0rem -0.0625rem 0.1875rem rgba(0, 0, 0, 0.5)) 
+    filter: drop-shadow(0.125rem 0.125rem 0.0625rem rgba(0, 0, 0, 0.7))
+        drop-shadow(0rem -0.0625rem 0.1875rem rgba(0, 0, 0, 0.5))
         drop-shadow(0rem -0.0625rem 0.5rem rgba(0, 0, 0, 0.4));
 }
 
 .shadow-drop-sm {
-    filter:
-        drop-shadow(0rem -0.0625rem 0.1875rem rgba(0, 0, 0, 0.8)) 
+    filter: drop-shadow(0rem -0.0625rem 0.1875rem rgba(0, 0, 0, 0.8))
         drop-shadow(0rem -0.0625rem 0.5rem rgba(0, 0, 0, 0.4));
 }
-
 
 @keyframes down-flip {
     0% {
         width: 1px;
-        transform: rotate(41deg) translate(11.1rem, -8.3rem) rotateX(-90deg) rotateZ(15deg);
+        transform: rotate(41deg) translate(11.1rem, -8.3rem) rotateX(-90deg)
+            rotateZ(15deg);
         transform-origin: top;
     }
     100% {
-        transform: rotate(41deg) translate(11.1rem, -8.3rem) rotateX(0) rotateZ(0);
+        transform: rotate(41deg) translate(11.1rem, -8.3rem) rotateX(0)
+            rotateZ(0);
         transform-origin: top;
     }
 }
@@ -88,11 +89,13 @@
 @keyframes down-flip-moblie {
     0% {
         width: 1px;
-        transform: rotate(39deg) translate(1.8rem, -0.1rem) rotateX(-90deg) rotateZ(15deg);
+        transform: rotate(39deg) translate(1.8rem, -0.1rem) rotateX(-90deg)
+            rotateZ(15deg);
         transform-origin: top;
     }
     100% {
-        transform: rotate(39deg) translate(1.8rem, -0.2rem) rotateX(0) rotateZ(0);
+        transform: rotate(39deg) translate(1.8rem, -0.2rem) rotateX(0)
+            rotateZ(0);
         transform-origin: top;
     }
 }

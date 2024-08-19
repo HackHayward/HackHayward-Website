@@ -3,6 +3,9 @@ export default {
     content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
     theme: {
         extend: {
+            backgroundImage: {
+                mainBG: "url('./assets/imgs/Background/BBackground')",
+            },
             fontFamily: {
                 grotesk: "'Space Grotesk','sans-serif'",
                 exo2: "'Exo 2','sans-serif'",

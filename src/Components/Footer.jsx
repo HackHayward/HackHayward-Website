@@ -1,3 +1,5 @@
+import logo from '/src/assets/imgs/others/Monotone Logo.webp';
+
 import {
     BiLogoDiscord,
     BiLogoInstagram,
@@ -71,7 +73,7 @@ export default function Footer() {
                         className="h-20 max-lg:h-16 max-sm:h-14 hover:scale-105 transition flex items-center"
                     >
                         <img
-                            src="src/assets/imgs/others/Monotone Logo.webp"
+                            src={logo}
                             alt="HackHayward logo"
                             className="h-full"
                         />

@@ -1,3 +1,5 @@
+import uranus from '/src/assets/imgs/Background/Uranus.webp';
+
 export default function Sponsor() {
     return (
         <>
@@ -29,11 +31,7 @@ export default function Sponsor() {
                     </a>
                 </section>
                 <div className="opacity-50 absolute bottom-[30%] left-[-8%] max-h-[30%] max-w-[30%]">
-                    <img
-                        src="src/assets/imgs/Background/Uranus.webp"
-                        alt="Uranus"
-                        className="object-cover"
-                    />
+                    <img src={uranus} alt="Uranus" className="object-cover" />
                 </div>
             </div>
         </>
