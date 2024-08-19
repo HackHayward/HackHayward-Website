@@ -66,7 +66,7 @@ function FaqAccordion() {
                     key={index}
                     className="collapse collapse-plus max-w-screen-md bg-white text-black z-10"
                 >
-                    <input type="checkbox" aria-label="Open Accordian"/>
+                    <input type="checkbox" aria-label="Open Accordian" />
                     <h2 className="collapse-title md:text-xl font-bold text-balance">
                         {faq.question}
                     </h2>
@@ -93,17 +93,18 @@ export default function FAQ() {
                     <p className="lg:text-xl sm:text-lg font-grotesk font-light text-pretty z-40">
                         If we missed anything, please contact us at{' '}
                         <a
-                            href="mailto:hackhayward@gmail.com"
+                            href="mailto:hacker@hackhayward.com
+"
                             className="font-bold text-[#c593e9] underline"
                         >
-                            hackhayward@gmail.com
+                            hacker@hackhayward.com
                         </a>
                     </p>
                 </div>
                 <FaqAccordion />
                 <div className="opacity-50 absolute top-0 right-[-10%] max-h-[40%] max-w-[40%] ">
                     <img
-                        src="./public/assets/Background/Saturn.webp"
+                        src="src/assets/imgs/Background/Saturn.webp"
                         alt="Saturn"
                         className="object-cover"
                     />

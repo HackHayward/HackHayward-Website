@@ -6,17 +6,19 @@ import {
 
 function SocialButtons() {
     const links = [
-        {   icon: BiLogoDiscord,
-            name: "Discord", 
-            href: 'https://discord.com/invite/eMHWYfMKDd' },
+        {
+            icon: BiLogoDiscord,
+            name: 'Discord',
+            href: 'https://discord.com/invite/eMHWYfMKDd',
+        },
         {
             icon: BiLogoInstagram,
-            name: "Instagram",
+            name: 'Instagram',
             href: 'https://www.instagram.com/hackhayward',
         },
         {
             icon: BiLogoLinkedinSquare,
-            name: "LinkedIn",
+            name: 'LinkedIn',
             href: 'https://www.linkedin.com/company/hackhayward',
         },
     ];
@@ -69,7 +71,7 @@ export default function Footer() {
                         className="h-20 max-lg:h-16 max-sm:h-14 hover:scale-105 transition flex items-center"
                     >
                         <img
-                            src="./public/assets/others/Monotone Logo.webp"
+                            src="src/assets/imgs/others/Monotone Logo.webp"
                             alt="HackHayward logo"
                             className="h-full"
                         />
