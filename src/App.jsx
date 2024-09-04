@@ -19,7 +19,7 @@ function App() {
                 </section>
                 {/* about us */}
                 <section
-                    className="pt-16 p-10 bg-black/50 overflow-hidden"
+                    className="pt-16 p-10 bg-black/50 max-w-screen-2xl:overflow-hidden"
                     id="about"
                 >
                     <AboutUs />
