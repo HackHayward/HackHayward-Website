@@ -13,7 +13,10 @@ export default function Hero() {
                         HackHayward
                     </h1>
                     <p className="lg:text-4xl text-2xl mt-2 max-lg:text-center font-grotesk animate-fade-up shadow-text">
-                        Hosted by the:<br />Department of Computer Science @ CSUEB
+                        Hosted by:<br />
+                        <p className='lg:text-3xl text-xl font-thin'>
+                            Department of Computer Science @ CSUEB
+                        </p>
                     </p>
                     <p className="lg:text-4xl text-2xl max-lg:text-center font-grotesk animate-fade-up shadow-text">
                         Spring 2025
