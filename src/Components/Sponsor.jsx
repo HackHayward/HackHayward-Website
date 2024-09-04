@@ -31,7 +31,7 @@ export default function Sponsor() {
                     </a>
                 </section>
                 <div className="opacity-50 absolute bottom-[30%] left-[-8%] max-h-[30%] max-w-[30%]">
-                    <img src={uranus} alt="Uranus" className="object-cover" />
+                    <img src={uranus} loading="lazy" alt="Uranus" className="object-cover" />
                 </div>
             </div>
         </>

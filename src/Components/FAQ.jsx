@@ -107,7 +107,7 @@ export default function FAQ() {
                 </div>
                 <FaqAccordion />
                 <div className="opacity-50 absolute top-0 right-[-10%] max-h-[40%] max-w-[40%] ">
-                    <img src={saturn} alt="Saturn" className="object-cover" />
+                    <img src={saturn} loading="lazy" alt="Saturn" className="object-cover" />
                 </div>
             </div>
         </>
