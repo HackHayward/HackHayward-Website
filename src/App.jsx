@@ -1,3 +1,7 @@
+import ReactGA from 'react-ga4';
+
+ReactGA.initialize('G-RC9XCMGX1W');
+
 import './App.css';
 import NavBar from './Components/NavBar';
 import Hero from './Components/Hero';
