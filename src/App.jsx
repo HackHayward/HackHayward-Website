@@ -6,8 +6,24 @@ import AboutUs from './Components/AboutUs';
 import Footer from './Components/Footer';
 import PilotFalcon from './Components/PilotFalcon';
 import Sponsor from './Components/Sponsor';
+import ReactGA from 'react-ga4';
+import { useEffect } from 'react';
 
 function App() {
+    useEffect(() => {
+        const measurementId = import.meta.env.VITE_MEASUREMENT_ID;
+        if (measurementId) {
+            ReactGA.initialize(measurementId);
+            ReactGA.send({
+                hitType: 'pageview',
+                page: '/',
+                title: 'Home Page',
+            });
+        } else {
+            console.error('Google Analytics Measurement ID not found.');
+        }
+    }, []);
+
     return (
         <>
             <header id="home" className="overflow-x-hidden">
