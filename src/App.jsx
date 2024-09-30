@@ -1,5 +1,5 @@
 import ReactGA from 'react-ga4';
-
+import { useEffect } from 'react';
 ReactGA.initialize(process.env.MEASUREMENT_ID);
 
 import './App.css';
@@ -12,6 +12,14 @@ import PilotFalcon from './Components/PilotFalcon';
 import Sponsor from './Components/Sponsor';
 
 function App() {
+    useEffect(() => {
+        ReactGA.initialize(process.env.MEASUREMENT_ID);
+        ReactGA.send({
+            hitType: 'pageview',
+            page: '/',
+            title: 'Home Page',
+        });
+    }, []);
     return (
         <>
             <header id="home" className="overflow-x-hidden">
