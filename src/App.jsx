@@ -1,4 +1,5 @@
 import './App.css';
+import NotificationBar from './Components/Notification';
 import NavBar from './Components/NavBar';
 import Hero from './Components/Hero';
 import FAQ from './Components/FAQ';
@@ -7,7 +8,9 @@ import Footer from './Components/Footer';
 import PilotFalcon from './Components/PilotFalcon';
 import Sponsor from './Components/Sponsor';
 import ReactGA from 'react-ga4';
-import { useEffect } from 'react';
+
+import { useState, useEffect } from 'react';
+
 
 function App() {
     useEffect(() => {
@@ -24,9 +27,14 @@ function App() {
         }
     }, []);
 
+    // Notification Display
+    const [display, setDisplay] = useState(false);
+
+
     return (
         <>
             <header id="home" className="overflow-x-hidden">
+                {display && <NotificationBar setDisplay={setDisplay} />}
                 <NavBar />
             </header>
             <main className="mainBackground bg-contain bg-repeat-y overflow-x-hidden">

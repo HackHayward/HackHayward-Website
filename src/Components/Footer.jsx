@@ -31,6 +31,7 @@ function SocialButtons() {
                 <li key={index} className="px-2 lg:hover:scale-110 transition">
                     <a
                         href={`${link.href}`}
+                        target="_blank" 
                         aria-label={link.name}
                         className="text-white text-xl font-grotesk font-medium"
                     >
