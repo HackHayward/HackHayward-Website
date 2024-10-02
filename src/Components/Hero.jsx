@@ -1,20 +1,30 @@
 import heroMobile from '/src/assets/imgs/hero/HeroScene-mobile.webp';
 import heroDesktop from '/src/assets/imgs/hero/HeroScene.webp';
 import astro from '/src/assets/imgs/hero/Astro.webp';
+import ReactGA from 'react-ga4';
 
 export default function Hero() {
+    const handleClick = (platform) => {
+        ReactGA.event({
+            category: 'hackathon',
+            action: 'Click',
+            label: platform,
+        });
+        console.log(`Google Analytics Event: ${platform} clicked`);
+    };
+
     return (
         <>
             {/* Title */}
-
             <div className="bg-[#30252d] min-h-[calc(100vh-8rem)] grid grid-cols-10">
                 <div className="text-white col-[2/10] row-[1] place-content-center z-50 flex flex-col gap-3 ">
                     <h1 className="lg:text-8xl sm:text-6xl text-5xl max-[340px]:text-4xl font-bold z-3 max-lg:text-center font-exo2	animate-fade-up	shadow-text">
                         HackHayward
                     </h1>
                     <p className="lg:text-4xl text-2xl mt-2 max-lg:text-center font-grotesk animate-fade-up shadow-text">
-                        Hosted by:<br />
-                        <p className='lg:text-3xl text-xl font-thin'>
+                        Hosted by:
+                        <br />
+                        <p className="lg:text-3xl text-xl font-thin">
                             Department of Computer Science @ CSUEB
                         </p>
                     </p>
@@ -27,6 +37,7 @@ export default function Hero() {
                         hover:bg-[#cfb0e8] transition max-lg:text-sm slash-r animate-flip-up text-center flex items-center"
                             target="_blank"
                             href="https://docs.google.com/forms/d/e/1FAIpQLSeU9aUxOy_6qdsvOSsVW1t91Z3ITRi5ziucR6b4joI-dKJLaQ/viewform"
+                            onClick={() => handleClick('Pre-Register')}
                         >
                             Pre-Register
                         </a>
@@ -36,6 +47,7 @@ export default function Hero() {
 
                     hover:bg-gray-700 transition max-lg:text-sm slash-l animate-flip-down text-center flex items-center"
                             href="mailto:sponsor@hackhayward.com"
+                            onClick={() => handleClick('Sponsor Us')}
                         >
                             Sponsor Us
                         </a>
