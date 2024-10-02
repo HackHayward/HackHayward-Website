@@ -8,7 +8,9 @@ import Footer from './Components/Footer';
 import PilotFalcon from './Components/PilotFalcon';
 import Sponsor from './Components/Sponsor';
 import ReactGA from 'react-ga4';
+
 import { useState, useEffect } from 'react';
+
 
 function App() {
     useEffect(() => {
@@ -24,8 +26,10 @@ function App() {
             console.error('Google Analytics Measurement ID not found.');
         }
     }, []);
+
     // Notification Display
     const [display, setDisplay] = useState(false);
+
 
     return (
         <>
