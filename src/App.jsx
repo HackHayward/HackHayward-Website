@@ -28,7 +28,7 @@ function App() {
     }, []);
 
     // Notification Display
-    const [display, setDisplay] = useState(false);
+    const [display, setDisplay] = useState(true);
 
 
     return (
