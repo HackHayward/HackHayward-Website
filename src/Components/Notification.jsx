@@ -15,11 +15,11 @@ export default function NotificationBar(props) {
     
     function closeBar() {
         const notification = document.getElementById("NotificationBar");
-        notification.classList.remove("sm:h-12", "h-20");
+        notification.classList.remove("sm:h-12", "h-16");
         notification.classList.add("h-0");
         document.getElementById("NotificationText").classList.add("translate-y-[-10px]");
         setTimeout(()=>{
-            props.setDisplay(true);
+            props.setDisplay(false);
         }, 300)
     }
 
