@@ -15,33 +15,36 @@ export default function NotificationBar(props) {
     
     function closeBar() {
         const notification = document.getElementById("NotificationBar");
-        notification.classList.remove("h-12");
+        notification.classList.remove("sm:h-12", "h-20");
         notification.classList.add("h-0");
         document.getElementById("NotificationText").classList.add("translate-y-[-10px]");
         setTimeout(()=>{
-            props.setDisplay(false);
+            props.setDisplay(true);
         }, 300)
     }
 
     return (
         <>
             <div id="NotificationBar" className="bg-[#c593e9] text-black overflow-hidden
-            font-grotesk h-12 animate-h transition-all duration-300">
-                <div id="NotificationText" className="flex items-center h-full text-white transition-all duration-300">
-                    <div className="pl-20 flex justify-center h-full w-full">
-                        <div className="flex flex-row gap-2 items-center">
+            font-grotesk h-16 sm:h-12 transition-all duration-300">
+                <div id="NotificationText" className="flex items-center h-full text-white 
+                transition-all duration-300 text-sm sm:text-base">
+                    <div className=" flex justify-center items-center h-full w-full">
+                        <div className="flex max-sm:flex-col gap-2 items-center text-nowrap">
                             <p><strong>{title}:</strong> </p>
-                            <p>{mssg}</p>
+                            <p>{mssg}
                             {isMore && <a href={link} target="_blank" >
-                                <u className="text-sm">
+                                <u className="text-sm ml-2">
                                     <strong>{action}</strong>
                                 </u>
                             </a>}
+                            </p>
+                            
                         </div>
                     </div>
                     <btn>
                         <BiX 
-                        className="mr-10 size-8 cursor-pointer hover:scale-110 transition" 
+                        className="size-8 cursor-pointer hover:scale-110 absolute right-2 top-4 sm:top-2 transition" 
                         onClick={closeBar}/>
                     </btn>
                 </div>
