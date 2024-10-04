@@ -11,13 +11,12 @@ import ReactGA from 'react-ga4';
 import { useState, useEffect } from 'react';
 
 function App() {
+    //Scroll to top on load
     useEffect(()=>{
-        window.onload = ()=>{
-            setTimeout(()=>{
-                window.scrollTo(0, 0);
-            }, 10)
-        }
-    })
+        setTimeout(()=>{
+            window.scrollTo(0, 0);
+        }, 100) // Timeout due to images/announcements not loading right away
+    }, []);
 
     useEffect(() => {
         const measurementId = import.meta.env.VITE_MEASUREMENT_ID;
