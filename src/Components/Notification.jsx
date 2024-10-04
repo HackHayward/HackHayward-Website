@@ -25,10 +25,10 @@ export default function NotificationBar(props) {
 
     return (
         <>
-            <div id="NotificationBar" className="bg-[#c593e9] text-black overflow-hidden
-            font-grotesk h-16 sm:h-12 transition-all duration-300">
-                <div id="NotificationText" className="flex items-center h-full text-white 
-                transition-all duration-300 text-sm sm:text-base">
+            <div id="NotificationBar" className="bg-[#c593e9] text-white text-sm sm:text-base
+            overflow-hidden font-grotesk h-16 sm:h-12 transition-all duration-300">
+                <div id="NotificationText" className="flex items-center h-full
+                transition-all duration-300">
                     <div className=" flex justify-center items-center h-full w-full">
                         <div className="flex max-sm:flex-col gap-2 items-center text-nowrap">
                             <p><strong>{title}:</strong> </p>
