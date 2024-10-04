@@ -8,11 +8,17 @@ import Footer from './Components/Footer';
 import PilotFalcon from './Components/PilotFalcon';
 import Sponsor from './Components/Sponsor';
 import ReactGA from 'react-ga4';
-
 import { useState, useEffect } from 'react';
 
-
 function App() {
+    useEffect(()=>{
+        window.onload = ()=>{
+            setTimeout(()=>{
+                window.scrollTo(0, 0);
+            }, 10)
+        }
+    })
+
     useEffect(() => {
         const measurementId = import.meta.env.VITE_MEASUREMENT_ID;
         if (measurementId) {
@@ -26,10 +32,9 @@ function App() {
             console.error('Google Analytics Measurement ID not found.');
         }
     }, []);
-
     // Notification Display
-    const [display, setDisplay] = useState(false);
-
+    const [display, setDisplay] = useState(true);
+    
 
     return (
         <>
