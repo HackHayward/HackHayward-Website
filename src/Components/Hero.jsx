@@ -1,9 +1,14 @@
+import PropTypes from 'prop-types';
 import heroMobile from '/src/assets/imgs/hero/HeroScene-mobile.webp';
 import heroDesktop from '/src/assets/imgs/hero/HeroScene.webp';
 import astro from '/src/assets/imgs/hero/Astro.webp';
 import ReactGA from 'react-ga4';
 
-export default function Hero() {
+Hero.propTypes = {
+    preRegister: PropTypes.string.isRequired,
+};
+
+export default function Hero(props) {
     const handleClick = (platform) => {
         ReactGA.event({
             category: 'hackathon',
@@ -36,7 +41,7 @@ export default function Hero() {
                             className="bg-[#c593e9] text-white lg:h-16 lg:px-14 h-12 px-6 pr-10
                         hover:bg-[#cfb0e8] transition max-lg:text-sm slash-r animate-flip-up text-center flex items-center"
                             target="_blank"
-                            href="https://docs.google.com/forms/d/e/1FAIpQLSeU9aUxOy_6qdsvOSsVW1t91Z3ITRi5ziucR6b4joI-dKJLaQ/viewform"
+                            href={props.preRegister}
                             onClick={() => handleClick('Pre-Register')}
                         >
                             Pre-Register
