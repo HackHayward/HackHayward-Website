@@ -11,13 +11,12 @@ import ReactGA from 'react-ga4';
 import { useState, useEffect } from 'react';
 
 function App() {
+    //Scroll to top on load
     useEffect(()=>{
-        window.onload = ()=>{
-            setTimeout(()=>{
-                window.scrollTo(0, 0);
-            }, 10)
-        }
-    })
+        setTimeout(()=>{
+            window.scrollTo(0, 0);
+        }, 100) // Timeout due to images/announcements not loading right away
+    }, []);
 
     useEffect(() => {
         const measurementId = import.meta.env.VITE_MEASUREMENT_ID;
@@ -33,7 +32,9 @@ function App() {
         }
     }, []);
     // Notification Display
-    const [display, setDisplay] = useState(true);
+    const [display, setDisplay] = useState(false);
+    // Links
+    const preRegister = "https://forms.fillout.com/t/cJH9deoDmCus";
 
     return (
         <>
@@ -43,7 +44,7 @@ function App() {
             </header>
             <main className="mainBackground bg-contain bg-repeat-y overflow-x-hidden">
                 <section className="border-b-8 border-[#c593e9]">
-                    <Hero />
+                    <Hero preRegister={preRegister} />
                 </section>
                 {/* about us */}
                 <section
@@ -70,7 +71,7 @@ function App() {
             </main>
             {/* footer */}
             <footer className="bg-[rgb(48,37,45)] border-t-8 border-[#c593e9] overflow-hidden">
-                <Footer />
+                <Footer preRegister={preRegister} />
             </footer>
         </>
     );
