@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import logo from '/src/assets/imgs/others/Monotone Logo.webp';
+import ReactGA from 'react-ga4';
 
 import {
     BiLogoDiscord,
@@ -70,6 +71,15 @@ function NavButtons() {
 }
 
 export default function Footer(props) {
+    const handleClick = (platform) => {
+        ReactGA.event({
+            category: 'hackathon',
+            action: 'Click',
+            label: platform,
+        });
+        console.log(`Google Analytics Event: ${platform} clicked`);
+    };
+
     return (
         <footer className="bg-[#30252d] text-white">
             <section className="navbar p-8 place-content-between max-lg:flex-col ">
@@ -131,6 +141,7 @@ export default function Footer(props) {
                                 href={props.preRegister}
                                 className="bg-[#c593e9] hover:bg-[#cfb0e8] rounded-full p-3 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap"
                                 target="_blank"
+                                onClick={() => handleClick('Pre-Register')}
                             >
                                 Pre-Register
                             </a>
