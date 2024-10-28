@@ -1,6 +1,23 @@
 import saturn from '/src/assets/imgs/Background/Saturn.webp';
+import ReactGA from 'react-ga4';
+import PropTypes from 'prop-types';
 
-function FaqAccordion() {
+
+FAQ.propTypes = {
+    preRegister: PropTypes.string.isRequired,
+};
+
+
+function FaqAccordion(props) {
+    const handleClick = (platform) => {
+        ReactGA.event({
+            category: 'hackathon',
+            action: 'Click',
+            label: platform,
+        });
+        console.log(`Google Analytics Event: ${platform} clicked`);
+    };
+
     const faqs = [
         {
             question: 'What is a Hackathon? ',
@@ -16,9 +33,10 @@ function FaqAccordion() {
                 <>
                     Fill in{' '}
                     <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSeU9aUxOy_6qdsvOSsVW1t91Z3ITRi5ziucR6b4joI-dKJLaQ/viewform"
+                        href={props.preRegister}
                         target="_blank"
                         className="text-[#c593e9] font-bold underline"
+                        onClick={() => handleClick('Pre-Register')}
                     >
                         our pre-registration form
                     </a>{' '}

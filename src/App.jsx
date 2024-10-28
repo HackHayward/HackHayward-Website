@@ -55,7 +55,7 @@ function App() {
                 </section>
                 {/* FAQ */}
                 <section className="p-10 bg-black/50 overflow-hidden" id="faq">
-                    <FAQ />
+                    <FAQ preRegister={preRegister}/>
                 </section>
                 {/* sponsor */}
                 <section
