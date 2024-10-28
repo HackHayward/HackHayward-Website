@@ -1,6 +1,15 @@
 import uranus from '/src/assets/imgs/Background/Uranus.webp';
+import ReactGA from 'react-ga4';
 
 export default function Sponsor() {
+    const handleClick = (platform) => {
+        ReactGA.event({
+            category: 'hackathon',
+            action: 'Click',
+            label: platform,
+        });
+        console.log(`Google Analytics Event: ${platform} clicked`);
+    };
     return (
         <>
             <div className="relative flex justify-center ">
@@ -26,6 +35,7 @@ export default function Sponsor() {
                     <a
                         href="mailto:sponsor@hackhayward.com"
                         className="bg-[#c593e9] hover:bg-[#cfb0e8] rounded-full p-4 px-8 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap"
+                        onClick={() => handleClick('Sponsor Us')}
                     >
                         Sponsor Us
                     </a>
