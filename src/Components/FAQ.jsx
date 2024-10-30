@@ -3,7 +3,7 @@ import ReactGA from 'react-ga4';
 import PropTypes from 'prop-types';
 
 
-FAQ.propTypes = {
+FaqAccordion.propTypes = {
     preRegister: PropTypes.string.isRequired,
 };
 
@@ -99,7 +99,11 @@ function FaqAccordion(props) {
     );
 }
 
-export default function FAQ() {
+FAQ.propTypes = {
+    preRegister: PropTypes.string.isRequired,
+};
+
+export default function FAQ(props) {
     return (
         <>
             <div className="relative">
@@ -123,7 +127,7 @@ export default function FAQ() {
                         </a>
                     </p>
                 </div>
-                <FaqAccordion />
+                <FaqAccordion preRegister={props.preRegister} />
                 <div className="opacity-50 absolute top-0 right-[-10%] max-h-[40%] max-w-[40%] ">
                     <img src={saturn} loading="lazy" alt="Saturn" className="object-cover" />
                 </div>
