@@ -20,7 +20,7 @@ export default function AboutUs() {
                             ideate, create, and pitch their solutions to tackle
                             real-world issues within a 24-hour timeframe. Our
                             hackathon will be hosted in person at California
-                            State University, East Bay during Spring 2025, and
+                            State University, East Bay during March 2025, and
                             we are expecting over 200 participants.
                         </p>
                     </article>
