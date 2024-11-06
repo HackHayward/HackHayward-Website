@@ -34,7 +34,7 @@ export default function Hero(props) {
                         </p>
                     </p>
                     <p className="lg:text-4xl text-2xl max-lg:text-center font-grotesk animate-fade-up shadow-text">
-                        Spring 2025
+                        March 2025
                     </p>
                     <div className="flex gap-4 max-lg:justify-center lg:mt- mt-2 font-mono">
                         <a
