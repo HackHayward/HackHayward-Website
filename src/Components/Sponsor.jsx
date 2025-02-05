@@ -33,7 +33,7 @@ export default function Sponsor() {
                                 
                                 
                                 {/* CSUEB SOE Logo */}
-                                <div className="bg-white p-4 rounded-lg w-full max-w-[300px] flex items-center justify-center">
+                                <div className="bg-white p-4 rounded-lg w-full max-w-[300px] h-[100px] flex items-center justify-center overflow-hidden">
                                     <img 
                                         src={csueb_soe} 
                                         alt="CSUEB School of Engineering" 
@@ -43,7 +43,7 @@ export default function Sponsor() {
                                 
                                 
                                 {/* CSUEB DOCS Logo */}
-                                <div className="bg-white p-4 rounded-lg w-full max-w-[300px] flex items-center justify-center">
+                                <div className="bg-white p-4 rounded-lg w-full max-w-[300px] h-[100px] flex items-center justify-center overflow-hidden">
                                     <img 
                                         src={csueb_docs} 
                                         alt="CSUEB Department of Computer Science" 
@@ -51,16 +51,16 @@ export default function Sponsor() {
                                     />
                                 </div>
                                 {/* GCP Logo */}
-                                <div className="bg-white p-4 rounded-lg w-full max-w-[300px] flex items-center justify-center">
+                                <div className="bg-white p-4 rounded-lg w-full max-w-[300px] h-[100px] flex items-center justify-center overflow-hidden">
                                     <img 
                                         src={GCP} 
                                         alt="Powered by GCP" 
-                                        className="h-16 object-contain"
+                                        className="h-[95px] object-contain"
                                     />
                                 </div>
 
                                 {/* AWS Logo */}
-                                <div className="bg-white p-4 rounded-lg w-full max-w-[300px] flex items-center justify-center">
+                                <div className="bg-white p-4 rounded-lg w-full max-w-[300px] h-[100px] flex items-center justify-center overflow-hidden">
                                     <img 
                                         src={aws} 
                                         alt="Powered by AWS" 
@@ -69,11 +69,11 @@ export default function Sponsor() {
                                 </div>
                                 
                                 {/* Smith Center Logo */}
-                                <div className="bg-white p-4 rounded-lg w-full max-w-[300px] flex items-center justify-center">
+                                <div className="bg-white p-4 rounded-lg w-full max-w-[300px] h-[100px] flex items-center justify-center overflow-hidden">
                                     <img 
                                         src={SCLogo} 
                                         alt="Smith Center" 
-                                        className="h-16 object-contain"
+                                        className="h-[95px] object-contain"
                                     />
                                 </div>
 
