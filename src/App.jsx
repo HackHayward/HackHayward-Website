@@ -34,7 +34,7 @@ function App() {
     // Notification Display
     const [display, setDisplay] = useState(false);
     // Links
-    const preRegister = "https://forms.fillout.com/t/cJH9deoDmCus";
+    const register = "https://forms.fillout.com/t/3wySorNxVMus";
 
     return (
         <>
@@ -44,7 +44,7 @@ function App() {
             </header>
             <main className="mainBackground bg-contain bg-repeat-y overflow-x-hidden">
                 <section className="border-b-8 border-[#c593e9]">
-                    <Hero preRegister={preRegister} />
+                    <Hero register={register} />
                 </section>
                 {/* about us */}
                 <section
@@ -55,7 +55,7 @@ function App() {
                 </section>
                 {/* FAQ */}
                 <section className="p-10 bg-black/50 overflow-hidden" id="faq">
-                    <FAQ preRegister={preRegister}/>
+                    <FAQ register={register}/>
                 </section>
                 {/* sponsor */}
                 <section
@@ -71,7 +71,7 @@ function App() {
             </main>
             {/* footer */}
             <footer className="bg-[rgb(48,37,45)] border-t-8 border-[#c593e9] overflow-hidden">
-                <Footer preRegister={preRegister} />
+                <Footer register={register} />
             </footer>
         </>
     );
