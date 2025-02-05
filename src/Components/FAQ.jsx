@@ -25,7 +25,7 @@ function FaqAccordion(props) {
         },
         {
             question: 'Who’s allowed to sign up?',
-            answer: 'Anyone who is in college/university or recent graduates aged 18 and up are invited to sign up!',
+            answer: 'Anyone who is in College/University or Highschooler above the age of 18 are invited to sign-up!',
         },
         {
             question: 'How do I sign up?',
@@ -45,7 +45,7 @@ function FaqAccordion(props) {
         },
         {
             question: 'How long will HackHayward last?',
-            answer: 'We will be hacking over 2 days! Plenty of time to work on your project and join many of our workshops.',
+            answer: 'We will be hacking on March 1st and 2nd with submission in the AM on March 2nd. Plenty of time to work on your project! Some workshops planned.',
         },
         {
             question: 'What does it cost to join?',
@@ -57,7 +57,7 @@ function FaqAccordion(props) {
         },
         {
             question: 'What can be submitted?',
-            answer: 'Any projects, technical or not, created within the 2 days of Hacking can be submitted!',
+            answer: 'Any projects, technical or not, created within the hacking event schedule!',
         },
         {
             question: 'What do I need to bring to the event?',
@@ -65,7 +65,7 @@ function FaqAccordion(props) {
         },
         {
             question: 'What if I have no experience?',
-            answer: 'This event is still for you! No technical experience or not majoring in Computer Science? You are still invited! Create creative solutions to the problems in the Hackathon!',
+            answer: 'This event is still for you! No technical experience or not majoring in Computer Science? You are still invited! Create creative solutions to the problems in the Hackathon! Calling all Engineering, Business, Computer Science, and every creative mind in between—ignite your potential at our event! Not in a team yet? No worries—the kickoff networking session is your chance to spark connections and form your dream squad.',
         },
         {
             question: 'What is HackHayward?',
@@ -108,7 +108,7 @@ export default function FAQ(props) {
             <div className="relative">
                 <div className="text-white text-center font-exo2 flex flex-col items-center gap-9 z-10 shadow-text-sm">
                     <h2 className="hidden md:block text-5xl text-balance max-lg:mx-28 font-bold">
-                        FREQUENTLY ASKED QUESTIONS
+                        Regulations and FAQs
                     </h2>
                     <p className="md:hidden text-5xl font-bold">
                         FAQ

@@ -18,7 +18,7 @@ export default function AboutUs() {
                             Hayward, California area. We challenge students to
                             work collaboratively within a limited timeframe to
                             ideate, create, and pitch their solutions to tackle
-                            real-world issues within a 24-hour timeframe. Our
+                            real-world issues within the hackathon&apos;s timeframe. Our
                             hackathon will be hosted in person at California
                             State University, East Bay during March 2025, and
                             we are expecting over 200 participants.
