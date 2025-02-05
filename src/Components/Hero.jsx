@@ -5,7 +5,8 @@ import astro from '/src/assets/imgs/hero/Astro.webp';
 import ReactGA from 'react-ga4';
 
 Hero.propTypes = {
-    preRegister: PropTypes.string.isRequired,
+    register: PropTypes.string.isRequired,
+    buttonText: "Register",
 };
 
 export default function Hero(props) {
@@ -41,10 +42,14 @@ export default function Hero(props) {
                             className="bg-[#c593e9] text-white lg:h-16 lg:px-14 h-12 px-6 pr-10
                         hover:bg-[#cfb0e8] transition max-lg:text-sm slash-r animate-flip-up text-center flex items-center"
                             target="_blank"
-                            href={props.preRegister}
-                            onClick={() => handleClick('Pre-Register')}
+                            href={props.register}
+                            onClick={() => handleClick('Register')}
                         >
-                            Pre-Register
+                            {/* Invisible span to reserve width */}
+                            <span className="absolute inset-0 flex items-center justify-center">Register</span>
+                            {/* Actual visible text */}
+                             <span className="invisible">Pre-Register</span>
+                            
                         </a>
                         <span className="slash-l-line animation-flip-down"></span>
                         <a

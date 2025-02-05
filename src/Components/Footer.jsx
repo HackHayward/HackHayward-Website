@@ -10,7 +10,7 @@ import {
 
 
 Footer.propTypes = {
-    preRegister: PropTypes.string.isRequired,
+    register: PropTypes.string.isRequired,
 };
 
 function SocialButtons() {
@@ -138,12 +138,12 @@ export default function Footer(props) {
                         <NavButtons />
                         <li className="px-2 max-[310px]:px-0 lg:hover:scale-110 transition">
                             <a
-                                href={props.preRegister}
+                                href={props.register}
                                 className="bg-[#c593e9] hover:bg-[#cfb0e8] rounded-full p-3 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap"
                                 target="_blank"
-                                onClick={() => handleClick('Pre-Register')}
+                                onClick={() => handleClick('Register')}
                             >
-                                Pre-Register
+                                Register
                             </a>
                         </li>
                     </ul>

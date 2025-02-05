@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 
 FaqAccordion.propTypes = {
-    preRegister: PropTypes.string.isRequired,
+    register: PropTypes.string.isRequired,
 };
 
 
@@ -33,14 +33,13 @@ function FaqAccordion(props) {
                 <>
                     Fill in{' '}
                     <a
-                        href={props.preRegister}
+                        href={props.register}
                         target="_blank"
                         className="text-[#c593e9] font-bold underline"
-                        onClick={() => handleClick('Pre-Register')}
+                        onClick={() => handleClick('Register')}
                     >
-                        our pre-registration form
-                    </a>{' '}
-                    and get informed when we open registration!
+                        our registration form!
+                    </a>
                 </>
             ),
         },
@@ -100,7 +99,7 @@ function FaqAccordion(props) {
 }
 
 FAQ.propTypes = {
-    preRegister: PropTypes.string.isRequired,
+    register: PropTypes.string.isRequired,
 };
 
 export default function FAQ(props) {
@@ -127,7 +126,7 @@ export default function FAQ(props) {
                         </a>
                     </p>
                 </div>
-                <FaqAccordion preRegister={props.preRegister} />
+                <FaqAccordion register={props.register} />
                 <div className="opacity-50 absolute top-0 right-[-10%] max-h-[40%] max-w-[40%] ">
                     <img src={saturn} loading="lazy" alt="Saturn" className="object-cover" />
                 </div>
