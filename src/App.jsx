@@ -34,7 +34,7 @@ function App() {
     // Notification Display
     const [display, setDisplay] = useState(false);
     // Links
-    const register = "https://forms.fillout.com/t/3wySorNxVMus";
+    const register = "https://gdg.community.dev/events/details/google-gdg-on-campus-california-state-university-east-bay-hayward-united-states-presents-build-with-ai-hackhayward/";
 
     return (
         <>
