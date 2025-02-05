@@ -6,7 +6,6 @@ import ReactGA from 'react-ga4';
 
 Hero.propTypes = {
     register: PropTypes.string.isRequired,
-    buttonText: "Register",
 };
 
 export default function Hero(props) {

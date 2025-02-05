@@ -25,7 +25,7 @@ function FaqAccordion(props) {
         },
         {
             question: 'Who’s allowed to sign up?',
-            answer: 'Anyone who is in College/University or Highschooler above the age of 18 are invited to sign-up!',
+            answer: 'Anyone who is in College/University or Highschooler above the age of 18 is invited to sign-up!',
         },
         {
             question: 'How do I sign up?',
