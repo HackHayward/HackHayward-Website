@@ -3,15 +3,16 @@ import { BiX } from "react-icons/bi";
 
 NotificationBar.propTypes = {
     setDisplay: PropTypes.func.isRequired,
+    register: PropTypes.string.isRequired,
 };
 
 export default function NotificationBar(props) {
-    const title = "🚀 The Power of Networking";
-    const mssg = "Workshop by MLT!";
+    const title = "🚀 Registration is now open!";
+    const mssg = "Join us for HackHayward 2025";
     // Ignore action & link if isMore == false
     const isMore = true;
-    const action = "Join here";
-    const link = "https://lu.ma/slcpoj81";
+    const action = "Register here";
+    // const link = "https://lu.ma/slcpoj81"; Uncomment to use custom link
     
     function closeBar() {
         const notification = document.getElementById("NotificationBar");
@@ -33,7 +34,7 @@ export default function NotificationBar(props) {
                         <div className="flex max-sm:flex-col gap-2 items-center text-nowrap">
                             <p><strong>{title}:</strong> </p>
                             <p>{mssg}
-                            {isMore && <a href={link} target="_blank" >
+                            {isMore && <a href={props.register /*link*/ } target="_blank" >
                                 <u className="text-sm ml-2">
                                     <strong>{action}</strong>
                                 </u>
