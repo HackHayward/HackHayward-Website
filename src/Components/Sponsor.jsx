@@ -5,7 +5,7 @@ import csueb_docs from '/src/assets/imgs/sponsors/CSUEB_DOCS.svg';
 import csueb_soe from '/src/assets/imgs/sponsors/CSUEB_SOE.svg';
 import aws from '/src/assets/imgs/sponsors/Amazon_Web_Services_Logo.svg.png';
 import GCP from '/src/assets/imgs/sponsors/GCP_Cheat_Sheet.png';
-import SCLogo from '/src/assets/imgs/sponsors/SmithCenter.jpg';
+import SCLogo from '/src/assets/imgs/sponsors/updated_smith_logo.png';
 
 import ReactGA from 'react-ga4';
 
@@ -73,8 +73,9 @@ export default function Sponsor() {
                                     <img 
                                         src={SCLogo} 
                                         alt="Smith Center" 
-                                        className="h-[95px] object-contain"
+                                        className="h-[160px] object-contain mt-2"
                                     />
+
                                 </div>
 
 
