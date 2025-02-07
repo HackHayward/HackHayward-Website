@@ -32,14 +32,14 @@ function App() {
         }
     }, []);
     // Notification Display
-    const [display, setDisplay] = useState(false);
+    const [display, setDisplay] = useState(true);
     // Links
     const register = "https://gdg.community.dev/events/details/google-gdg-on-campus-california-state-university-east-bay-hayward-united-states-presents-build-with-ai-hackhayward/";
 
     return (
         <>
             <header id="home" className="overflow-x-hidden">
-                {display && <NotificationBar setDisplay={setDisplay} />}
+                {display && <NotificationBar setDisplay={setDisplay} register={register}/>}
                 <NavBar />
             </header>
             <main className="mainBackground bg-contain bg-repeat-y overflow-x-hidden">
