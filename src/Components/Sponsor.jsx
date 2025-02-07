@@ -9,6 +9,15 @@ import SCLogo from '/src/assets/imgs/sponsors/updated_smith_logo.png';
 
 import ReactGA from 'react-ga4';
 
+// sponsor URL links
+const sponsorURLs = {
+    'CSUEB DOCS': 'https://cs.csueastbay.edu/',
+    'CSUEB SOE': 'https://www.csueastbay.edu/engineering/',
+    'AWS': 'https://aws.amazon.com/',
+    'GCP': 'https://cloud.google.com/',
+    'Smith Center': 'https://www.csueastbay.edu/smith-center/',
+}
+
 export default function Sponsor() {
     const handleClick = (platform) => {
         ReactGA.event({
@@ -31,52 +40,95 @@ export default function Sponsor() {
                             {/* Sponsor Logos */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-items-center">
                                 
-                                
-                                {/* CSUEB SOE Logo */}
-                                <div className="bg-white p-4 rounded-lg w-full max-w-[300px] h-[100px] flex items-center justify-center overflow-hidden">
-                                    <img 
-                                        src={csueb_soe} 
-                                        alt="CSUEB School of Engineering" 
-                                        className="h-16 object-contain"
-                                    />
-                                </div>
-                                
-                                
-                                {/* CSUEB DOCS Logo */}
-                                <div className="bg-white p-4 rounded-lg w-full max-w-[300px] h-[100px] flex items-center justify-center overflow-hidden">
-                                    <img 
-                                        src={csueb_docs} 
-                                        alt="CSUEB Department of Computer Science" 
-                                        className="h-16 object-contain"
-                                    />
-                                </div>
-                                {/* GCP Logo */}
-                                <div className="bg-white p-4 rounded-lg w-full max-w-[300px] h-[100px] flex items-center justify-center overflow-hidden">
-                                    <img 
-                                        src={GCP} 
-                                        alt="Powered by GCP" 
-                                        className="h-[95px] object-contain"
-                                    />
-                                </div>
 
+                                {/* GCP Logo */}
+                                <a 
+                                    href={sponsorURLs['GCP']} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    onClick={() => handleClick('GCP')}
+                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98] touch-none"
+                                >
+                                    <div className="bg-white p-4 rounded-lg w-full h-[100px] flex items-center justify-center overflow-hidden hover:bg-gray-50 transition-colors">
+                                        <img 
+                                            src={GCP} 
+                                            alt="Powered by GCP" 
+                                            className="h-[95px] object-contain"
+                                        />
+                                    </div>
+                                </a>
+                                
                                 {/* AWS Logo */}
-                                <div className="bg-white p-4 rounded-lg w-full max-w-[300px] h-[100px] flex items-center justify-center overflow-hidden">
-                                    <img 
-                                        src={aws} 
-                                        alt="Powered by AWS" 
-                                        className="h-16 object-contain"
-                                    />
-                                </div>
+                                <a 
+                                    href={sponsorURLs['AWS']} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    onClick={() => handleClick('AWS')}
+                                    className="block w-full max-w-[299px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98] touch-none"
+                                >
+                                    <div className="bg-white p-5 rounded-lg w-full h-[100px] flex items-center justify-center overflow-hidden hover:bg-gray-50 transition-colors">
+                                        <img 
+                                            src={aws} 
+                                            alt="Powered by AWS" 
+                                            className="h-[80px] object-contain"
+                                        />
+                                    </div>
+                                </a>
+
+                                {/* CSUEB SOE Logo */}
+                                <a 
+                                    href={sponsorURLs['CSUEB SOE']} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    onClick={() => handleClick('CSUEB SOE')}
+                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98] touch-none"
+                                >
+                                    <div className="bg-white p-4 rounded-lg w-full h-[100px] flex items-center justify-center overflow-hidden hover:bg-gray-50 transition-colors">
+                                        <img 
+                                            src={csueb_soe} 
+                                            alt="CSUEB School of Engineering" 
+                                            className="h-16 object-contain select-none"
+                                        />
+                                    </div>
+                                </a>
+                                
+                                
+
+                                {/* CSUEB DOCS Logo */}
+                                <a 
+                                    href={sponsorURLs['CSUEB DOCS']} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    onClick={() => handleClick('CSUEB DOCS')}
+                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98] touch-none"
+                                >
+                                    <div className="bg-white p-4 rounded-lg w-full h-[100px] flex items-center justify-center overflow-hidden hover:bg-gray-50 transition-colors">
+                                        <img 
+                                            src={csueb_docs} 
+                                            alt="CSUEB Department of Computer Science" 
+                                            className="h-16 object-contain"
+                                        />
+                                    </div>
+                                </a>
                                 
                                 {/* Smith Center Logo */}
-                                <div className="bg-white p-4 rounded-lg w-full max-w-[300px] h-[100px] flex items-center justify-center overflow-hidden">
-                                    <img 
-                                        src={SCLogo} 
-                                        alt="Smith Center" 
-                                        className="h-[160px] object-contain mt-2"
-                                    />
+                                <a 
+                                    href={sponsorURLs['Smith Center']} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    onClick={() => handleClick('Smith Center')}
+                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98] touch-none"
+                                >
+                                    <div className="bg-white p-4 rounded-lg w-full h-[100px] flex items-center justify-center overflow-hidden hover:bg-gray-50 transition-colors">
+                                        <img 
+                                            src={SCLogo} 
+                                            alt="Smith Center" 
+                                            className="h-[160px] object-contain mt-2"
+                                        />
 
-                                </div>
+                                    </div>
+
+                                </a>
 
 
                             </div>
