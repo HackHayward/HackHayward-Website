@@ -38,13 +38,14 @@ export default function Hero(props) {
                     <p className="lg:text-4xl text-2xl max-lg:text-center font-grotesk animate-fade-up shadow-text">
                         March 1st & 2nd, 2025
                     </p>
+                    
                     {/* Countdown Timer */}
                     <div className="flex gap-4 max-lg:justify-center lg:mt- mt-2 font-mono">
                         {/* Lower text to align with center of timer */}
-                        <div className="flex flex-col items-center">
-                            <CountdownTimer targetDate="2025-03-01" />
-                            <p className="text-white text-xl font-mono ">
-                                Until HackHayward 2025
+                        <div className="flex lg:flex-row flex-col gap-4 items-center ">
+                            <CountdownTimer targetDate="2025-03-01T08:00:00" />
+                            <p className="text-white lg:text-3xl sm:text-xl font-mono ">
+                                Until HackHayward
                             </p>
                         </div>
                         
@@ -75,6 +76,8 @@ export default function Hero(props) {
                             Sponsor Us
                         </a>
                     </div>
+
+                    
                 </div>
                 <div className="col-[1/11] row-[1] place-self-end">
                     <div className="relative">

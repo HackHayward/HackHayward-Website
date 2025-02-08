@@ -11,7 +11,12 @@ const CountdownTimer = ({ targetDate }) => {
 
     useEffect(() => {
         const calculateTimeLeft = () => {
-            const difference = new Date(targetDate) - new Date();
+            const target = new Date(targetDate);
+            if (isNaN(target.getTime())) {
+                console.error('Invalid target date provided');
+                return;
+            }
+            const difference = target - new Date();
             
             if (difference > 0) {
                 setTimeLeft({
@@ -20,6 +25,8 @@ const CountdownTimer = ({ targetDate }) => {
                     minutes: Math.floor((difference / 1000 / 60) % 60),
                     seconds: Math.floor((difference / 1000) % 60)
                 });
+            } else {
+                setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
             }
         };
 
@@ -32,20 +39,20 @@ const CountdownTimer = ({ targetDate }) => {
     return (
         <div className="flex gap-4 justify-center my-2">
             <div className="text-center">
-                <span className="font-bold text-xl">{timeLeft.days}</span>
-                <p className="text-sm">Days</p>
+                <span className="font-bold text-xl lg:text-4xl">{timeLeft.days}</span>
+                <p className="text-sm lg:text-lg">Days</p>
             </div>
             <div className="text-center">
-                <span className="font-bold text-xl">{timeLeft.hours}</span>
-                <p className="text-sm">Hours</p>
+                <span className="font-bold text-xl lg:text-4xl">{timeLeft.hours}</span>
+                <p className="text-sm lg:text-lg">Hours</p>
             </div>
             <div className="text-center">
-                <span className="font-bold text-xl">{timeLeft.minutes}</span>
-                <p className="text-sm">Minutes</p>
+                <span className="font-bold text-xl lg:text-4xl">{timeLeft.minutes}</span>
+                <p className="text-sm lg:text-lg">Minutes</p>
             </div>
             <div className="text-center">
-                <span className="font-bold text-xl">{timeLeft.seconds}</span>
-                <p className="text-sm">Seconds</p>
+                <span className="font-bold text-xl lg:text-4xl">{timeLeft.seconds}</span>
+                <p className="text-sm lg:text-lg">Seconds</p>
             </div>
         </div>
     );
