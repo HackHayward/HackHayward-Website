@@ -3,6 +3,7 @@ import heroMobile from '/src/assets/imgs/hero/HeroScene-mobile.webp';
 import heroDesktop from '/src/assets/imgs/hero/HeroScene.webp';
 import astro from '/src/assets/imgs/hero/Astro.webp';
 import ReactGA from 'react-ga4';
+import CountdownTimer from './CountdownTimer';
 
 Hero.propTypes = {
     register: PropTypes.string.isRequired,
@@ -37,6 +38,18 @@ export default function Hero(props) {
                     <p className="lg:text-4xl text-2xl max-lg:text-center font-grotesk animate-fade-up shadow-text">
                         March 1st & 2nd, 2025
                     </p>
+                    {/* Countdown Timer */}
+                    <div className="flex gap-4 max-lg:justify-center lg:mt- mt-2 font-mono">
+                        {/* Lower text to align with center of timer */}
+                        <div className="flex flex-col items-center">
+                            <CountdownTimer targetDate="2025-03-01" />
+                            <p className="text-white text-xl font-mono ">
+                                Until HackHayward 2025
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
                     <div className="flex gap-4 max-lg:justify-center lg:mt- mt-2 font-mono">
                         <a
                             className="bg-[#c593e9] text-white lg:h-16 lg:px-14 h-12 px-6 pr-10
