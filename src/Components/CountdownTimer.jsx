@@ -15,6 +15,7 @@ const CountdownTimer = ({ targetDate }) => {
             const target = new Date(targetDate);
             if (isNaN(target.getTime())) {
                 console.error('Invalid target date provided');
+                clearInterval(timer);
                 return;
             }
             const difference = target - new Date();
