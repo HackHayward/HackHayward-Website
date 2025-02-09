@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { BiX } from "react-icons/bi";
+import ReactGA from 'react-ga4';
 
 NotificationBar.propTypes = {
     setDisplay: PropTypes.func.isRequired,
@@ -14,6 +15,15 @@ export default function NotificationBar(props) {
     const action = "Register here";
     // const link = "https://lu.ma/slcpoj81"; Uncomment to use custom link
     
+    const handleClick = (platform) => {
+        ReactGA.event({
+            category: 'hackathon',
+            action: 'Click',
+            label: platform,
+        });
+        console.log(`Google Analytics Event: ${platform} clicked`);
+    };
+
     function closeBar() {
         const notification = document.getElementById("NotificationBar");
         notification.classList.remove("sm:h-12", "h-16");
@@ -34,7 +44,7 @@ export default function NotificationBar(props) {
                         <div className="flex max-sm:flex-col gap-2 items-center text-nowrap">
                             <p><strong>{title}:</strong> </p>
                             <p>{mssg}
-                            {isMore && <a href={props.register /*link*/ } target="_blank" >
+                            {isMore && <a href={props.register /*link*/ } target="_blank" onClick={() => handleClick("Register Notification")}>
                                 <u className="text-sm ml-2">
                                     <strong>{action}</strong>
                                 </u>

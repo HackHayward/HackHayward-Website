@@ -3,6 +3,7 @@ import heroMobile from '/src/assets/imgs/hero/HeroScene-mobile.webp';
 import heroDesktop from '/src/assets/imgs/hero/HeroScene.webp';
 import astro from '/src/assets/imgs/hero/Astro.webp';
 import ReactGA from 'react-ga4';
+import CountdownTimer from './CountdownTimer';
 
 Hero.propTypes = {
     register: PropTypes.string.isRequired,
@@ -22,8 +23,8 @@ export default function Hero(props) {
     return (
         <>
             {/* Title */}
-            <div className="bg-[#30252d] min-h-[calc(100vh-8rem)] grid grid-cols-10">
-                <div className="text-white col-[2/10] row-[1] place-content-center z-50 flex flex-col gap-3 ">
+            <div className="bg-[#30252d] min-h-[calc(100vh-8rem)] grid grid-cols-10 pt-24">
+                <div className="text-white col-[2/10] row-[1] place-content-center z-10 flex flex-col gap-3">
                     <h1 className="lg:text-6xl sm:text-4xl text-4xl max-[340px]:text-4xl font-bold z-3 max-lg:text-center font-exo2	animate-fade-up	shadow-text">
                         Build with AI: HackHayward
                     </h1>
@@ -37,9 +38,22 @@ export default function Hero(props) {
                     <p className="lg:text-4xl text-2xl max-lg:text-center font-grotesk animate-fade-up shadow-text">
                         March 1st & 2nd, 2025
                     </p>
-                    <div className="flex gap-4 max-lg:justify-center lg:mt- mt-2 font-mono">
+                    
+                    {/* Countdown Timer */}
+                    <div className="flex gap-4 max-lg:justify-center mt-2 font-mono animate-fade-up">
+                        <div className="p-1 pb-4 rounded-lg shadow-drop">
+                            <div className="animate-fade-up">
+                                <CountdownTimer targetDate="2025-03-01T08:00:00" />
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="flex gap-4 max-lg:justify-center lg:mt-4 mt-2 font-mono lg:pb-0 max-[375px]:pb-4">
                         <a
                             className="bg-[#c593e9] text-white lg:h-16 lg:px-14 h-12 px-6 pr-10
+
+
                         hover:bg-[#cfb0e8] transition max-lg:text-sm slash-r animate-flip-up text-center flex items-center"
                             target="_blank"
                             href={props.register}
@@ -62,8 +76,10 @@ export default function Hero(props) {
                             Sponsor Us
                         </a>
                     </div>
+
+                    
                 </div>
-                <div className="col-[1/11] row-[1] place-self-end">
+                <div className="col-[1/11] row-[1] place-self-end z-0">
                     <div className="relative">
                         <picture>
                             <source
