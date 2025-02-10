@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import PropTypes from 'prop-types';
 
 const CountdownTimer = ({ targetDate }) => {
@@ -45,9 +45,9 @@ const CountdownTimer = ({ targetDate }) => {
         return () => clearInterval(timer);
     }, [targetDate]);
 
-    const padNumber = (num) => {
+    const padNumber = useCallback(num => {
         return num.toString().padStart(2, '0');
-    };
+    }, []);
 
     const renderDigit = (current, previous, position, unit) => {
         const currentDigits = padNumber(current);
