@@ -1,4 +1,3 @@
-
 /* Smooth Scroll */
 
 
@@ -175,4 +174,17 @@
 .mainBackground {
     background-image: url('./assets/imgs/Background/BBackground.webp');
 }
+
+@keyframes numberChange {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px) rotate(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+/* Remove the .animate-digit class as we're using inline animation */
 
