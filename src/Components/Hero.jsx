@@ -41,11 +41,10 @@ export default function Hero(props) {
                     
                     {/* Countdown Timer */}
                     <div className="flex gap-4 max-lg:justify-center mt-2 font-mono animate-fade-up">
-                        <div className="p-1 pb-4 rounded-lg shadow-drop">
+                        <div className="bg-black/30 backdrop-blur-sm p-1 pb-4 rounded-lg shadow-[0_4px_8px_rgba(0,0,0,0.5)]">
                             <div className="animate-fade-up">
                                 <CountdownTimer targetDate="2025-03-01T08:00:00" />
                             </div>
-
                         </div>
                     </div>
                     
