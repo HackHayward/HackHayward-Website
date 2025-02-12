@@ -69,12 +69,12 @@ function FaqAccordion(props) {
         },
         {
             question: 'What is HackHayward?',
-            answer: 'The first hackathon in Hayward, organized by CSU East Bay Students for all students in the Bay Area due to take place this coming Spring! Aimed towards spreading awareness for marginalized communities, we are open to everyone!',
+            answer: 'The first hackathon in Hayward, organized by CSU East Bay Students for all students in the Bay Area about to take place this coming March 1st and 2nd! Aimed towards spreading awareness for marginalized communities, we are open to everyone!',
         },
 
         {
             question: 'Where will the Hackathon take place?',
-            answer: 'We are taking place in Hayward, CA. ',
+            answer: 'We are taking place in Hayward, CA at the CSU East Bay campus. ',
         },
     ];
 
