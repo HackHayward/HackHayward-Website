@@ -80,31 +80,31 @@ const CountdownTimer = ({ targetDate }) => {
         <div className="flex flex-col gap-2 items-center">
             <div role="timer" aria-live="polite" aria-label="Countdown timer" className="flex gap-4 justify-center my-2">
                 <div className="text-center">
-                    <span className="font-bold text-xl lg:text-4xl inline-flex" aria-label={`Days: ${timeLeft.days}`}>
+                    <span className="font-exo2 font-bold text-xl lg:text-4xl inline-flex" aria-label={`Days: ${timeLeft.days}`}>
                         {[0, 1].map(pos => renderDigit(timeLeft.days, prevTimeLeft.current.days, pos, 'days'))}
                     </span>
-                    <p className="text-sm lg:text-lg" aria-hidden="true">Days</p>
+                    <p className="font-grotesk text-sm lg:text-lg" aria-hidden="true">Days</p>
                 </div>
                 <div className="text-center">
-                    <span className="font-bold text-xl lg:text-4xl inline-flex" aria-label={`Hours: ${timeLeft.hours}`}>
+                    <span className="font-exo2 font-bold text-xl lg:text-4xl inline-flex" aria-label={`Hours: ${timeLeft.hours}`}>
                         {[0, 1].map(pos => renderDigit(timeLeft.hours, prevTimeLeft.current.hours, pos, 'hours'))}
                     </span>
-                    <p className="text-sm lg:text-lg" aria-hidden="true">Hours</p>
+                    <p className="font-grotesk text-sm lg:text-lg" aria-hidden="true">Hours</p>
                 </div>
                 <div className="text-center">
-                    <span className="font-bold text-xl lg:text-4xl inline-flex" aria-label={`Minutes: ${timeLeft.minutes}`}>
+                    <span className="font-exo2 font-bold text-xl lg:text-4xl inline-flex" aria-label={`Minutes: ${timeLeft.minutes}`}>
                         {[0, 1].map(pos => renderDigit(timeLeft.minutes, prevTimeLeft.current.minutes, pos, 'minutes'))}
                     </span>
-                    <p className="text-sm lg:text-lg" aria-hidden="true">Minutes</p>
+                    <p className="font-grotesk text-sm lg:text-lg" aria-hidden="true">Minutes</p>
                 </div>
                 <div className="text-center">
-                    <span className="font-bold text-xl lg:text-4xl inline-flex" aria-label={`Seconds: ${timeLeft.seconds}`}>
+                    <span className="font-exo2 font-bold text-xl lg:text-4xl inline-flex" aria-label={`Seconds: ${timeLeft.seconds}`}>
                         {[0, 1].map(pos => renderDigit(timeLeft.seconds, prevTimeLeft.current.seconds, pos, 'seconds'))}
                     </span>
-                    <p className="text-sm lg:text-lg" aria-hidden="true">Seconds</p>
+                    <p className="font-grotesk text-sm lg:text-lg" aria-hidden="true">Seconds</p>
                 </div>
             </div>
-            <p className="text-white lg:text-3xl sm:text-xl font-mono">
+            <p className="text-white lg:text-3xl sm:text-xl font-exo2 px-6">
                 Until HackHayward!
             </p>
         </div>

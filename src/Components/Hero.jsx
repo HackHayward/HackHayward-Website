@@ -28,19 +28,23 @@ export default function Hero(props) {
                     <h1 className="lg:text-6xl sm:text-4xl text-4xl max-[340px]:text-4xl font-bold z-3 max-lg:text-center font-exo2	animate-fade-up	shadow-text">
                         Build with AI: HackHayward
                     </h1>
-                    <p className="lg:text-4xl text-2xl mt-2 max-lg:text-center font-grotesk animate-fade-up shadow-text">
+                    {/* Tagline or mission statement */}
+                    {/* <p className="lg:text-3xl text-xl mt-2 max-lg:text-center font-thin animate-fade-up shadow-text">
+                        Innovate. Create. Collaborate.
+                    </p> */}
+                    {/* <p className="lg:text-4xl text-2xl mt-2 max-lg:text-center font-grotesk animate-fade-up shadow-text">
                         Hosted by:
                         <br />
                         <p className="lg:text-3xl text-xl font-thin">
                             Department of Computer Science @ CSUEB
                         </p>
-                    </p>
+                    </p> */}
                     <p className="lg:text-4xl text-2xl max-lg:text-center font-grotesk animate-fade-up shadow-text">
                         March 1st & 2nd, 2025
                     </p>
                     
                     {/* Countdown Timer */}
-                    <div className="flex gap-4 max-lg:justify-center mt-2 font-mono animate-fade-up">
+                    <div className="flex gap-4 max-lg:justify-center mt-2 animate-fade-up">
                         <div className="bg-black/30 backdrop-blur-sm p-1 pb-4 rounded-lg shadow-[0_4px_8px_rgba(0,0,0,0.5)]">
                             <div className="animate-fade-up">
                                 <CountdownTimer targetDate="2025-03-01T08:00:00" />
