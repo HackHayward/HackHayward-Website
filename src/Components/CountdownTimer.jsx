@@ -104,7 +104,7 @@ const CountdownTimer = ({ targetDate }) => {
                     <p className="font-grotesk text-sm lg:text-lg" aria-hidden="true">Seconds</p>
                 </div>
             </div>
-            <p className="text-white lg:text-3xl sm:text-xl font-exo2 px-6">
+            <p className="text-white lg:text-3xl sm:text-xl font-exo2  px-6">
                 Until HackHayward!
             </p>
         </div>
