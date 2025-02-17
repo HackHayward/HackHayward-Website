@@ -47,7 +47,7 @@ export default function Sponsor() {
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     onClick={() => handleClick('GCP')}
-                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98]"
+                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98] touch-none"
                                 >
                                     <div className="bg-white p-4 rounded-lg w-full h-[100px] flex items-center justify-center overflow-hidden hover:bg-gray-50 transition-colors">
                                         <img 
@@ -64,7 +64,7 @@ export default function Sponsor() {
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     onClick={() => handleClick('AWS')}
-                                    className="block w-full max-w-[299px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98]"
+                                    className="block w-full max-w-[299px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98] touch-none"
                                 >
                                     <div className="bg-white p-5 rounded-lg w-full h-[100px] flex items-center justify-center overflow-hidden hover:bg-gray-50 transition-colors">
                                         <img 
@@ -81,7 +81,7 @@ export default function Sponsor() {
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     onClick={() => handleClick('CSUEB SOE')}
-                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98]"
+                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98] touch-none"
                                 >
                                     <div className="bg-white p-4 rounded-lg w-full h-[100px] flex items-center justify-center overflow-hidden hover:bg-gray-50 transition-colors">
                                         <img 
@@ -100,7 +100,7 @@ export default function Sponsor() {
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     onClick={() => handleClick('CSUEB DOCS')}
-                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98]"
+                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98] touch-none"
                                 >
                                     <div className="bg-white p-4 rounded-lg w-full h-[100px] flex items-center justify-center overflow-hidden hover:bg-gray-50 transition-colors">
                                         <img 
@@ -117,7 +117,7 @@ export default function Sponsor() {
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     onClick={() => handleClick('Smith Center')}
-                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98]"
+                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98] touch-none"
                                 >
                                     <div className="bg-white p-4 rounded-lg w-full h-[100px] flex items-center justify-center overflow-hidden hover:bg-gray-50 transition-colors">
                                         <img 
