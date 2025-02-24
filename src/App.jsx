@@ -1,4 +1,6 @@
 import './App.css';
+
+// Components
 import NotificationBar from './Components/Notification';
 import NavBar from './Components/NavBar';
 import Hero from './Components/Hero';
@@ -6,9 +8,16 @@ import FAQ from './Components/FAQ';
 import AboutUs from './Components/AboutUs';
 import Footer from './Components/Footer';
 import PilotFalcon from './Components/PilotFalcon';
+import Organizers from './Components/Organizers';
 import Sponsor from './Components/Sponsor';
+
 import ReactGA from 'react-ga4';
 import { useState, useEffect } from 'react';
+
+// Data
+import {users as organizers} from "./assets/data/organizers.jsx";
+import {users as speakers} from "./assets/data/speakers.jsx";
+import {users as judges} from "./assets/data/judges.jsx";
 
 function App() {
     //Scroll to top on load
@@ -32,19 +41,19 @@ function App() {
         }
     }, []);
     // Notification Display
-    const [display, setDisplay] = useState(false);
+    const [display, setDisplay] = useState(true);
     // Links
-    const preRegister = "https://forms.fillout.com/t/cJH9deoDmCus";
+    const register = "https://gdg.community.dev/events/details/google-gdg-on-campus-california-state-university-east-bay-hayward-united-states-presents-build-with-ai-hackhayward/";
 
     return (
         <>
             <header id="home" className="overflow-x-hidden">
-                {display && <NotificationBar setDisplay={setDisplay} />}
+                {display && <NotificationBar setDisplay={setDisplay} register={register}/>}
                 <NavBar />
             </header>
             <main className="mainBackground bg-contain bg-repeat-y overflow-x-hidden">
                 <section className="border-b-8 border-[#c593e9]">
-                    <Hero preRegister={preRegister} />
+                    <Hero register={register} />
                 </section>
                 {/* about us */}
                 <section
@@ -55,7 +64,28 @@ function App() {
                 </section>
                 {/* FAQ */}
                 <section className="p-10 bg-black/50 overflow-hidden" id="faq">
-                    <FAQ />
+                    <FAQ register={register}/>
+                </section>
+                {/* Organizers */}
+                <section
+                    className="pb-16 p-10 bg-black/50 overflow-hidden"
+                    id="organizers"
+                >
+                    <Organizers title="Meet the Team" users={organizers} />
+                </section>
+                {/* Speakers */}
+                <section
+                    className="pb-16 p-10 bg-black/50 overflow-hidden"
+                    id="speakers"
+                >
+                    <Organizers title="Speakers" users={speakers} />
+                </section>
+                {/* Judges */}
+                <section
+                    className="pb-16 p-10 bg-black/50 overflow-hidden"
+                    id="judges"
+                >
+                    <Organizers title="Judges" users={judges} />
                 </section>
                 {/* sponsor */}
                 <section
@@ -71,7 +101,7 @@ function App() {
             </main>
             {/* footer */}
             <footer className="bg-[rgb(48,37,45)] border-t-8 border-[#c593e9] overflow-hidden">
-                <Footer preRegister={preRegister} />
+                <Footer register={register} />
             </footer>
         </>
     );

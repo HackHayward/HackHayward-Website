@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import logo from '/src/assets/imgs/others/Monotone Logo.webp';
+import ReactGA from 'react-ga4';
 
 import {
     BiLogoDiscord,
@@ -9,7 +10,7 @@ import {
 
 
 Footer.propTypes = {
-    preRegister: PropTypes.string.isRequired,
+    register: PropTypes.string.isRequired,
 };
 
 function SocialButtons() {
@@ -50,7 +51,7 @@ function SocialButtons() {
 }
 
 function NavButtons() {
-    const links = [{ text: 'About' }, { text: 'FAQ' }, { text: 'Sponsor Us' }];
+    const links = [{ text: 'About' }, { text: 'FAQ' }, { text: 'Organizers' }, { text: 'Speakers' }, { text: 'Judges' }, { text: 'Sponsor Us' }];
 
     return (
         <>
@@ -70,6 +71,15 @@ function NavButtons() {
 }
 
 export default function Footer(props) {
+    const handleClick = (platform) => {
+        ReactGA.event({
+            category: 'hackathon',
+            action: 'Click',
+            label: platform,
+        });
+        console.log(`Google Analytics Event: ${platform} clicked`);
+    };
+
     return (
         <footer className="bg-[#30252d] text-white">
             <section className="navbar p-8 place-content-between max-lg:flex-col ">
@@ -128,11 +138,12 @@ export default function Footer(props) {
                         <NavButtons />
                         <li className="px-2 max-[310px]:px-0 lg:hover:scale-110 transition">
                             <a
-                                href={props.preRegister}
+                                href={props.register}
                                 className="bg-[#c593e9] hover:bg-[#cfb0e8] rounded-full p-3 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap"
                                 target="_blank"
+                                onClick={() => handleClick('Register')}
                             >
-                                Pre-Register
+                                Register
                             </a>
                         </li>
                     </ul>

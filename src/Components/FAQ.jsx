@@ -1,6 +1,23 @@
-import saturn from '/src/assets/imgs/Background/Saturn.webp';
+import ReactGA from 'react-ga4';
+import PropTypes from 'prop-types';
 
-function FaqAccordion() {
+import jupiter from '/src/assets/imgs/Background/Jupiter.webp';
+
+FaqAccordion.propTypes = {
+    register: PropTypes.string.isRequired,
+};
+
+
+function FaqAccordion(props) {
+    const handleClick = (platform) => {
+        ReactGA.event({
+            category: 'hackathon',
+            action: 'Click',
+            label: platform,
+        });
+        console.log(`Google Analytics Event: ${platform} clicked`);
+    };
+
     const faqs = [
         {
             question: 'What is a Hackathon? ',
@@ -8,7 +25,7 @@ function FaqAccordion() {
         },
         {
             question: 'Who’s allowed to sign up?',
-            answer: 'Anyone who is in college/university or recent graduates aged 18 and up are invited to sign up!',
+            answer: 'Anyone who is in College/University or Highschooler above the age of 18 is invited to sign-up!',
         },
         {
             question: 'How do I sign up?',
@@ -16,19 +33,19 @@ function FaqAccordion() {
                 <>
                     Fill in{' '}
                     <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSeU9aUxOy_6qdsvOSsVW1t91Z3ITRi5ziucR6b4joI-dKJLaQ/viewform"
+                        href={props.register}
                         target="_blank"
                         className="text-[#c593e9] font-bold underline"
+                        onClick={() => handleClick('Register')}
                     >
-                        our pre-registration form
-                    </a>{' '}
-                    and get informed when we open registration!
+                        our registration form!
+                    </a>
                 </>
             ),
         },
         {
             question: 'How long will HackHayward last?',
-            answer: 'We will be hacking over 2 days! Plenty of time to work on your project and join many of our workshops.',
+            answer: 'We will be hacking on March 1st and 2nd with submission in the AM on March 2nd. Plenty of time to work on your project! Some workshops planned.',
         },
         {
             question: 'What does it cost to join?',
@@ -40,7 +57,7 @@ function FaqAccordion() {
         },
         {
             question: 'What can be submitted?',
-            answer: 'Any projects, technical or not, created within the 2 days of Hacking can be submitted!',
+            answer: 'Any projects, technical or not, created within the hacking event schedule!',
         },
         {
             question: 'What do I need to bring to the event?',
@@ -48,16 +65,16 @@ function FaqAccordion() {
         },
         {
             question: 'What if I have no experience?',
-            answer: 'This event is still for you! No technical experience or not majoring in Computer Science? You are still invited! Create creative solutions to the problems in the Hackathon!',
+            answer: 'This event is still for you! No technical experience or not majoring in Computer Science? You are still invited! Create creative solutions to the problems in the Hackathon! Calling all Engineering, Business, Computer Science, and every creative mind in between—ignite your potential at our event! Not in a team yet? No worries—the kickoff networking session is your chance to spark connections and form your dream squad.',
         },
         {
             question: 'What is HackHayward?',
-            answer: 'The first hackathon in Hayward, organized by CSU East Bay Students for all students in the Bay Area due to take place this coming Spring! Aimed towards spreading awareness for marginalized communities, we are open to everyone!',
+            answer: 'The first hackathon in Hayward, organized by CSU East Bay Students for all students in the Bay Area about to take place this coming March 1st and 2nd! Aimed towards spreading awareness for marginalized communities, we are open to everyone!',
         },
 
         {
             question: 'Where will the Hackathon take place?',
-            answer: 'We are taking place in Hayward, CA. ',
+            answer: 'We are taking place in Hayward, CA at the CSU East Bay campus. ',
         },
     ];
 
@@ -81,13 +98,17 @@ function FaqAccordion() {
     );
 }
 
-export default function FAQ() {
+FAQ.propTypes = {
+    register: PropTypes.string.isRequired,
+};
+
+export default function FAQ(props) {
     return (
         <>
             <div className="relative">
                 <div className="text-white text-center font-exo2 flex flex-col items-center gap-9 z-10 shadow-text-sm">
                     <h2 className="hidden md:block text-5xl text-balance max-lg:mx-28 font-bold">
-                        FREQUENTLY ASKED QUESTIONS
+                        Regulations and FAQs
                     </h2>
                     <p className="md:hidden text-5xl font-bold">
                         FAQ
@@ -105,10 +126,15 @@ export default function FAQ() {
                         </a>
                     </p>
                 </div>
-                <FaqAccordion />
-                <div className="opacity-50 absolute top-0 right-[-10%] max-h-[40%] max-w-[40%] ">
-                    <img src={saturn} loading="lazy" alt="Saturn" className="object-cover" />
-                </div>
+                <FaqAccordion register={props.register} />
+                <div className="opacity-50 absolute bottom-[45%] left-[-15%] max-h-[30%] max-w-[30%] z-10">
+                        <img
+                            src={jupiter}
+                            loading="lazy"
+                            alt="Jupiter"
+                            className="object-cover"
+                        />
+                    </div>
             </div>
         </>
     );
