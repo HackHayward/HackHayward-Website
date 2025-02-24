@@ -1,7 +1,7 @@
-import saturn from '/src/assets/imgs/Background/Saturn.webp';
 import ReactGA from 'react-ga4';
 import PropTypes from 'prop-types';
 
+import jupiter from '/src/assets/imgs/Background/Jupiter.webp';
 
 FaqAccordion.propTypes = {
     register: PropTypes.string.isRequired,
@@ -127,9 +127,14 @@ export default function FAQ(props) {
                     </p>
                 </div>
                 <FaqAccordion register={props.register} />
-                <div className="opacity-50 absolute top-0 right-[-10%] max-h-[40%] max-w-[40%] ">
-                    <img src={saturn} loading="lazy" alt="Saturn" className="object-cover" />
-                </div>
+                <div className="opacity-50 absolute bottom-[45%] left-[-15%] max-h-[30%] max-w-[30%] z-10">
+                        <img
+                            src={jupiter}
+                            loading="lazy"
+                            alt="Jupiter"
+                            className="object-cover"
+                        />
+                    </div>
             </div>
         </>
     );

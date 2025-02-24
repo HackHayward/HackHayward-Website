@@ -1,4 +1,6 @@
 import './App.css';
+
+// Components
 import NotificationBar from './Components/Notification';
 import NavBar from './Components/NavBar';
 import Hero from './Components/Hero';
@@ -6,9 +8,16 @@ import FAQ from './Components/FAQ';
 import AboutUs from './Components/AboutUs';
 import Footer from './Components/Footer';
 import PilotFalcon from './Components/PilotFalcon';
+import Organizers from './Components/Organizers';
 import Sponsor from './Components/Sponsor';
+
 import ReactGA from 'react-ga4';
 import { useState, useEffect } from 'react';
+
+// Data
+import {users as organizers} from "./assets/data/organizers.jsx";
+import {users as speakers} from "./assets/data/speakers.jsx";
+import {users as judges} from "./assets/data/judges.jsx";
 
 function App() {
     //Scroll to top on load
@@ -56,6 +65,27 @@ function App() {
                 {/* FAQ */}
                 <section className="p-10 bg-black/50 overflow-hidden" id="faq">
                     <FAQ register={register}/>
+                </section>
+                {/* Organizers */}
+                <section
+                    className="pb-16 p-10 bg-black/50 overflow-hidden"
+                    id="organizers"
+                >
+                    <Organizers title="Meet the Team" users={organizers} />
+                </section>
+                {/* Speakers */}
+                <section
+                    className="pb-16 p-10 bg-black/50 overflow-hidden"
+                    id="speakers"
+                >
+                    <Organizers title="Speakers" users={speakers} />
+                </section>
+                {/* Judges */}
+                <section
+                    className="pb-16 p-10 bg-black/50 overflow-hidden"
+                    id="judges"
+                >
+                    <Organizers title="Judges" users={judges} />
                 </section>
                 {/* sponsor */}
                 <section
