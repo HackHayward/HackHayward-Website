@@ -97,7 +97,7 @@ export default function Sponsor() {
                                 </a>
                                 
                                 {/* Perplexity Logo */}
-                                {/* <a 
+                                <a 
                                     href={sponsorURLs['perplexity']} 
                                     target="_blank" 
                                     rel="noopener noreferrer"
@@ -112,7 +112,7 @@ export default function Sponsor() {
                                             loading="lazy"
                                         />
                                     </div>
-                                </a> */}
+                                </a>
 
                                 {/* Smith Center Logo */}
                                 <a 
