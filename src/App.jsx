@@ -71,7 +71,7 @@ function App() {
                 {/* sponsor */}
                 <section
                     className="pb-16 p-10 bg-black/50 overflow-hidden"
-                    id="sponsor-us"
+                    id="sponsors"
                 >
                     <Sponsor />
                 </section>

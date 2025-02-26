@@ -37,7 +37,7 @@ export default function Sponsor() {
                 <section className="flex flex-col items-center justify-items-center gap-10 text-white max-w-screen-lg">
                     <div className="text-white text-center font-exo2 flex flex-col gap-9">
                         <h2 className="text-5xl text-balance font-bold shadow-text-sm">
-                            SPONSORS
+                            Sponsors
                         </h2>
                         
                         <div className="flex flex-col gap-8">

@@ -51,7 +51,7 @@ function SocialButtons() {
 }
 
 function NavButtons() {
-    const links = [{ text: 'About' }, { text: 'FAQ' }, { text: 'Meet the Teams' }, { text: 'Sponsor Us' }];
+    const links = [{ text: 'About' }, { text: 'FAQ' }, { text: 'Meet the Teams' }, { text: 'Sponsors' }];
 
     return (
         <>

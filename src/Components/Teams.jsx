@@ -37,29 +37,29 @@ export default function Teams({ title }) {
                 <div className="hidden md:flex max-lg:justify-center font-mono">
                     <a
                         onClick={() => setFilter("All")}
-                        className={`bg-[#c593e9] hover:bg-[#cfb0e8] left-[7.5%] w-[175px] text-center slash-r2 p-4 px-8 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap cursor-pointer
-                            ${filter === "All" ? "border-2 border-white" : ""}`}
+                        className={`left-[7.5%] w-[175px] text-center slash-r2 p-4 px-8 transition lg:text-lg text-sm font-grotesk text-nowrap cursor-pointer
+                            ${filter === "All" ? "bg-white text-black hover:bg-[#e9e9e9] font-bold" : "bg-[#c593e9] text-white hover:bg-[#cfb0e8] font-medium"}`}
                     >
                         All
                     </a>
                     <a
                         onClick={() => setFilter("Organizers")}
-                        className={`bg-[#c593e9] hover:bg-[#cfb0e8] left-[2.5%] w-[175px] text-center slash-m2 p-4 px-8 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap cursor-pointer
-                            ${filter === "Organizers" ? "border-2 border-white" : ""}`}
+                        className={`left-[2.5%] w-[175px] text-center slash-m2 p-4 px-8 transition lg:text-lg text-sm font-grotesk text-nowrap cursor-pointer
+                            ${filter === "Organizers" ? "bg-white text-black hover:bg-[#e9e9e9] font-bold" : "bg-[#c593e9] text-white hover:bg-[#cfb0e8] font-medium"}`}
                     >
                         Organizers
                     </a>
                     <a
                         onClick={() => setFilter("Speakers")}
-                        className={`bg-[#c593e9] hover:bg-[#cfb0e8] right-[2.5%] w-[175px] text-center slash-m2 p-4 px-8 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap cursor-pointer
-                            ${filter === "Speakers" ? "border-2 border-white" : ""}`}
+                        className={`right-[2.5%] w-[175px] text-center slash-m2 p-4 px-8 transition  lg:text-lg text-sm font-grotesk text-nowrap cursor-pointer
+                            ${filter === "Speakers" ? "bg-white text-black hover:bg-[#e9e9e9] font-bold" : "bg-[#c593e9] text-white hover:bg-[#cfb0e8] font-medium"}`}
                     >
                         Speakers
                     </a>
                     <a
                         onClick={() => setFilter("Mentors")}
-                        className={`bg-[#c593e9] hover:bg-[#cfb0e8] right-[7.5%] w-[175px] text-center slash-l2 p-4 px-8 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap cursor-pointer
-                            ${filter === "Mentors" ? "border-2 border-white" : ""}`}
+                        className={`right-[7.5%] w-[175px] text-center slash-l2 p-4 px-8 transition lg:text-lg text-sm font-grotesk text-nowrap cursor-pointer
+                            ${filter === "Mentors" ? "bg-white text-black hover:bg-[#e9e9e9] font-bold" : "bg-[#c593e9] text-white hover:bg-[#cfb0e8] font-medium"}`}
                     >
                         Mentors
                     </a>

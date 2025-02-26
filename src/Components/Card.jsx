@@ -31,13 +31,13 @@ export default function Card({ name, desc, pos, img, badge, flair }) {
                 
                 <div className='flex flex-wrap gap-1 mb-2'>
                     {flair.jud &&
-                        <div className="badge badge-secondary badge-info text-white px-3 py-1 rounded-full text-xs">Judge</div>
+                        <div className="badge badge-secondary badge-warning text-white px-3 py-1 rounded-full text-xs">Judge</div>
                     }
                     {flair.mnt &&
                         <div className="badge badge-secondary badge-error text-white px-3 py-1 rounded-full text-xs">Mentor</div>
                     }
                     {flair.spk &&
-                        <div className="badge badge-secondary badge-warning text-white px-3 py-1 rounded-full text-xs">Speaker</div>
+                        <div className="badge badge-secondary badge-info text-white px-3 py-1 rounded-full text-xs">Speaker</div>
                     }
                 </div>
                 
