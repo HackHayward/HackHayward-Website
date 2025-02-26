@@ -38,7 +38,7 @@ export const users = [
         img: Ujas,
         badge: "Co-Founder",
         flair: {
-            spk: true,
+            spk: false,
             jud: false,
             mnt: false,
         }
