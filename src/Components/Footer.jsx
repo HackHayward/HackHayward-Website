@@ -51,14 +51,14 @@ function SocialButtons() {
 }
 
 function NavButtons() {
-    const links = [{ text: 'About' }, { text: 'FAQ' }, { text: 'Organizers' }, { text: 'Speakers' }, { text: 'Judges' }, { text: 'Sponsor Us' }];
+    const links = [{ text: 'About' }, { text: 'FAQ' }, { text: 'Meet the Teams' }, { text: 'Sponsor Us' }];
 
     return (
         <>
             {links.map((link, index) => (
                 <li key={index} className="px-2 lg:hover:scale-110 transition">
                     <a
-                        href={`#${link.text.toLowerCase().replace(' ', '-')}`}
+                        href={`#${link.text.toLowerCase().replaceAll(' ', '-')}`}
                         className="text-white lg:text-lg text-sm font-grotesk
                          font-bold text-nowrap"
                     >

@@ -8,16 +8,11 @@ import FAQ from './Components/FAQ';
 import AboutUs from './Components/AboutUs';
 import Footer from './Components/Footer';
 import PilotFalcon from './Components/PilotFalcon';
-import Organizers from './Components/Organizers';
+import Teams from './Components/Teams';
 import Sponsor from './Components/Sponsor';
 
 import ReactGA from 'react-ga4';
 import { useState, useEffect } from 'react';
-
-// Data
-import {users as organizers} from "./assets/data/organizers.jsx";
-import {users as speakers} from "./assets/data/speakers.jsx";
-import {users as judges} from "./assets/data/judges.jsx";
 
 function App() {
     //Scroll to top on load
@@ -66,26 +61,12 @@ function App() {
                 <section className="p-10 bg-black/50 overflow-hidden" id="faq">
                     <FAQ register={register}/>
                 </section>
-                {/* Organizers */}
+                {/* Teams (orgs, speakers, judges, etc.) */}
                 <section
                     className="pb-16 p-10 bg-black/50 overflow-hidden"
-                    id="organizers"
+                    id="meet-the-teams"
                 >
-                    <Organizers title="Meet the Team" users={organizers} />
-                </section>
-                {/* Speakers */}
-                <section
-                    className="pb-16 p-10 bg-black/50 overflow-hidden"
-                    id="speakers"
-                >
-                    <Organizers title="Speakers" users={speakers} />
-                </section>
-                {/* Judges */}
-                <section
-                    className="pb-16 p-10 bg-black/50 overflow-hidden"
-                    id="judges"
-                >
-                    <Organizers title="Judges" users={judges} />
+                    <Teams title="Meet the Teams" />
                 </section>
                 {/* sponsor */}
                 <section

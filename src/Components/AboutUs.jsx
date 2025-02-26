@@ -1,6 +1,7 @@
 import mars from '/src/assets/imgs/Background/Mars.webp';
 import scene2 from '/src/assets/imgs/Scene2/s2Full.webp';
 import scene3 from '/src/assets/imgs/Scene3/s3Full.webp';
+import jupiter from '/src/assets/imgs/Background/Jupiter.webp';
 
 export default function AboutUs() {
     return (
@@ -59,7 +60,14 @@ export default function AboutUs() {
                             connections.
                         </p>
                     </article>
-                    
+                    <div className="opacity-50 absolute bottom-[0%] left-[-15%] max-h-[30%] max-w-[30%] z-10">
+                        <img
+                            src={jupiter}
+                            loading="lazy"
+                            alt="Jupiter"
+                            className="object-cover"
+                        />
+                    </div>
                 </section>
             </div>
         </>

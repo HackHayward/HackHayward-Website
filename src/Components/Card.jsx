@@ -1,3 +1,4 @@
+import { prototype } from 'postcss/lib/previous-map';
 import PropTypes from 'prop-types';
 
 Card.propTypes = {
@@ -6,32 +7,49 @@ Card.propTypes = {
     pos: PropTypes.string.isRequired,
     img: PropTypes.string.isRequired,
     badge: PropTypes.string.isRequired,
+    flair: PropTypes.shape({
+        spk: PropTypes.bool,
+        jud: PropTypes.bool,
+        mnt: PropTypes.bool,
+    }).isRequired,
 };
 
-export default function Card(props) {
+export default function Card({ name, desc, pos, img, badge, flair }) {
     return(
         <div className="card bg-white w-60 md:w-72">
             <figure>
                 <img
-                src={props.img}
-                alt={props.name} 
+                src={img}
+                alt={name} 
                 loading="lazy"
                 />
             </figure>
             <div className="p-6 text-black font-grotesk">
                 <h2 className="card-title md:text-xl font-bold text-balance">
-                    {props.name}
+                    {name}
+                    
                 </h2>
+                <div className='flex gap-1'>
+                    {flair.jud &&
+                        <div className="badge badge-secondary badge-info text-white">Judge</div>
+                    }
+                    {flair.spk &&
+                        <div className="badge badge-secondary badge-warning text-white">Speaker</div>
+                    }
+                    {flair.mnt &&
+                        <div className="badge badge-secondary badge-error text-white">Mentor</div>
+                    }
+                </div>
                 <h3 className="pt-3">
-                    {props.desc}
+                    {desc}
                 </h3>
                 <h3>
-                    {props.pos}
+                    {pos}
                 </h3>
                 {/* If no badge given, hide it */}
-                {props.badge && 
+                {badge && 
                 <div className="card-actions justify-end pt-3">
-                    <div className="badge badge-outline">{props.badge}</div>
+                    <div className="badge badge-outline">{badge}</div>
                 </div>}
             </div>
         </div>

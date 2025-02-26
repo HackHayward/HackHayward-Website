@@ -42,7 +42,7 @@ export default function Sponsor() {
                         
                         <div className="flex flex-col gap-8">
                             {/* Sponsor Logos */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-items-center">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-items-center z-10">
                                 
 
                                 {/* GCP Logo */}
