@@ -1,0 +1,210 @@
+/* Smooth Scroll */
+* {
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+}
+
+/* Background Image */
+.mainBackground {
+    background-image: url('./assets/imgs/Background/BBackground.webp');
+}
+
+/* Slash Left */
+.slash-l {
+    border-radius: 0px 100px 100px 0px;
+    clip-path: polygon(26% 1%, 100% 1%, 100% 101%, 0% 100%);
+    -webkit-clip-path: polygon(26% 1%, 100% 1%, 100% 101%, 0% 100%);
+    margin: 1rem 0px 0px -5rem;
+    backdrop-filter: blur(3px) brightness(75%);
+    -webkit-backdrop-filter: blur(3px) brightness(75%);
+    z-index: 9;
+}
+
+/* Slash Left Line */
+.slash-l-line {
+    background-color: white;
+    clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0% 100%);
+    transform: rotate(41deg) translate(9.4rem, -7.6rem);
+    height: 5.2rem;
+    width: 2px;
+    position: absolute;
+    z-index: 10;
+}
+
+/* Animation Flip Down */
+.animation-flip-down {
+    animation: down-flip var(--tw-animate-duration, 0.85s)
+        var(--tw-animate-easing, ease) var(--tw-animate-delay, 0s)
+        var(--tw-animate-iteration, 1);
+}
+
+
+/* Mobile View */
+@media screen and (max-width: 1023px) {
+    /* Slash Left */
+
+
+
+    .slash-l {
+        clip-path: polygon(26% 1%, 100% 1%, 100% 101%, 0% 100%);
+        -webkit-clip-path: polygon(26% 1%, 100% 1%, 100% 101%, 0% 100%);
+        margin: 1rem 0px 0px -4rem;
+    }
+
+    /* Slash Left Line */
+    .slash-l-line {
+        clip-path: polygon(0 2%, 100% 0%, 100% 100%, 0% 100%);
+        -webkit-clip-path: polygon(0 2%, 100% 0%, 100% 100%, 0% 100%);
+        transform: rotate(39deg) translate(0.6rem, 0.25rem);
+        height: 3.8rem;
+    }
+
+    .animation-flip-down {
+        animation: down-flip-moblie var(--tw-animate-duration, 0.85s)
+            var(--tw-animate-easing, ease) var(--tw-animate-delay, 0s)
+            var(--tw-animate-iteration, 1);
+    }
+}
+
+/* Slash Right */
+.slash-r {
+    border-radius: 100px 0px 0px 100px;
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+}
+
+/* Slash Right Teams Section */
+.slash-r2 {
+    border-radius: 100px 0px 0px 100px;
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    position: relative;
+}
+
+/* Slash Middle Teams Section */
+.slash-m2 {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    position:  relative;
+}
+
+/* Slash Left Teams Section */
+.slash-l2 {
+    border-radius: 0px 100px 100px 0px;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    position: relative;
+}
+
+/* Shadow Text */
+.shadow-text {
+    text-shadow: 0.125rem 0.125rem 0.0625rem rgba(0, 0, 0, 0.7),
+        0rem -0.0625rem 0.1875rem rgba(0, 0, 0, 0.5),
+        0rem -0.0625rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.shadow-text-sm {
+    text-shadow: 0rem -0.0625rem 0.1875rem rgba(0, 0, 0, 0.8),
+        0rem -0.0625rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+/* Shadow Drop */
+.shadow-drop {
+    -webkit-backdrop-filter: blur(3px) brightness(75%);
+    backdrop-filter: blur(3px) brightness(75%);
+    box-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.7),
+        0 -1px 3px rgba(0, 0, 0, 0.5),
+        0 -1px 8px rgba(0, 0, 0, 0.4);
+}
+
+.shadow-drop-sm {
+    filter: drop-shadow(0rem -0.0625rem 0.1875rem rgba(0, 0, 0, 0.8))
+
+        drop-shadow(0rem -0.0625rem 0.5rem rgba(0, 0, 0, 0.4));
+    -webkit-filter: drop-shadow(0rem -0.0625rem 0.1875rem rgba(0, 0, 0, 0.8))
+
+
+        drop-shadow(0rem -0.0625rem 0.5rem rgba(0, 0, 0, 0.4));
+}
+
+@keyframes down-flip {
+    0% {
+        width: 1px;
+        transform: rotate(41deg) translate(11.1rem, -8.3rem) rotateX(-90deg)
+            rotateZ(15deg);
+
+        transform-origin: top;
+    }
+    100% {
+        transform: rotate(41deg) translate(11.1rem, -8.3rem) rotateX(0)
+            rotateZ(0);
+        transform-origin: top;
+    }
+}
+
+@-webkit-keyframes down-flip {
+    0% {
+        width: 1px;
+        transform: rotate(41deg) translate(11.1rem, -8.3rem) rotateX(-90deg)
+            rotateZ(15deg);
+
+
+        transform-origin: top;
+    }
+    100% {
+        transform: rotate(41deg) translate(11.1rem, -8.3rem) rotateX(0)
+            rotateZ(0);
+        transform-origin: top;
+    }
+}
+
+@keyframes down-flip-moblie {
+    0% {
+        width: 1px;
+        transform: rotate(39deg) translate(1.8rem, -0.1rem) rotateX(-90deg)
+            rotateZ(15deg);
+        transform-origin: top;
+    }
+    100% {
+        transform: rotate(39deg) translate(1.8rem, -0.2rem) rotateX(0)
+            rotateZ(0);
+        transform-origin: top;
+    }
+}
+
+
+@-webkit-keyframes down-flip-moblie {
+    0% {
+        width: 1px;
+        transform: rotate(39deg) translate(1.8rem, -0.1rem) rotateX(-90deg)
+            rotateZ(15deg);
+        transform-origin: top;
+    }
+    100% {
+        transform: rotate(39deg) translate(1.8rem, -0.2rem) rotateX(0)
+            rotateZ(0);
+        transform-origin: top;
+    }
+}
+
+.mainBackground {
+    background-image: url('./assets/imgs/Background/BBackground.webp');
+}
+
+@keyframes numberChange {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+        -webkit-transform: translate3d(0, -20px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Remove the .animate-digit class as we're using inline animation */
+
