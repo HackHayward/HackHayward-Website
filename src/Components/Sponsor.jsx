@@ -78,6 +78,43 @@ export default function Sponsor() {
                                         />
                                     </div>
                                 </a>
+                                {/* Groq Logo */}
+                                <a 
+                                    href={sponsorURLs['Groq']} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    onClick={() => handleClick('Groq')}
+                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98]"
+                                >
+                                    <div className="bg-white p-4 rounded-lg w-full h-[100px] flex items-center justify-center overflow-hidden hover:bg-gray-50 transition-colors">
+                                        <img 
+                                            src={GroqLogo} 
+                                            alt="Groq" 
+                                            className="h-[60px] object-contain mt-2"
+                                        />
+
+                                    </div>
+
+                                </a>
+
+                                {/* Perplexity Logo */}
+                                {<a 
+                                    href={sponsorURLs['Perplexity']} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    onClick={() => handleClick('Perplexity')}
+                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98]"
+                                >
+                                    <div className="bg-white p-4 rounded-lg w-full h-[100px] flex items-center justify-center overflow-hidden hover:bg-gray-50 transition-colors">
+                                        <img 
+                                            src={PerplexityLogo} 
+                                            alt="Groq" 
+                                            className="h-[120px] object-contain mt-2"
+                                        />
+
+                                    </div>
+
+                                </a>}
 
                                 {/* CSUEB SOE Logo */}
                                 <a 
@@ -134,43 +171,7 @@ export default function Sponsor() {
 
                                 </a>
 
-                                {/* Groq Logo */}
-                                <a 
-                                    href={sponsorURLs['Groq']} 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    onClick={() => handleClick('Groq')}
-                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98]"
-                                >
-                                    <div className="bg-white p-4 rounded-lg w-full h-[100px] flex items-center justify-center overflow-hidden hover:bg-gray-50 transition-colors">
-                                        <img 
-                                            src={GroqLogo} 
-                                            alt="Groq" 
-                                            className="h-[160px] object-contain mt-2"
-                                        />
-
-                                    </div>
-
-                                </a>
-
-                                {/* Perplexity Logo */}
-                                {<a 
-                                    href={sponsorURLs['Perplexity']} 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    onClick={() => handleClick('Perplexity')}
-                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98]"
-                                >
-                                    <div className="bg-white p-4 rounded-lg w-full h-[100px] flex items-center justify-center overflow-hidden hover:bg-gray-50 transition-colors">
-                                        <img 
-                                            src={PerplexityLogo} 
-                                            alt="Groq" 
-                                            className="h-[160px] object-contain mt-2"
-                                        />
-
-                                    </div>
-
-                                </a>}
+                                
 
                             </div>
                         </div>
