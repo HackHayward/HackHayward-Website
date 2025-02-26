@@ -1,4 +1,3 @@
-import { prototype } from 'postcss/lib/previous-map';
 import PropTypes from 'prop-types';
 
 Card.propTypes = {
@@ -16,40 +15,42 @@ Card.propTypes = {
 
 export default function Card({ name, desc, pos, img, badge, flair }) {
     return(
-        <div className="card bg-white w-60 md:w-72">
-            <figure>
+        <div className="card bg-white rounded-lg overflow-hidden shadow-md w-72 h-full">
+            <figure className="w-full h-64">
                 <img
                 src={img}
                 alt={name} 
                 loading="lazy"
+                className="w-full h-full object-cover object-center"
                 />
             </figure>
-            <div className="p-6 text-black font-grotesk">
-                <h2 className="card-title md:text-xl font-bold text-balance">
+            <div className="p-6 text-black font-grotesk flex flex-col">
+                <h2 className="text-xl font-bold mb-2">
                     {name}
-                    
                 </h2>
-                <div className='flex gap-1'>
+                
+                <div className='flex flex-wrap gap-1 mb-2'>
                     {flair.jud &&
-                        <div className="badge badge-secondary badge-info text-white">Judge</div>
-                    }
-                    {flair.spk &&
-                        <div className="badge badge-secondary badge-warning text-white">Speaker</div>
+                        <div className="badge badge-secondary badge-info text-white px-3 py-1 rounded-full text-xs">Judge</div>
                     }
                     {flair.mnt &&
-                        <div className="badge badge-secondary badge-error text-white">Mentor</div>
+                        <div className="badge badge-secondary badge-error text-white px-3 py-1 rounded-full text-xs">Mentor</div>
+                    }
+                    {flair.spk &&
+                        <div className="badge badge-secondary badge-warning text-white px-3 py-1 rounded-full text-xs">Speaker</div>
                     }
                 </div>
-                <h3 className="pt-3">
-                    {desc}
-                </h3>
-                <h3>
-                    {pos}
-                </h3>
-                {/* If no badge given, hide it */}
+                
+                <div className="text-sm text-gray-800">
+                    <p className="font-medium">{desc}</p>
+                    <p className="mt-1">{pos}</p>
+                </div>
+                
                 {badge && 
-                <div className="card-actions justify-end pt-3">
-                    <div className="badge badge-outline">{badge}</div>
+                <div className="flex justify-end mt-4">
+                    <div className="badge badge-outline px-3 py-1 rounded-full text-xs">
+                        {badge}
+                    </div>
                 </div>}
             </div>
         </div>
