@@ -1,6 +1,4 @@
 /* Smooth Scroll */
-
-
 * {
     scroll-behavior: smooth;
     -webkit-scroll-behavior: smooth;
@@ -74,6 +72,29 @@
     border-radius: 100px 0px 0px 100px;
     clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+}
+
+/* Slash Right Teams Section */
+.slash-r2 {
+    border-radius: 100px 0px 0px 100px;
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    position: relative;
+}
+
+/* Slash Middle Teams Section */
+.slash-m2 {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    position:  relative;
+}
+
+/* Slash Left Teams Section */
+.slash-l2 {
+    border-radius: 0px 100px 100px 0px;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    position: relative;
 }
 
 /* Shadow Text */

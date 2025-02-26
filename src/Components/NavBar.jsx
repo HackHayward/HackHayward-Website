@@ -3,14 +3,14 @@ import logo from '/src/assets/imgs/others/Monotone Logo.webp';
 import hamburger from '/src/assets/imgs/others/hamburger_Icon.svg';
 
 function NavButtons() {
-    const links = [{ text: 'About' }, { text: 'FAQ' }, { text: 'Organizers' }, { text: 'Speakers' }, { text: 'Judges' }, { text: 'Sponsor Us' }];
+    const links = [{ text: 'About' }, { text: 'FAQ' }, { text: 'Meet the Teams' }, { text: 'Sponsor Us' }];
 
     return (
         <>
             {links.map((link, index) => (
                 <li key={index} className="px-2 lg:hover:scale-110 transition ">
                     <a
-                        href={`#${link.text.toLowerCase().replace(' ', '-')}`}
+                        href={`#${link.text.toLowerCase().replaceAll(' ', '-')}`}
                         className="text-white text-xl font-['Roboto'] font-medium"
                     >
                         {link.text}
