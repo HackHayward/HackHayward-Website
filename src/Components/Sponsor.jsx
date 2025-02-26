@@ -6,8 +6,8 @@ import csueb_soe from '/src/assets/imgs/sponsors/CSUEB_SOE.svg';
 import aws from '/src/assets/imgs/sponsors/Amazon_Web_Services_Logo.svg.png';
 import GCP from '/src/assets/imgs/sponsors/GCP_Cheat_Sheet.png';
 import SCLogo from '/src/assets/imgs/sponsors/updated_smith_logo.png';
-import groq from '/src/assets/imgs/sponsors/GroqLogo_Black.svg';
-import perplexity from '/src/assets/imgs/sponsors/Perplexity-Logo.jpg';
+import GroqLogo from '/src/assets/imgs/sponsors/GroqLogo_Black.svg';
+import PerplexityLogo from '/src/assets/imgs/sponsors/Perplexity-Logo.jpg';
 
 import ReactGA from 'react-ga4';
 
@@ -18,8 +18,8 @@ const sponsorURLs = {
     'AWS': 'https://aws.amazon.com/',
     'GCP': 'https://cloud.google.com/',
     'Smith Center': 'https://www.csueastbay.edu/smith-center/',
-    'groq': 'https://groq.com/',
-    'perplexity': 'https://www.perplexity.ai/'
+    'Groq': 'https://groq.com/',
+    'Perplexity': 'https://www.perplexity.ai/'
 }
 
 export default function Sponsor() {
@@ -37,12 +37,14 @@ export default function Sponsor() {
                 <section className="flex flex-col items-center justify-items-center gap-10 text-white max-w-screen-lg">
                     <div className="text-white text-center font-exo2 flex flex-col gap-9">
                         <h2 className="text-5xl text-balance font-bold shadow-text-sm">
-                            Sponsors
+                            SPONSORS
                         </h2>
                         
                         <div className="flex flex-col gap-8">
                             {/* Sponsor Logos */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-items-center z-10">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-items-center">
+                                
+
                                 {/* GCP Logo */}
                                 <a 
                                     href={sponsorURLs['GCP']} 
@@ -73,63 +75,7 @@ export default function Sponsor() {
                                             src={aws} 
                                             alt="Powered by AWS" 
                                             className="h-[80px] object-contain"
-                                            loading="lazy"
                                         />
-                                    </div>
-                                </a>
-
-                                {/* Groq Logo */}
-                                <a 
-                                    href={sponsorURLs['groq']} 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    onClick={() => handleClick('groq')}
-                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98]"
-                                >
-                                    <div className="bg-white p-4 rounded-lg w-full h-[100px] flex items-center justify-center overflow-hidden hover:bg-gray-50 transition-colors">
-                                        <img 
-                                            src={groq} 
-                                            alt="Groq" 
-                                            className="h-[50px] object-contain" 
-                                            loading="lazy"
-                                        />
-                                    </div>
-                                </a>
-                                
-                                {/* Perplexity Logo */}
-                                <a 
-                                    href={sponsorURLs['perplexity']} 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    onClick={() => handleClick('perplexity')}
-                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98]"
-                                >
-                                    <div className="bg-white p-4 rounded-lg w-full h-[100px] flex items-center justify-center overflow-hidden hover:bg-gray-50 transition-colors">
-                                        <img 
-                                            src={perplexity} 
-                                            alt="Perplexity" 
-                                            className="h-[95px] object-contain" 
-                                            loading="lazy"
-                                        />
-                                    </div>
-                                </a>
-
-                                {/* Smith Center Logo */}
-                                <a 
-                                    href={sponsorURLs['Smith Center']} 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    onClick={() => handleClick('Smith Center')}
-                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98]"
-                                >
-                                    <div className="bg-white p-4 rounded-lg w-full h-[100px] flex items-center justify-center overflow-hidden hover:bg-gray-50 transition-colors">
-                                        <img 
-                                            src={SCLogo} 
-                                            alt="Smith Center" 
-                                            className="h-[160px] object-contain mt-2"
-                                            loading="lazy"
-                                        />
-
                                     </div>
                                 </a>
 
@@ -146,7 +92,6 @@ export default function Sponsor() {
                                             src={csueb_soe} 
                                             alt="CSUEB School of Engineering" 
                                             className="h-16 object-contain select-none"
-                                            loading="lazy"
                                         />
                                     </div>
                                 </a>
@@ -166,12 +111,66 @@ export default function Sponsor() {
                                             src={csueb_docs} 
                                             alt="CSUEB Department of Computer Science" 
                                             className="h-16 object-contain"
-                                            loading="lazy"
                                         />
                                     </div>
                                 </a>
                                 
+                                {/* Smith Center Logo */}
+                                <a 
+                                    href={sponsorURLs['Smith Center']} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    onClick={() => handleClick('Smith Center')}
+                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98]"
+                                >
+                                    <div className="bg-white p-4 rounded-lg w-full h-[100px] flex items-center justify-center overflow-hidden hover:bg-gray-50 transition-colors">
+                                        <img 
+                                            src={SCLogo} 
+                                            alt="Smith Center" 
+                                            className="h-[160px] object-contain mt-2"
+                                        />
 
+                                    </div>
+
+                                </a>
+
+                                {/* Groq Logo */}
+                                <a 
+                                    href={sponsorURLs['Groq']} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    onClick={() => handleClick('Groq')}
+                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98]"
+                                >
+                                    <div className="bg-white p-4 rounded-lg w-full h-[100px] flex items-center justify-center overflow-hidden hover:bg-gray-50 transition-colors">
+                                        <img 
+                                            src={GroqLogo} 
+                                            alt="Groq" 
+                                            className="h-[160px] object-contain mt-2"
+                                        />
+
+                                    </div>
+
+                                </a>
+
+                                {/* Perplexity Logo */}
+                                {<a 
+                                    href={sponsorURLs['Perplexity']} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    onClick={() => handleClick('Perplexity')}
+                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98]"
+                                >
+                                    <div className="bg-white p-4 rounded-lg w-full h-[100px] flex items-center justify-center overflow-hidden hover:bg-gray-50 transition-colors">
+                                        <img 
+                                            src={PerplexityLogo} 
+                                            alt="Groq" 
+                                            className="h-[160px] object-contain mt-2"
+                                        />
+
+                                    </div>
+
+                                </a>}
 
                             </div>
                         </div>
