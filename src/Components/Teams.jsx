@@ -19,7 +19,7 @@ export default function Teams({ title }) {
         if (filter === "All") return true;
         if (filter === "Organizers") return organizer.badge;
         if (filter === "Speakers") return organizer.flair?.spk;
-        if (filter === "Judges") return organizer.flair?.jud;
+        //if (filter === "Judges") return organizer.flair?.jud;
         if (filter === "Mentors") return organizer.flair?.mnt;
         return false;
     });
@@ -37,35 +37,28 @@ export default function Teams({ title }) {
                 <div className="hidden md:flex max-lg:justify-center font-mono">
                     <a
                         onClick={() => setFilter("All")}
-                        className={`bg-[#c593e9] hover:bg-[#cfb0e8] left-[8%] w-[175px] text-center slash-r2 p-4 px-8 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap cursor-pointer
+                        className={`bg-[#c593e9] hover:bg-[#cfb0e8] left-[7.5%] w-[175px] text-center slash-r2 p-4 px-8 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap cursor-pointer
                             ${filter === "All" ? "border-2 border-white" : ""}`}
                     >
                         All
                     </a>
                     <a
                         onClick={() => setFilter("Organizers")}
-                        className={`bg-[#c593e9] hover:bg-[#cfb0e8] left-[4%] w-[175px] text-center slash-m2 p-4 px-8 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap cursor-pointer
+                        className={`bg-[#c593e9] hover:bg-[#cfb0e8] left-[2.5%] w-[175px] text-center slash-m2 p-4 px-8 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap cursor-pointer
                             ${filter === "Organizers" ? "border-2 border-white" : ""}`}
                     >
                         Organizers
                     </a>
                     <a
                         onClick={() => setFilter("Speakers")}
-                        className={`bg-[#c593e9] hover:bg-[#cfb0e8] right-[0%] w-[175px] text-center slash-m2 p-4 px-8 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap cursor-pointer
+                        className={`bg-[#c593e9] hover:bg-[#cfb0e8] right-[2.5%] w-[175px] text-center slash-m2 p-4 px-8 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap cursor-pointer
                             ${filter === "Speakers" ? "border-2 border-white" : ""}`}
                     >
                         Speakers
                     </a>
                     <a
-                        onClick={() => setFilter("Judges")}
-                        className={`bg-[#c593e9] hover:bg-[#cfb0e8] right-[4%] w-[175px] text-center slash-m2 p-4 px-8 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap cursor-pointer
-                            ${filter === "Judges" ? "border-2 border-white" : ""}`}
-                    >
-                        Judges
-                    </a>
-                    <a
                         onClick={() => setFilter("Mentors")}
-                        className={`bg-[#c593e9] hover:bg-[#cfb0e8] right-[8%] w-[175px] text-center slash-l2 p-4 px-8 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap cursor-pointer
+                        className={`bg-[#c593e9] hover:bg-[#cfb0e8] right-[7.5%] w-[175px] text-center slash-l2 p-4 px-8 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap cursor-pointer
                             ${filter === "Mentors" ? "border-2 border-white" : ""}`}
                     >
                         Mentors

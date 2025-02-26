@@ -27,7 +27,7 @@ export const users = [
         badge: "Co-Founder",
         flair: {
             spk: false,
-            jud: true,
+            jud: false,
             mnt: false,
         }
     },
@@ -44,13 +44,13 @@ export const users = [
         }
     },
     {
-        name: "Eugene Vuong",
-        desc: "CSU East Bay",
-        pos: "Organizer",
-        img: Eugene,
-        badge: "Co-Founder",
+        name: "Nidhi Prajapati",
+        desc: "HackHayward - CSU East Bay",
+        pos: "Logistics & Operations",
+        img: Nidhi,
+        badge: "Director",
         flair: {
-            spk: true,
+            spk: false,
             jud: false,
             mnt: false,
         }
@@ -80,6 +80,30 @@ export const users = [
         }
     },
     {
+        name: "Eugene Vuong",
+        desc: "CSU East Bay",
+        pos: "Past Organizer",
+        img: Eugene,
+        badge: "",
+        flair: {
+            spk: true,
+            jud: false,
+            mnt: false,
+        }
+    },
+    {
+        name: "Rhenjiro Gunawan",
+        desc: "HackHayward - CSU East Bay",
+        pos: "Logistics & Operations",
+        img: Rhenjiro,
+        badge: "Organizer",
+        flair: {
+            spk: true,
+            jud: false,
+            mnt: false,
+        }
+    },
+    {
         name: "Yatish & Rakshit",
         desc: "Unknown",
         pos: "Software Engineer",
@@ -92,6 +116,18 @@ export const users = [
         }
     },
     {
+        name: "Lynne Grewe",
+        desc: "CSU East Bay",
+        pos: "Faculty Avisor and Professor",
+        img: Lynne,
+        badge: "",
+        flair: {
+            spk: false,
+            jud: false,
+            mnt: true,
+        }
+    },
+    {
         name: "Levent Ertual",
         desc: "CSU East Bay",
         pos: "C.S. Chair and Professor",
@@ -100,30 +136,6 @@ export const users = [
         flair: {
             spk: false,
             jud: false,
-            mnt: true,
-        }
-    },
-    {
-        name: "Lynne Grewe",
-        desc: "CSU East Bay",
-        pos: "Professor",
-        img: Lynne,
-        badge: "Organizer",
-        flair: {
-            spk: false,
-            jud: false,
-            mnt: true,
-        }
-    },
-    {
-        name: "Tony Hu",
-        desc: "Unknown",
-        pos: "Software Engineer",
-        img: Unknown,
-        badge: "",
-        flair: {
-            spk: false,
-            jud: true,
             mnt: true,
         }
     },
@@ -140,27 +152,15 @@ export const users = [
         }
     },
     {
-        name: "Nidhi Prajapati",
-        desc: "HackHayward - CSU East Bay",
-        pos: "Logistics & Operations",
-        img: Nidhi,
-        badge: "Director",
+        name: "Tony Hu",
+        desc: "Unknown",
+        pos: "Software Engineer",
+        img: Unknown,
+        badge: "",
         flair: {
             spk: false,
             jud: false,
-            mnt: false,
-        }
-    },
-    {
-        name: "Rhenjiro Gunawan",
-        desc: "HackHayward - CSU East Bay",
-        pos: "Logistics & Operations",
-        img: Rhenjiro,
-        badge: "Organizer",
-        flair: {
-            spk: true,
-            jud: false,
-            mnt: false,
+            mnt: true,
         }
     },
     {
@@ -207,7 +207,7 @@ export const users = [
         badge: "Lead",
         flair: {
             spk: false,
-            jud: true,
+            jud: false,
             mnt: false,
         }
     },

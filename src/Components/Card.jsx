@@ -15,7 +15,7 @@ Card.propTypes = {
 
 export default function Card({ name, desc, pos, img, badge, flair }) {
     return(
-        <div className="card bg-white rounded-lg overflow-hidden shadow-md w-72 h-full">
+        <div className="card bg-white rounded-lg overflow-hidden shadow-md w-60 md:w-72 h-full">
             <figure className="w-full h-64">
                 <img
                 src={img}
