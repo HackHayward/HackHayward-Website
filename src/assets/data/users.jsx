@@ -17,6 +17,7 @@ import Joseph from "/src/assets/imgs/users/Joseph.webp";
 import Naman from "/src/assets/imgs/users/Naman.webp";
 import Gehna from "/src/assets/imgs/users/Gehna.webp";
 import Eugene from "/src/assets/imgs/users/Eugene.webp";
+import Wail from "/src/assets/imgs/users/wail.webp";
 
 export const users = [
     {
@@ -247,4 +248,16 @@ export const users = [
             mnt: false,
         }
     },
+    {
+        name: "Wail Mohammad",
+        desc: "",
+        pos: "Photographer",
+        img: Wail,
+        badge: "",
+        flair: {
+            spk: false,
+            jud: false,
+            mnt: false,
+        }
+    }
 ]
