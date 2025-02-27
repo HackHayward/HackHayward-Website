@@ -13,7 +13,7 @@ Teams.propTypes = {
 
 export default function Teams({ title }) {
     const [isHovered, setIsHovered] = useState(false);
-    const [filter, setFilter] = useState("All");
+    const [filter, setFilter] = useState("Organizers");
 
     const filteredUsers = users.filter((organizer) => {
         if (filter === "All") return true;
@@ -86,7 +86,6 @@ export default function Teams({ title }) {
                             <li><a onClick={() => setFilter("All")}>All</a></li>
                             <li><a onClick={() => setFilter("Organizers")}>Organizers</a></li>
                             <li><a onClick={() => setFilter("Speakers")}>Speakers</a></li>
-                            <li><a onClick={() => setFilter("Judges")}>Judges</a></li>
                             <li><a onClick={() => setFilter("Mentors")}>Mentors</a></li>
                         </ul>
                     </div>

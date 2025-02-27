@@ -3,7 +3,7 @@ import logo from '/src/assets/imgs/others/Monotone Logo.webp';
 import hamburger from '/src/assets/imgs/others/hamburger_Icon.svg';
 
 function NavButtons() {
-    const links = [{ text: 'About' }, { text: 'FAQ' }, { text: 'Meet the Teams' }, { text: 'Sponsors' }];
+    const links = [{ text: 'About' }, { text: 'FAQ' }, { text: 'Teams' }, { text: 'Sponsors' }];
 
     return (
         <>

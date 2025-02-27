@@ -29,7 +29,7 @@ export default function Card({ name, desc, pos, img, badge, flair }) {
                     {name}
                 </h2>
                 
-                <div className='flex flex-wrap gap-1 mb-2'>
+                {/*<div className='flex flex-wrap gap-1 mb-2'> //Temporary disable
                     {flair.jud &&
                         <div className="badge badge-secondary badge-warning text-white px-3 py-1 rounded-full text-xs">Judge</div>
                     }
@@ -39,7 +39,7 @@ export default function Card({ name, desc, pos, img, badge, flair }) {
                     {flair.spk &&
                         <div className="badge badge-secondary badge-info text-white px-3 py-1 rounded-full text-xs">Speaker</div>
                     }
-                </div>
+                </div>*/}
                 
                 <div className="text-sm text-gray-800">
                     <p className="font-medium">{desc}</p>
