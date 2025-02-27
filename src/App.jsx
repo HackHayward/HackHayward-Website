@@ -64,7 +64,7 @@ function App() {
                 {/* Teams (orgs, speakers, judges, etc.) */}
                 <section
                     className="pb-16 p-10 bg-black/50 overflow-hidden"
-                    id="meet-the-teams"
+                    id="teams"
                 >
                     <Teams title="Meet the Teams" />
                 </section>
