@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import logo from '/src/assets/imgs/others/Monotone Logo.webp';
 import ReactGA from 'react-ga4';
+import { useCountdown } from '../context/CountdownContext';
+import { useLocation } from 'react-router-dom';
 
 import {
     BiLogoDiscord,
@@ -71,6 +73,10 @@ function NavButtons() {
 }
 
 export default function Footer(props) {
+    const { hasCountdownEnded } = useCountdown();
+    const location = useLocation();
+    const isLiveDashboard = location.pathname === '/live';
+    
     const handleClick = (platform) => {
         ReactGA.event({
             category: 'hackathon',
@@ -136,16 +142,18 @@ export default function Footer(props) {
                 <nav className="flex flex-col items-end">
                     <ul className="menu-vertical sm:menu-horizontal px-1 gap-2 max-[410px]:gap-0 font-extrabold whitespace-nowrap">
                         <NavButtons />
-                        <li className="px-2 max-[310px]:px-0 lg:hover:scale-110 transition mt-6 sm:mt-0">
-                            <a
-                                href={props.register}
-                                className="bg-[#c593e9] hover:bg-[#cfb0e8] rounded-full p-3 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap"
-                                target="_blank"
-                                onClick={() => handleClick('Register')}
-                            >
-                                Register
-                            </a>
-                        </li>
+                        {!hasCountdownEnded && !isLiveDashboard && (
+                            <li className="px-2 max-[310px]:px-0 lg:hover:scale-110 transition mt-6 sm:mt-0">
+                                <a
+                                    href={props.register}
+                                    className="bg-[#c593e9] hover:bg-[#cfb0e8] rounded-full p-3 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap"
+                                    target="_blank"
+                                    onClick={() => handleClick('Register')}
+                                >
+                                    Register
+                                </a>
+                            </li>
+                        )}
                     </ul>
                 </nav>
             </section>
