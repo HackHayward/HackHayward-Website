@@ -60,6 +60,11 @@ export default function Dashboard() {
     }
   }, []);
 
+  // Define text shadow styles
+  const textShadowStyle = {
+    textShadow: '0 2px 4px rgba(0, 0, 0, 0.7), 0 1px 2px rgba(0, 0, 0, 0.5)'
+  };
+
   return (
     <>
     
@@ -69,7 +74,7 @@ export default function Dashboard() {
       <div className="bg-black/50">
       
         <main className="mainBackground bg-contain bg-repeat-y overflow-x-hidden ">
-          {/* <div className="absolute inset-0 bg-gradient-to-b from-[#1a1229]/0 to-[#271d2d]/90 pointer-events-none"></div> */}
+          
           
           <section className="pt-36 px-4 md:px-10 text-white relative">
             {/* Uranus positioned behind the rotating text */}
@@ -81,12 +86,12 @@ export default function Dashboard() {
                   className="object-cover" />
             </div>
             
-            <h1 className="text-5xl md:text-5xl sm:text-4xl font-bold font-exo2 text-center mb-12 animate-fade-up shadow-text relative z-10">
-              <div className="flex flex-wrap items-baseline justify-center gap-2">
-                <span className="inline-block">HackHayward&apos;s</span>{" "}
+            <h1 className="text-4xl md:text-5xl font-bold font-exo2 text-center mb-12 animate-fade-up relative z-10 max-w-4xl mx-auto" style={textShadowStyle}>
+              <div className="flex flex-col md:flex-row items-center justify-center gap-2">
+                <span className="inline-block">HackHayward&apos;s</span>
                 <RotatingText
                   texts={rotatingWords}
-                  mainClassName="px-4 md:px-4 text-[#c593e9] overflow-hidden py-1 inline-flex justify-center rounded-xl relative"
+                  mainClassName="px-4 md:px-4 text-[#c593e9] overflow-hidden py-1 inline-flex justify-center rounded-xl relative mt-2 md:mt-0"
                   staggerFrom={"last"}
                   initial={{ y: "100%" }}
                   animate={{ y: "0%" }}
@@ -115,21 +120,21 @@ export default function Dashboard() {
                 </div>
                 
                 {/* Bottom Section - Event Info (columns on desktop) */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-6">
                   {/* Left Column - Event Schedule (wider) */}
                   <div className="bg-black/85 backdrop-blur-md p-6 rounded-lg border border-gray-800 shadow-[0_15px_30px_-10px_rgba(0,0,0,0.7)] hover:shadow-[0_20px_35px_-5px_rgba(197,147,233,0.3)] transition-shadow duration-300 h-full order-2 md:order-1">
                     <EventSchedule />
                   </div>
                   
                   {/* Right Column - Next Event and Countdown stacked */}
-                  <div className="flex flex-col gap-3 md:gap-6 order-1 md:order-2">
+                  <div className="flex flex-col gap-6 md:gap-6 order-1 md:order-2">
                       {/* Time Remaining - Fixed height */}
                       <div className="bg-black/85 backdrop-blur-md p-6 rounded-lg border border-gray-800 shadow-[0_15px_30px_-10px_rgba(0,0,0,0.7)] hover:shadow-[0_20px_35px_-5px_rgba(197,147,233,0.3)] transition-shadow duration-300 h-[180px] overflow-hidden">
                         <DashCountdown targetDate={submissionDeadline} />
                       </div>
                       
-                      {/* Next Event - Flexible height with minimum */}
-                      <div className="bg-black/85 backdrop-blur-md p-6 rounded-lg border border-gray-800 shadow-[0_15px_30px_-10px_rgba(0,0,0,0.7)] hover:shadow-[0_20px_35px_-5px_rgba(197,147,233,0.3)] transition-shadow duration-300 min-h-[180px] overflow-hidden">
+                      {/* Next Event - Increased min-height to prevent shadow cutoff */}
+                      <div className="bg-black/85 backdrop-blur-md p-6 rounded-lg border border-gray-800 shadow-[0_15px_30px_-10px_rgba(0,0,0,0.7)] hover:shadow-[0_20px_35px_-5px_rgba(197,147,233,0.3)] transition-shadow duration-300 min-h-[200px] overflow-hidden">
                         <NextEvent />
                       </div>
                   </div>

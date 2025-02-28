@@ -80,10 +80,15 @@ export default function EventSchedule() {
     return urlMatch ? urlMatch[0] : null;
   };
 
+  // Define text shadow styles
+  const textShadowStyle = {
+    textShadow: '0 2px 4px rgba(0, 0, 0, 0.7), 0 1px 2px rgba(0, 0, 0, 0.5)'
+  };
+
   return (
     <div className="font-grotesk">
       <div className="flex flex-col lg:flex-row justify-between items-center mb-6 gap-3 lg:gap-0">
-        <h2 className="text-3xl font-bold font-exo2 shadow-text">Event Schedule</h2>
+        <h2 className="text-3xl font-bold font-exo2" style={textShadowStyle}>Event Schedule</h2>
         
         {/* Tab buttons for desktop only - hidden on tablet and mobile */}
         <div className="hidden lg:flex font-grotesk overflow-hidden rounded-full">
@@ -162,7 +167,7 @@ export default function EventSchedule() {
                 </p>
               </div>
             </div>
-            <h3 className="text-xl font-bold mt-1 shadow-text">{event.title}</h3>
+            <h3 className="text-xl font-bold mt-1" style={textShadowStyle}>{event.title}</h3>
             {event.description && (
               <p className="mt-2 text-white/80 drop-shadow-sm">
                 {event.description.replace(/\(https?:\/\/[^\s)]+\)/, '')}

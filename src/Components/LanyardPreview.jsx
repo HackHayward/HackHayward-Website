@@ -6,7 +6,7 @@ import Lanyard from './Lanyard';
 export default function LanyardPreview() {
   return (
     <div>
-      <h2 className="text-3xl font-bold font-exo2 mb-4">Your HackHayward Virtual Badge</h2>
+      <h2 className="text-xl sm:text-2xl font-bold font-exo2 mb-4">Your HackHayward Virtual Badge</h2>
       <p className="text-white/80 mb-4 font-grotesk">
         Here&apos;s a preview of your event badge. Drag to interact.
       </p>
