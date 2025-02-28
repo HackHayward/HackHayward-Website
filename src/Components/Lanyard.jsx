@@ -5,6 +5,7 @@ import { Canvas, extend, useThree, useFrame } from '@react-three/fiber';
 import { useGLTF, useTexture, Environment, Lightformer } from '@react-three/drei';
 import { BallCollider, CuboidCollider, Physics, RigidBody, useRopeJoint, useSphericalJoint } from '@react-three/rapier';
 import { MeshLineGeometry, MeshLineMaterial } from 'meshline';
+import PropTypes from 'prop-types';
 
 import cardGLB from "/src/assets/lanyard/card.glb";
 import lanyard from "/src/assets/lanyard/lanyard.webp";
@@ -13,6 +14,14 @@ import * as THREE from 'three';
 
 
 extend({ MeshLineGeometry, MeshLineMaterial });
+
+// PropTypes for Lanyard component
+Lanyard.propTypes = {
+  position: PropTypes.arrayOf(PropTypes.number),
+  gravity: PropTypes.arrayOf(PropTypes.number),
+  fov: PropTypes.number,
+  transparent: PropTypes.bool
+};
 
 export default function Lanyard({ position = [0, 0, 10], gravity = [0, -40, 0], fov = 20, transparent = true }) {
   return (
@@ -36,6 +45,12 @@ export default function Lanyard({ position = [0, 0, 10], gravity = [0, -40, 0], 
     </div>
   );
 }
+
+// PropTypes for Band component
+Band.propTypes = {
+  maxSpeed: PropTypes.number,
+  minSpeed: PropTypes.number
+};
 
 function Band({ maxSpeed = 50, minSpeed = 10 }) {
   const band = useRef(), fixed = useRef(), j1 = useRef(), j2 = useRef(), j3 = useRef(), card = useRef();
