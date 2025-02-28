@@ -1,7 +1,6 @@
 import './App.css';
 
 // Components
-import NotificationBar from './Components/Notification';
 import NavBar from './Components/NavBar';
 import Hero from './Components/Hero';
 import FAQ from './Components/FAQ';
@@ -12,7 +11,7 @@ import Teams from './Components/Teams';
 import Sponsor from './Components/Sponsor';
 
 import ReactGA from 'react-ga4';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 
 function App() {
     //Scroll to top on load
@@ -36,14 +35,12 @@ function App() {
         }
     }, []);
     // Notification Display
-    const [display, setDisplay] = useState(true);
     // Links
     const register = "https://gdg.community.dev/events/details/google-gdg-on-campus-california-state-university-east-bay-hayward-united-states-presents-build-with-ai-hackhayward/";
 
     return (
         <>
             <header id="home" className="overflow-x-hidden">
-                {display && <NotificationBar setDisplay={setDisplay} register={register}/>}
                 <NavBar />
             </header>
             <main className="mainBackground bg-contain bg-repeat-y overflow-x-hidden">
