@@ -20,13 +20,10 @@ export default function EventSchedule() {
       // ...
       const currentEvent = dayEvents.find(event => {
         
-        const eventTime = new Date(`${event.day}, 2025 ${event.time}`);
-        const [startHour, startMinute] = event.time.split(':').map(num => parseInt(num));
         const eventStart = new Date(`${event.day}, 2025 ${event.time}`);
-
         const eventEnd = new Date(eventStart);
         eventEnd.setHours(eventStart.getHours() + (event.durationHours || 1)); // Default to 1 hour if duration not specified
-        return eventTime >= now && now < eventEnd;
+        return now >= eventStart && now < eventEnd;
       });
       setCurrentEvent(currentEvent);
     };
