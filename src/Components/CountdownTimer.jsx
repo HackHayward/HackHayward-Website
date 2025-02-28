@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import PropTypes from 'prop-types';
+import { useCountdown } from '../context/CountdownContext';
 
 const CountdownTimer = ({ targetDate }) => {
     const [timeLeft, setTimeLeft] = useState({
@@ -10,6 +11,7 @@ const CountdownTimer = ({ targetDate }) => {
     });
     const [hasStarted, setHasStarted] = useState(false);
     const prevTimeLeft = useRef(timeLeft);
+    const { setHasCountdownEnded } = useCountdown();
 
     useEffect(() => {
         const calculateTimeLeft = () => {
@@ -34,6 +36,7 @@ const CountdownTimer = ({ targetDate }) => {
                 });
             } else {
                 setHasStarted(true);
+                setHasCountdownEnded(true);
                 setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
                 clearInterval(timer);
             }
@@ -43,7 +46,7 @@ const CountdownTimer = ({ targetDate }) => {
         calculateTimeLeft();
 
         return () => clearInterval(timer);
-    }, [targetDate]);
+    }, [targetDate, setHasCountdownEnded]);
 
     const padNumber = useCallback(num => {
         return num.toString().padStart(2, '0');

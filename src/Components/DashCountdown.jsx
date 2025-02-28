@@ -57,7 +57,7 @@ const DashCountdown = ({ targetDate }) => {
         return (
             <span 
                 key={`${unit}-${position}-${hasChanged ? current : digit}`}
-                className={`inline-block transform transition-all duration-1000 ${
+                className={`inline-block transform transition-all duration-1000 text-shadow-glow ${
                     hasChanged ? 'opacity-0 animate-[numberChange_0.5s_ease-out_forwards]' : ''
                 }`}
             >
@@ -68,44 +68,44 @@ const DashCountdown = ({ targetDate }) => {
 
     return (
         <div className="h-full flex flex-col justify-center">
-            <h3 className="text-2xl font-bold font-exo2 mb-2">
+            <h3 className="text-2xl font-bold font-exo2 mb-2 shadow-text">
                 {hasEnded ? "Submission Deadline Passed" : "Time Remaining for Submissions"}
             </h3>
             
             {hasEnded ? (
                 <div className="py-1">
-                    <p className="text-red-400 font-bold">Submissions are now closed</p>
-                    <p className="text-sm mt-1 opacity-80">Judging will begin shortly</p>
+                    <p className="text-red-400 font-bold drop-shadow-md">Submissions are now closed</p>
+                    <p className="text-sm mt-1 opacity-80 drop-shadow-sm">Judging will begin shortly</p>
                 </div>
             ) : (
                 <div className="flex flex-col items-center">
                     <div role="timer" aria-live="polite" aria-label="Countdown timer" className="flex justify-center gap-3 my-1">
                         <div className="text-center px-1">
-                            <span className="font-exo font-bold text-2xl inline-flex" aria-label={`Days: ${timeLeft.days}`}>
+                            <span className="font-exo font-bold text-2xl inline-flex drop-shadow-md" aria-label={`Days: ${timeLeft.days}`}>
                                 {[0, 1].map(pos => renderDigit(timeLeft.days, prevTimeLeft.current.days, pos, 'days'))}
                             </span>
-                            <p className="font-grotesk text-xs" aria-hidden="true">Days</p>
+                            <p className="font-grotesk text-xs drop-shadow-sm" aria-hidden="true">Days</p>
                         </div>
                         <div className="text-center px-1">
-                            <span className="font-exo font-bold text-2xl inline-flex" aria-label={`Hours: ${timeLeft.hours}`}>
+                            <span className="font-exo font-bold text-2xl inline-flex drop-shadow-md" aria-label={`Hours: ${timeLeft.hours}`}>
                                 {[0, 1].map(pos => renderDigit(timeLeft.hours, prevTimeLeft.current.hours, pos, 'hours'))}
                             </span>
-                            <p className="font-grotesk text-xs" aria-hidden="true">Hours</p>
+                            <p className="font-grotesk text-xs drop-shadow-sm" aria-hidden="true">Hours</p>
                         </div>
                         <div className="text-center px-1">
-                            <span className="font-exo font-bold text-2xl inline-flex" aria-label={`Minutes: ${timeLeft.minutes}`}>
+                            <span className="font-exo font-bold text-2xl inline-flex drop-shadow-md" aria-label={`Minutes: ${timeLeft.minutes}`}>
                                 {[0, 1].map(pos => renderDigit(timeLeft.minutes, prevTimeLeft.current.minutes, pos, 'minutes'))}
                             </span>
-                            <p className="font-grotesk text-xs" aria-hidden="true">Mins</p>
+                            <p className="font-grotesk text-xs drop-shadow-sm" aria-hidden="true">Mins</p>
                         </div>
                         <div className="text-center px-1">
-                            <span className="font-exo font-bold text-2xl inline-flex" aria-label={`Seconds: ${timeLeft.seconds}`}>
+                            <span className="font-exo font-bold text-2xl inline-flex drop-shadow-md" aria-label={`Seconds: ${timeLeft.seconds}`}>
                                 {[0, 1].map(pos => renderDigit(timeLeft.seconds, prevTimeLeft.current.seconds, pos, 'seconds'))}
                             </span>
-                            <p className="font-grotesk text-xs" aria-hidden="true">Secs</p>
+                            <p className="font-grotesk text-xs drop-shadow-sm" aria-hidden="true">Secs</p>
                         </div>
                     </div>
-                    <p className="text-sm text-center font-medium mt-1 text-amber-300">
+                    <p className="text-sm text-center font-medium mt-1 text-amber-300 drop-shadow-lg">
                         Submit your projects before the deadline!
                     </p>
                 </div>

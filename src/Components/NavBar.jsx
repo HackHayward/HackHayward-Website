@@ -1,16 +1,24 @@
 import MLH from './MLH';
 import logo from '/src/assets/imgs/others/Monotone Logo.webp';
 import hamburger from '/src/assets/imgs/others/hamburger_Icon.svg';
+import { useCountdown } from '../context/CountdownContext';
 
 function NavButtons() {
-    const links = [{ text: 'About' }, { text: 'FAQ' }, { text: 'Teams' }, { text: 'Sponsors' }];
+    const { hasCountdownEnded } = useCountdown();
+    // Base links without Live
+    const baseLinks = [{ text: 'About' }, { text: 'FAQ' }, { text: 'Teams' }, { text: 'Sponsors' }];
+    
+    // Conditionally add Live link only if countdown has ended
+    const links = hasCountdownEnded ? 
+        [...baseLinks, { text: 'Live', path: '/live' }] : 
+        baseLinks;
 
     return (
         <>
             {links.map((link, index) => (
                 <li key={index} className="px-2 lg:hover:scale-110 transition ">
                     <a
-                        href={`#${link.text.toLowerCase().replaceAll(' ', '-')}`}
+                        href={link.path || `#${link.text.toLowerCase().replaceAll(' ', '-')}`}
                         className="text-white text-xl font-['Roboto'] font-medium"
                     >
                         {link.text}
@@ -27,7 +35,7 @@ export default function NavBar() {
             <nav className="navbar absolute z-[9999] lg:p-10 ">
                 <div className="max-lg:flex-1">
                     <a
-                        href="#home"
+                        href="/"
                         className="max-lg:h-20 max-sm:h-16 hover:scale-110 transition"
                     >
                         <img

@@ -52,13 +52,14 @@ export default function Dashboard() {
 
   return (
     <>
+    
       <header id="home" className="overflow-x-hidden">
         <NavBar />
       </header>
-
+      <div className="bg-black/50">
       <main className="mainBackground bg-contain bg-repeat-y overflow-x-hidden ">
         {/* <div className="absolute inset-0 bg-gradient-to-b from-[#1a1229]/0 to-[#271d2d]/90 pointer-events-none"></div> */}
-        <div className="bg-black/50">
+        
         <section className="pt-36 px-4 md:px-10 text-white relative">
           {/* Uranus positioned behind the rotating text */}
           <div className="absolute opacity-[40%] top-[10%] right-[-5%] max-h-[40%] max-w-[40%] z-0 pointer-events-none opacity-80">
@@ -88,7 +89,7 @@ export default function Dashboard() {
             {/* Main content grid */}
             <div className="grid grid-cols-1 gap-6 mb-6 relative z-10">
               {/* Top Section - Badge Preview */}
-              <div className="bg-black/85 backdrop-blur-md p-6 rounded-lg border border-gray-800 shadow-lg">
+              <div className="bg-black/85 backdrop-blur-md p-6 rounded-lg border border-gray-800 shadow-[0_15px_30px_-10px_rgba(0,0,0,0.7)] hover:shadow-[0_20px_35px_-5px_rgba(197,147,233,0.3)] transition-shadow duration-300">
                 <Suspense fallback={<LanyardFallback />}>
                   <ErrorBoundary FallbackComponent={LanyardFallback}>
                     <LanyardPreview />
@@ -99,19 +100,19 @@ export default function Dashboard() {
               {/* Bottom Section - Event Info (columns on desktop) */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Left Column - Event Schedule (wider) */}
-                <div className="bg-black/85 backdrop-blur-md p-6 rounded-lg border border-gray-800 shadow-lg h-full order-2 md:order-1">
+                <div className="bg-black/85 backdrop-blur-md p-6 rounded-lg border border-gray-800 shadow-[0_15px_30px_-10px_rgba(0,0,0,0.7)] hover:shadow-[0_20px_35px_-5px_rgba(197,147,233,0.3)] transition-shadow duration-300 h-full order-2 md:order-1">
                   <EventSchedule />
                 </div>
                 
                 {/* Right Column - Next Event and Countdown stacked */}
                 <div className="grid grid-cols-1 gap-6 grid-rows-5 order-1 md:order-2">
                     {/* Time Remaining - Fixed height */}
-                    <div className="bg-black/85 backdrop-blur-md p-6 rounded-lg border border-gray-800 shadow-lg h-[180px] overflow-hidden">
+                    <div className="bg-black/85 backdrop-blur-md p-6 rounded-lg border border-gray-800 shadow-[0_15px_30px_-10px_rgba(0,0,0,0.7)] hover:shadow-[0_20px_35px_-5px_rgba(197,147,233,0.3)] transition-shadow duration-300 h-[180px] overflow-hidden">
                       <DashCountdown targetDate={submissionDeadline} />
                     </div>
                     
-                    {/* Next Event - Fixed height */}
-                    <div className="bg-black/85 backdrop-blur-md p-6 rounded-lg border border-gray-800 shadow-lg h-[180px] overflow-hidden">
+                    {/* Next Event - Flexible height with minimum */}
+                    <div className="bg-black/85 backdrop-blur-md p-6 rounded-lg border border-gray-800 shadow-[0_15px_30px_-10px_rgba(0,0,0,0.7)] hover:shadow-[0_20px_35px_-5px_rgba(197,147,233,0.3)] transition-shadow duration-300 min-h-[180px] overflow-hidden">
                       <NextEvent />
                     </div>
                 </div>
@@ -124,9 +125,8 @@ export default function Dashboard() {
             <img src={mars} loading="lazy" alt="Mars" className="object-cover" />
           </div>
         </section>
-        </div>
       </main>
-      
+      </div>
       <footer className="bg-[rgb(48,37,45)] border-t-8 border-[#c593e9] overflow-hidden">
         <Footer register={register} />
       </footer>
