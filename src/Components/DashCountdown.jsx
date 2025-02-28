@@ -57,18 +57,24 @@ const DashCountdown = ({ targetDate }) => {
         return (
             <span 
                 key={`${unit}-${position}-${hasChanged ? current : digit}`}
-                className={`inline-block transform transition-all duration-1000 text-shadow-glow ${
+                className={`inline-block transform transition-all duration-1000 ${
                     hasChanged ? 'opacity-0 animate-[numberChange_0.5s_ease-out_forwards]' : ''
                 }`}
+                style={{ textShadow: '0 0 10px rgba(255, 255, 255, 0.4)' }}
             >
                 {digit}
             </span>
         );
     };
 
+    // Define text shadow styles
+    const textShadowStyle = {
+        textShadow: '0 2px 4px rgba(0, 0, 0, 0.7), 0 1px 2px rgba(0, 0, 0, 0.5)'
+    };
+
     return (
         <div className="h-full flex flex-col justify-center">
-            <h3 className="text-2xl font-bold font-exo2 mb-2 shadow-text">
+            <h3 className="text-2xl font-bold font-exo2 mb-2" style={textShadowStyle}>
                 {hasEnded ? "Submission Deadline Passed" : "Time Remaining for Submissions"}
             </h3>
             
@@ -105,7 +111,7 @@ const DashCountdown = ({ targetDate }) => {
                             <p className="font-grotesk text-xs drop-shadow-sm" aria-hidden="true">Secs</p>
                         </div>
                     </div>
-                    <p className="text-sm text-center font-medium mt-1 text-amber-300 drop-shadow-lg">
+                    <p className="text-sm text-center font-medium mt-1 text-amber-300" style={{ textShadow: '0 0 8px rgba(217, 119, 6, 0.5)' }}>
                         Submit your projects before the deadline!
                     </p>
                 </div>
