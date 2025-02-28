@@ -1,4 +1,5 @@
 import uranus from '/src/assets/imgs/Background/Uranus.webp';
+import { useCountdown } from '../context/CountdownContext';
 
 // import sponsors
 import csueb_docs from '/src/assets/imgs/sponsors/CSUEB_DOCS.svg';
@@ -23,6 +24,7 @@ const sponsorURLs = {
 }
 
 export default function Sponsor() {
+    const { hasCountdownEnded } = useCountdown();
     const handleClick = (platform) => {
         ReactGA.event({
             category: 'hackathon',
@@ -188,11 +190,11 @@ export default function Sponsor() {
                         </p>
                     </div>
                     <a
-                        href="mailto:sponsor@hackhayward.com"
+                        href={hasCountdownEnded ? "mailto:contact@hackhayward.com" : "mailto:sponsor@hackhayward.com"}
                         className="bg-[#c593e9] hover:bg-[#cfb0e8] rounded-full p-4 px-8 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap"
-                        onClick={() => handleClick('Sponsor Us')}
+                        onClick={() => handleClick(hasCountdownEnded ? 'Contact Us' : 'Sponsor Us')}
                     >
-                        Sponsor Us
+                        {hasCountdownEnded ? 'Contact Us' : 'Sponsor Us'}
                     </a>
                 </section>
                 <div className="opacity-50 absolute bottom-[30%] left-[-8%] max-h-[30%] max-w-[30%]">
