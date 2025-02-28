@@ -11,8 +11,6 @@ import RotatingText from '../Components/RotatingText';
 import Footer from '../Components/Footer';
 import ReactGA from 'react-ga4';
 
-
-
 // Import planet images for background
 import uranus from '/src/assets/imgs/Background/Uranus.webp';
 import mars from '/src/assets/imgs/Background/Saturn.webp';

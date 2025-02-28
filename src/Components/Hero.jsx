@@ -6,6 +6,7 @@ import ReactGA from 'react-ga4';
 import CountdownTimer from './CountdownTimer';
 import { useCountdown } from '../context/CountdownContext';
 import ShinyText from './ShinyText';
+import { Link } from 'react-router-dom';
 
 Hero.propTypes = {
     register: PropTypes.string.isRequired,
@@ -61,10 +62,10 @@ export default function Hero(props) {
                     {hasCountdownEnded ? (
                         // Countdown ended - Show View Live Dashboard button
                         <div className="flex gap-4 max-lg:justify-center lg:mt-4 mt-2 font-mono lg:pb-0 max-[375px]:pb-4">
-                            <a
+                            <Link
                                 className="bg-[#c593e9] text-white lg:h-16 lg:px-14 h-12 px-7
                                 hover:bg-[#cfb0e8] transition-all duration-300 max-lg:text-sm rounded-full animate-flip-up text-center flex items-center"
-                                href="/live"
+                                to="/live"
                                 onClick={() => handleClick('View Live Dashboard')}
                             >
                                 <div className="flex items-center gap-2">
@@ -80,7 +81,7 @@ export default function Hero(props) {
                                         className="font-semibold text-white tracking-wide lg:text-lg" 
                                     />
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     ) : (
                         // Countdown still active - Show Register and Sponsor Us buttons

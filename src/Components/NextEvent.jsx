@@ -20,6 +20,7 @@ export default function NextEvent() {
     });
   };
   
+  
   const nextEvent = findNextEvent();
   
   // // Format the date string for CountdownTimer
