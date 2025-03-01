@@ -73,10 +73,9 @@ export default function Dashboard() {
       </header>
       <div className="bg-black/50">
       
-        <main className="mainBackground bg-contain bg-repeat-y overflow-x-hidden ">
+        <main className="mainBackground bg-contain bg-repeat-y overflow-x-hidden">
           
-          
-          <section className="pt-36 px-4 md:px-10 text-white relative">
+          <section className="pt-36 px-4 md:px-10 bg-black/50 text-white relative pb-2">
             {/* Uranus positioned behind the rotating text */}
             <div className="absolute opacity-50 top-[10%] right-[-5%] max-h-[40%] max-w-[40%]">
               <img 

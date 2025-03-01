@@ -13,6 +13,7 @@ import {
 
 Footer.propTypes = {
     register: PropTypes.string.isRequired,
+    other: PropTypes.bool,
 };
 
 function SocialButtons() {
@@ -60,7 +61,7 @@ function NavButtons() {
             {links.map((link, index) => (
                 <li key={index} className="px-2 lg:hover:scale-110 transition mt-2 sm:mt-0">
                     <a
-                        href={`#${link.text.toLowerCase().replaceAll(' ', '-')}`}
+                        href={`/#${link.text.toLowerCase().replaceAll(' ', '-')}`}
                         className="text-white lg:text-lg text-sm font-grotesk
                          font-bold text-nowrap"
                     >
@@ -141,7 +142,7 @@ export default function Footer(props) {
                 {/* Nav Buttons */}
                 <nav className="flex flex-col items-end">
                     <ul className="menu-vertical sm:menu-horizontal px-1 gap-2 max-[410px]:gap-0 font-extrabold whitespace-nowrap">
-                        <NavButtons />
+                        <NavButtons other={props.other} />
                         {!hasCountdownEnded && !isLiveDashboard && (
                             <li className="px-2 max-[310px]:px-0 lg:hover:scale-110 transition mt-6 sm:mt-0">
                                 <a
