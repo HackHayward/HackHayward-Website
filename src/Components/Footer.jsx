@@ -13,7 +13,6 @@ import {
 
 Footer.propTypes = {
     register: PropTypes.string.isRequired,
-    other: PropTypes.bool,
 };
 
 function SocialButtons() {
@@ -142,7 +141,7 @@ export default function Footer(props) {
                 {/* Nav Buttons */}
                 <nav className="flex flex-col items-end">
                     <ul className="menu-vertical sm:menu-horizontal px-1 gap-2 max-[410px]:gap-0 font-extrabold whitespace-nowrap">
-                        <NavButtons other={props.other} />
+                        <NavButtons />
                         {!hasCountdownEnded && !isLiveDashboard && (
                             <li className="px-2 max-[310px]:px-0 lg:hover:scale-110 transition mt-6 sm:mt-0">
                                 <a
