@@ -2,7 +2,9 @@ import PropTypes from 'prop-types';
 import logo from '/src/assets/imgs/others/Monotone Logo.webp';
 import ReactGA from 'react-ga4';
 import { useCountdown } from '../context/CountdownContext';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
+
+
 
 import {
     BiLogoDiscord,
@@ -59,13 +61,13 @@ function NavButtons() {
         <>
             {links.map((link, index) => (
                 <li key={index} className="px-2 lg:hover:scale-110 transition mt-2 sm:mt-0">
-                    <a
-                        href={`/#${link.text.toLowerCase().replaceAll(' ', '-')}`}
+                    <Link
+                        to={`/#${link.text.toLowerCase().replaceAll(' ', '-')}`}
                         className="text-white lg:text-lg text-sm font-grotesk
                          font-bold text-nowrap"
                     >
                         {link.text}
-                    </a>
+                    </Link>
                 </li>
             ))}
         </>
