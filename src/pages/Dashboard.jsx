@@ -136,6 +136,25 @@ export default function Dashboard() {
                       <div className="bg-black/85 backdrop-blur-md p-6 rounded-lg border border-gray-800 shadow-[0_15px_30px_-10px_rgba(0,0,0,0.7)] hover:shadow-[0_20px_35px_-5px_rgba(197,147,233,0.3)] transition-shadow duration-300 min-h-[200px] overflow-hidden">
                         <NextEvent />
                       </div>
+
+                      {/* Hacker Guide - Link to HackHayward's ultimate guide to succeed */}
+                      <div className="bg-black/85 backdrop-blur-md p-6 rounded-lg border border-gray-800 shadow-[0_15px_30px_-10px_rgba(0,0,0,0.7)] hover:shadow-[0_20px_35px_-5px_rgba(197,147,233,0.3)] transition-shadow duration-300 min-h-[200px] overflow-hidden">
+                        <div className="h-full flex flex-col justify-center">
+                          <h2 className="text-2xl font-bold font-exo2 mb-3 shadow-text">Hacker Guide</h2>
+                            <div className=" pb-1">
+                              <h3 className=" text-white/80 drop-shadow-sm mb-2">Need a quick boost? Head over to our ultimate guide!</h3>
+                              <div className='flex justify-end'> 
+                                <a
+                                  href="https://docs.google.com/document/d/1Qtth7iAm6ib8JzynNEPSM_HVshUlR-SKbytYHWyNg5w/edit?tab=t.0#heading=h.iwygb2m62l2x"
+                                  className="bg-[#c593e9] hover:bg-[#cfb0e8] rounded-full p-3 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap m-3"
+                                  target="_blank"
+                                >
+                                  Click Here!
+                                </a>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
                   </div>
                 </div>
               </div>
