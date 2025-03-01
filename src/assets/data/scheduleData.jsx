@@ -1,9 +1,9 @@
-// src/data/scheduleData.js
+// src/data/scheduleData.jsx
 export const scheduleData = [
     {
       id: 1,
       day: "March 1",
-      time: "08:00 AM",
+      time: "8:00 AM",
       title: "Check-in & Breakfast",
       location: "Core 1st floor Entrance area",
       duration: 90,
