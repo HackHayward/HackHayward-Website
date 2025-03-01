@@ -35,7 +35,8 @@ const LanyardFallback = () => (
 export default function Dashboard() {
   // const { hasCountdownEnded } = useCountdown();
   const register = "https://gdg.community.dev/events/details/google-gdg-on-campus-california-state-university-east-bay-hayward-united-states-presents-build-with-ai-hackhayward/";
-  const submissionDeadline = "2025-03-02T10:00:00"; // Update this with your actual submission deadline
+  const eventStartDate = "2025-03-01T08:00:00"; // Event start date
+  const submissionDeadline = "2025-03-02T10:00:00"; // Submission deadline
   
   // Words for the rotating text
   const rotatingWords = ["Live", "Happening", "Now", "Hacking", "Cooking", "Creating", "Innovating", "Building", "Collabing", "Learning", "Tinkering", "Vibing", "Slaying", "Bussin'", "Chilling"];
@@ -129,7 +130,10 @@ export default function Dashboard() {
                   <div className="flex flex-col gap-6 md:gap-6 order-1 md:order-2">
                       {/* Time Remaining - Fixed height */}
                       <div className="bg-black/85 backdrop-blur-md p-6 rounded-lg border border-gray-800 shadow-[0_15px_30px_-10px_rgba(0,0,0,0.7)] hover:shadow-[0_20px_35px_-5px_rgba(197,147,233,0.3)] transition-shadow duration-300 h-[180px] overflow-hidden">
-                        <DashCountdown targetDate={submissionDeadline} />
+                        <DashCountdown 
+                          targetDate={submissionDeadline} 
+                          eventStartDate={eventStartDate} 
+                        />
                       </div>
                       
                       {/* Next Event - Increased min-height to prevent shadow cutoff */}
