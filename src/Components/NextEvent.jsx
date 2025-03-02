@@ -34,7 +34,7 @@ export default function NextEvent() {
 
   return (
     <div className="h-full flex flex-col justify-center">
-      <h2 className="text-2xl font-bold font-exo2 mb-3 shadow-text">Next Up</h2>
+      <h2 className="text-xl sm:text-2xl font-bold font-exo2 mb-3 shadow-text">Next Up</h2>
       
       {nextEvent ? (
         <div className="overflow-hidden pb-1">

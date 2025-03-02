@@ -134,7 +134,7 @@ export default function EventSchedule() {
   return (
     <div className="font-grotesk">
       <div className="flex flex-col lg:flex-row justify-between items-center mb-6 gap-3 lg:gap-0">
-        <h2 className="text-3xl font-bold font-exo2" style={textShadowStyle}>Event Schedule</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold font-exo2" style={textShadowStyle}>Event Schedule</h2>
         
         {/* Tab buttons for desktop only - hidden on tablet and mobile */}
         <div className="hidden lg:flex font-grotesk overflow-hidden rounded-full">

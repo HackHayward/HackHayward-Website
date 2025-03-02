@@ -112,7 +112,7 @@ const DashCountdown = ({ targetDate, eventStartDate = "2025-03-01T08:00:00" }) =
 
     return (
         <div className="h-full flex flex-col justify-center">
-            <h3 className="text-2xl font-bold font-exo2 mb-2" style={textShadowStyle}>
+            <h3 className="text-xl sm:text-2xl font-bold font-exo2 mb-2" style={textShadowStyle}>
                 {getTitle()}
             </h3>
             
