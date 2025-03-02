@@ -1,24 +1,36 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import PropTypes from 'prop-types';
 
-const DashCountdown = ({ targetDate }) => {
+const DashCountdown = ({ targetDate, eventStartDate = "2025-03-01T08:00:00" }) => {
     const [timeLeft, setTimeLeft] = useState({
         days: 0,
         hours: 0,
         minutes: 0,
         seconds: 0
     });
+    const [hasEventStarted, setHasEventStarted] = useState(false);
     const [hasEnded, setHasEnded] = useState(false);
     const prevTimeLeft = useRef(timeLeft);
 
     useEffect(() => {
         const calculateTimeLeft = () => {
-            const target = new Date(targetDate);
+            const now = new Date();
+            const eventStart = new Date(eventStartDate);
+            const submissionEnd = new Date(targetDate);
+            
+            // Check if event has started
+            const eventStarted = now >= eventStart;
+            setHasEventStarted(eventStarted);
+            
+            // Decide which target to count down to
+            const target = eventStarted ? submissionEnd : eventStart;
+            
             if (isNaN(target.getTime())) {
-                console.error("Invalid target date provided");
+                console.error("Invalid date provided");
                 return;
             }
-            const difference = target - new Date();
+            
+            const difference = target - now;
 
             if (difference > 0) {
                 setHasEnded(false);
@@ -32,8 +44,14 @@ const DashCountdown = ({ targetDate }) => {
                     };
                 });
             } else {
-                setHasEnded(true);
-                setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+                // If we're counting down to event start and it's passed, switch to submission countdown
+                if (!eventStarted) {
+                    setHasEventStarted(true);
+                } else {
+                    // If submission deadline has passed
+                    setHasEnded(true);
+                    setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+                }
             }
         };
 
@@ -41,7 +59,7 @@ const DashCountdown = ({ targetDate }) => {
         calculateTimeLeft();
 
         return () => clearInterval(timer);
-    }, [targetDate]);
+    }, [targetDate, eventStartDate]);
 
     const padNumber = useCallback(num => {
         return num.toString().padStart(2, '0');
@@ -57,19 +75,45 @@ const DashCountdown = ({ targetDate }) => {
         return (
             <span 
                 key={`${unit}-${position}-${hasChanged ? current : digit}`}
-                className={`inline-block transform transition-all duration-1000 text-shadow-glow ${
+                className={`inline-block transform transition-all duration-1000 ${
                     hasChanged ? 'opacity-0 animate-[numberChange_0.5s_ease-out_forwards]' : ''
                 }`}
+                style={{ textShadow: '0 0 10px rgba(255, 255, 255, 0.4)' }}
             >
                 {digit}
             </span>
         );
     };
 
+    // Define text shadow styles
+    const textShadowStyle = {
+        textShadow: '0 2px 4px rgba(0, 0, 0, 0.7), 0 1px 2px rgba(0, 0, 0, 0.5)'
+    };
+
+    // Get appropriate title based on event phase
+    const getTitle = () => {
+        if (hasEnded) {
+            return "Submission Deadline Passed";
+        } else if (hasEventStarted) {
+            return "Time Remaining for Submissions";
+        } else {
+            return "Time Until HackHayward";
+        }
+    };
+
+    // Get appropriate message based on event phase
+    const getMessage = () => {
+        if (hasEventStarted) {
+            return "Submit your projects before the deadline!";
+        } else {
+            return "Get ready for an amazing hackathon experience!";
+        }
+    };
+
     return (
         <div className="h-full flex flex-col justify-center">
-            <h3 className="text-2xl font-bold font-exo2 mb-2 shadow-text">
-                {hasEnded ? "Submission Deadline Passed" : "Time Remaining for Submissions"}
+            <h3 className="text-2xl font-bold font-exo2 mb-2" style={textShadowStyle}>
+                {getTitle()}
             </h3>
             
             {hasEnded ? (
@@ -105,8 +149,8 @@ const DashCountdown = ({ targetDate }) => {
                             <p className="font-grotesk text-xs drop-shadow-sm" aria-hidden="true">Secs</p>
                         </div>
                     </div>
-                    <p className="text-sm text-center font-medium mt-1 text-amber-300 drop-shadow-lg">
-                        Submit your projects before the deadline!
+                    <p className="text-sm text-center font-medium mt-1 text-amber-300" style={{ textShadow: '0 0 8px rgba(217, 119, 6, 0.5)' }}>
+                        {getMessage()}
                     </p>
                 </div>
             )}
@@ -116,7 +160,8 @@ const DashCountdown = ({ targetDate }) => {
 
 // PropTypes validation
 DashCountdown.propTypes = {
-    targetDate: PropTypes.string.isRequired
+    targetDate: PropTypes.string.isRequired,
+    eventStartDate: PropTypes.string
 };
 
 export default DashCountdown; 

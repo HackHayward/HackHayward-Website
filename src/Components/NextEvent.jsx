@@ -34,18 +34,25 @@ export default function NextEvent() {
 
   return (
     <div className="h-full flex flex-col justify-center">
-      <h2 className="text-2xl font-bold font-exo2 mb-2 shadow-text">Next Up</h2>
+      <h2 className="text-2xl font-bold font-exo2 mb-3 shadow-text">Next Up</h2>
       
       {nextEvent ? (
-        <div className="overflow-hidden">
-          <div className="mb-1">
-            <span className="text-[#c593e9] font-medium drop-shadow-md text-shadow-purple-glow">{nextEvent.time} • {nextEvent.location}</span>
+        <div className="overflow-hidden pb-1">
+          <div className="mb-2">
+            <span 
+              className="text-[#c593e9] font-medium" 
+              style={{ 
+                textShadow: '0 0 10px rgba(197, 147, 233, 0.6), 0 0 5px rgba(197, 147, 233, 0.4)'
+              }}
+            >
+              {nextEvent.time} • {nextEvent.location}
+            </span>
             <h3 className="text-xl font-bold mt-1 truncate drop-shadow-md shadow-text">{nextEvent.title}</h3>
           </div>
           <p className="text-white/70 text-sm line-clamp-2 drop-shadow-sm">{nextEvent.description}</p>
         </div>
       ) : (
-        <p className="drop-shadow-md">All events have concluded!</p>
+        <p className="drop-shadow-md pb-2">All events have concluded!</p>
       )}
     </div>
   );

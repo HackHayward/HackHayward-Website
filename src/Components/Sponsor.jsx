@@ -9,6 +9,7 @@ import GCP from '/src/assets/imgs/sponsors/GCP_Cheat_Sheet.png';
 import SCLogo from '/src/assets/imgs/sponsors/updated_smith_logo.png';
 import GroqLogo from '/src/assets/imgs/sponsors/GroqLogo_Black.svg';
 import PerplexityLogo from '/src/assets/imgs/sponsors/Perplexity-Logo.jpg';
+import redbull from '/src/assets/imgs/sponsors/redbull.webp';
 
 import ReactGA from 'react-ga4';
 
@@ -20,7 +21,8 @@ const sponsorURLs = {
     'GCP': 'https://cloud.google.com/',
     'Smith Center': 'https://www.csueastbay.edu/smith-center/',
     'Groq': 'https://groq.com/',
-    'Perplexity': 'https://www.perplexity.ai/'
+    'Perplexity': 'https://www.perplexity.ai/',
+    'Redbull': 'https://www.redbull.com/'
 }
 
 export default function Sponsor() {
@@ -171,8 +173,25 @@ export default function Sponsor() {
 
                                 </a>
 
+                                {/* Redbull Logo */}
+                                <a 
+                                    href={sponsorURLs['Redbull']} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    onClick={() => handleClick('Redbull')}
+                                    className="block w-full max-w-[300px] transform transition-all duration-200 active:scale-95 hover:scale-[0.98]"
+                                >
+                                    <div className="bg-white p-4 rounded-lg w-full h-[100px] flex items-center justify-center overflow-hidden hover:bg-gray-50 transition-colors">  
+                                        <img 
+                                            src={redbull} 
+                                            alt="Redbull" 
+                                            className="h-[100px] object-contain mt-2"
+                                        />
+                                    </div>
+                                </a>
                                 
 
+                                
                             </div>
                         </div>
 

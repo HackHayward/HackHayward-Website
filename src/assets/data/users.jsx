@@ -154,8 +154,8 @@ export const users = [
     },
     {
         name: "Tony Hu",
-        desc: "Unknown",
-        pos: "Software Engineer",
+        desc: "Google",
+        pos: "Senior Software Engineer",
         img: Unknown,
         badge: "",
         flair: {

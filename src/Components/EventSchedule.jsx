@@ -15,17 +15,63 @@ export default function EventSchedule() {
   // Find current event based on time
   useEffect(() => {
     const findCurrentEvent = () => {
+      // Get current date and time
       const now = new Date();
-      // Logic to find current event
-      // ...
-      const currentEvent = dayEvents.find(event => {
-        
+      
+      // For testing purposes - comment this out in production
+      // Uncomment and modify this to test different times during development
+      // const testTime = new Date("March 1, 2025 12:30 PM");
+      // now.setHours(testTime.getHours(), testTime.getMinutes());
+      
+      console.log(`Current time: ${now.toLocaleString()}`);
+      
+      // Check each event to see if current time falls within its duration
+      let foundEvent = null;
+      
+      for (const event of dayEvents) {
+        // Create start date for the event
         const eventStart = new Date(`${event.day}, 2025 ${event.time}`);
+        
+        // Create end date based on duration (or default 1 hour)
         const eventEnd = new Date(eventStart);
-        eventEnd.setHours(eventStart.getHours() + (event.durationHours || 1)); // Default to 1 hour if duration not specified
-        return now >= eventStart && now < eventEnd;
-      });
-      setCurrentEvent(currentEvent);
+        eventEnd.setMinutes(eventStart.getMinutes() + (event.duration || 60));
+        
+        console.log(`Event: ${event.title}, Start: ${eventStart.toLocaleString()}, End: ${eventEnd.toLocaleString()}`);
+        
+        // Check if current time is within event duration
+        if (now >= eventStart && now < eventEnd) {
+          foundEvent = event;
+          console.log(`Found current event: ${event.title}`);
+          break;
+        }
+      }
+      
+      // If no current event found, find the next upcoming event
+      if (!foundEvent) {
+        const upcomingEvents = dayEvents.filter(event => {
+          const eventStart = new Date(`${event.day}, 2025 ${event.time}`);
+          return eventStart > now;
+        });
+        
+        // Sort by closest start time
+        upcomingEvents.sort((a, b) => {
+          const startA = new Date(`${a.day}, 2025 ${a.time}`);
+          const startB = new Date(`${b.day}, 2025 ${b.time}`);
+          return startA - startB;
+        });
+        
+        // If there are upcoming events today, highlight the next one
+        if (upcomingEvents.length > 0) {
+          foundEvent = upcomingEvents[0];
+          console.log(`No current event, highlighting next event: ${foundEvent.title}`);
+        } else if (selectedDay === "March 1") {
+          // If we're on day 1 with no upcoming events, suggest day 2
+          setSelectedDay("March 2");
+          return; // This will trigger the effect again with day 2 selected
+        }
+      }
+      
+      setCurrentEvent(foundEvent);
     };
     
     findCurrentEvent();
@@ -80,10 +126,15 @@ export default function EventSchedule() {
     return urlMatch ? urlMatch[0] : null;
   };
 
+  // Define text shadow styles
+  const textShadowStyle = {
+    textShadow: '0 2px 4px rgba(0, 0, 0, 0.7), 0 1px 2px rgba(0, 0, 0, 0.5)'
+  };
+
   return (
     <div className="font-grotesk">
       <div className="flex flex-col lg:flex-row justify-between items-center mb-6 gap-3 lg:gap-0">
-        <h2 className="text-3xl font-bold font-exo2 shadow-text">Event Schedule</h2>
+        <h2 className="text-3xl font-bold font-exo2" style={textShadowStyle}>Event Schedule</h2>
         
         {/* Tab buttons for desktop only - hidden on tablet and mobile */}
         <div className="hidden lg:flex font-grotesk overflow-hidden rounded-full">
@@ -162,7 +213,7 @@ export default function EventSchedule() {
                 </p>
               </div>
             </div>
-            <h3 className="text-xl font-bold mt-1 shadow-text">{event.title}</h3>
+            <h3 className="text-xl font-bold mt-1" style={textShadowStyle}>{event.title}</h3>
             {event.description && (
               <p className="mt-2 text-white/80 drop-shadow-sm">
                 {event.description.replace(/\(https?:\/\/[^\s)]+\)/, '')}

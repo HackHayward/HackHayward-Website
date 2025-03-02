@@ -35,7 +35,8 @@ const LanyardFallback = () => (
 export default function Dashboard() {
   // const { hasCountdownEnded } = useCountdown();
   const register = "https://gdg.community.dev/events/details/google-gdg-on-campus-california-state-university-east-bay-hayward-united-states-presents-build-with-ai-hackhayward/";
-  const submissionDeadline = "2025-03-02T10:00:00"; // Update this with your actual submission deadline
+  const eventStartDate = "2025-03-01T08:00:00"; // Event start date
+  const submissionDeadline = "2025-03-02T10:00:00"; // Submission deadline
   
   // Words for the rotating text
   const rotatingWords = ["Live", "Happening", "Now", "Hacking", "Cooking", "Creating", "Innovating", "Building", "Collabing", "Learning", "Tinkering", "Vibing", "Slaying", "Bussin'", "Chilling"];
@@ -60,6 +61,11 @@ export default function Dashboard() {
     }
   }, []);
 
+  // Define text shadow styles
+  const textShadowStyle = {
+    textShadow: '0 2px 4px rgba(0, 0, 0, 0.7), 0 1px 2px rgba(0, 0, 0, 0.5)'
+  };
+
   return (
     <>
     
@@ -68,10 +74,9 @@ export default function Dashboard() {
       </header>
       <div className="bg-black/50">
       
-        <main className="mainBackground bg-contain bg-repeat-y overflow-x-hidden ">
-          {/* <div className="absolute inset-0 bg-gradient-to-b from-[#1a1229]/0 to-[#271d2d]/90 pointer-events-none"></div> */}
+        <main className="mainBackground bg-contain bg-repeat-y overflow-x-hidden">
           
-          <section className="pt-36 px-4 md:px-10 text-white relative">
+          <section className="pt-36 px-4 md:px-10 bg-black/50 text-white relative pb-2">
             {/* Uranus positioned behind the rotating text */}
             <div className="absolute opacity-50 top-[10%] right-[-5%] max-h-[40%] max-w-[40%]">
               <img 
@@ -81,12 +86,12 @@ export default function Dashboard() {
                   className="object-cover" />
             </div>
             
-            <h1 className="text-5xl md:text-5xl sm:text-4xl font-bold font-exo2 text-center mb-12 animate-fade-up shadow-text relative z-10">
-              <div className="flex flex-wrap items-baseline justify-center gap-2">
-                <span className="inline-block">HackHayward&apos;s</span>{" "}
+            <h1 className="text-4xl md:text-5xl font-bold font-exo2 text-center mb-12 animate-fade-up relative z-10 max-w-4xl mx-auto" style={textShadowStyle}>
+              <div className="flex flex-col md:flex-row items-center justify-center gap-2">
+                <span className="inline-block">HackHayward&apos;s</span>
                 <RotatingText
                   texts={rotatingWords}
-                  mainClassName="px-4 md:px-4 text-[#c593e9] overflow-hidden py-1 inline-flex justify-center rounded-xl relative"
+                  mainClassName="px-4 md:px-4 text-[#c593e9] overflow-hidden py-1 inline-flex justify-center rounded-xl relative mt-2 md:mt-0"
                   staggerFrom={"last"}
                   initial={{ y: "100%" }}
                   animate={{ y: "0%" }}
@@ -115,22 +120,44 @@ export default function Dashboard() {
                 </div>
                 
                 {/* Bottom Section - Event Info (columns on desktop) */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-6">
                   {/* Left Column - Event Schedule (wider) */}
                   <div className="bg-black/85 backdrop-blur-md p-6 rounded-lg border border-gray-800 shadow-[0_15px_30px_-10px_rgba(0,0,0,0.7)] hover:shadow-[0_20px_35px_-5px_rgba(197,147,233,0.3)] transition-shadow duration-300 h-full order-2 md:order-1">
                     <EventSchedule />
                   </div>
                   
                   {/* Right Column - Next Event and Countdown stacked */}
-                  <div className="flex flex-col gap-3 md:gap-6 order-1 md:order-2">
+                  <div className="flex flex-col gap-6 md:gap-6 order-1 md:order-2">
                       {/* Time Remaining - Fixed height */}
                       <div className="bg-black/85 backdrop-blur-md p-6 rounded-lg border border-gray-800 shadow-[0_15px_30px_-10px_rgba(0,0,0,0.7)] hover:shadow-[0_20px_35px_-5px_rgba(197,147,233,0.3)] transition-shadow duration-300 h-[180px] overflow-hidden">
-                        <DashCountdown targetDate={submissionDeadline} />
+                        <DashCountdown 
+                          targetDate={submissionDeadline} 
+                          eventStartDate={eventStartDate} 
+                        />
                       </div>
                       
-                      {/* Next Event - Flexible height with minimum */}
-                      <div className="bg-black/85 backdrop-blur-md p-6 rounded-lg border border-gray-800 shadow-[0_15px_30px_-10px_rgba(0,0,0,0.7)] hover:shadow-[0_20px_35px_-5px_rgba(197,147,233,0.3)] transition-shadow duration-300 min-h-[180px] overflow-hidden">
+                      {/* Next Event - Increased min-height to prevent shadow cutoff */}
+                      <div className="bg-black/85 backdrop-blur-md p-6 rounded-lg border border-gray-800 shadow-[0_15px_30px_-10px_rgba(0,0,0,0.7)] hover:shadow-[0_20px_35px_-5px_rgba(197,147,233,0.3)] transition-shadow duration-300 min-h-[200px] overflow-hidden">
                         <NextEvent />
+                      </div>
+
+                      {/* Hacker Guide - Link to HackHayward's ultimate guide to succeed */}
+                      <div className="bg-black/85 backdrop-blur-md p-6 rounded-lg border border-gray-800 shadow-[0_15px_30px_-10px_rgba(0,0,0,0.7)] hover:shadow-[0_20px_35px_-5px_rgba(197,147,233,0.3)] transition-shadow duration-300 min-h-[200px] overflow-hidden">
+                        <div className="h-full flex flex-col justify-center">
+                          <h2 className="text-2xl font-bold font-exo2 mb-3 shadow-text">Hacker Guide</h2>
+                            <div className=" pb-1">
+                              <h3 className=" text-white/80 drop-shadow-sm mb-2">Need a quick boost? Head over to our ultimate guide!</h3>
+                              <div className='flex justify-end'> 
+                                <a
+                                  href="https://docs.google.com/document/d/1Qtth7iAm6ib8JzynNEPSM_HVshUlR-SKbytYHWyNg5w/edit?tab=t.0#heading=h.iwygb2m62l2x"
+                                  className="bg-[#c593e9] hover:bg-[#cfb0e8] rounded-full p-3 transition text-white lg:text-lg text-sm font-grotesk font-medium text-nowrap m-3"
+                                  target="_blank"
+                                >
+                                  Click Here!
+                                </a>
+                              </div>
+                            </div>
+                        </div>
                       </div>
                   </div>
                 </div>
