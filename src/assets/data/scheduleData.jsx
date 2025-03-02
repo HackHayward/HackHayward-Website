@@ -117,7 +117,7 @@ export const scheduleData = [
       id: 14,
       day: "March 2",
       time: "8:00 AM",
-      title: "Checkin & Breakfast Snack",
+      title: "Check-in & Snacks",
       location: "Core Building 1st Floor Common Area",
       duration: 90,
       description: "",
