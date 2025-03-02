@@ -1,4 +1,4 @@
-// src/data/scheduleData.jsx
+// src/data/scheduleData.js
 export const scheduleData = [
     {
       id: 1,
