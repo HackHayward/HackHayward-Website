@@ -18,6 +18,7 @@ import Naman from "/src/assets/imgs/users/Naman.webp";
 import Gehna from "/src/assets/imgs/users/Gehna.webp";
 import Eugene from "/src/assets/imgs/users/Eugene.webp";
 import Wail from "/src/assets/imgs/users/wail.webp";
+import Mayur from "/src/assets/imgs/users/Mayur.webp";
 
 export const users = [
     {
@@ -258,6 +259,18 @@ export const users = [
             spk: false,
             jud: false,
             mnt: false,
+        }
+    },
+    {
+        name: "Mayur Pipaliya",
+        desc: "Neon Capital",
+        pos: "Founding Organizer",
+        img: Mayur,
+        badge: "",
+        flair: {
+            spk: false,
+            jud: false,
+            mnt: true,
         }
     }
 ]
